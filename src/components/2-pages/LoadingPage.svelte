@@ -73,23 +73,23 @@ p {
 /* PORTRAIT -------------------------------- */
 @media screen and (orientation: portrait) {
   p {
-    font-size: calc(var(--cw)/15);
+    font-size: 5vw;
   }
   .loading-page div {
     width: 40%;
     height: 60%;
-    border-width: calc(var(--cw)/50);
+    border-width: 1vw;
   }
 }
 /* LANDSCAPE -------------------------------- */
 @media screen and (orientation: landscape) {
   p {
-    font-size: calc(var(--cw)/30);
+    font-size: 3vw;
   }
   .loading-page div {
     width: 50%;
     height: 40%;
-    border-width: calc(var(--cw)/200);
+    border-width: 0.5vw;
   }
 }
 </style>
