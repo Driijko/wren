@@ -6,8 +6,8 @@
 
   // EVENT HANDLERS ---------------------------------------------
   updateOnResize();
-  
+
 </script>
 
 <!-- MARKUP //////////////////////////////////////////////////// -->
-<OpeningRouter />
+<!-- <OpeningRouter /> -->
