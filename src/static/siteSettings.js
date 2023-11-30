@@ -1,5 +1,5 @@
 export const layout = {
-  breakpointLD: 1920,
+  breakpointLD: 2000, // px viewport width
 };
 
 export const startingPageName = "loading";
