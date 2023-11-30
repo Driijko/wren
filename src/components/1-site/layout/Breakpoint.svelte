@@ -7,5 +7,12 @@
 
 <!-- Background ---------------- -->
 <div class="vp">
-  
+
 </div>
+
+<!-- STYLES /////////////////////////////////////////// -->
+<style>
+div {
+  background-color: blue;
+}
+</style>
