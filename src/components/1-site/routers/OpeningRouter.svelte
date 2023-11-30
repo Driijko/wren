@@ -3,7 +3,7 @@
   // IMPORTS --------------------------------------------------
   import { currentPage } from "../../../dynamic/currentPage";
   import LoadingPage from "../../2-pages/LoadingPage.svelte";
-  import Breakpoint from "../layout/Breakpoint.svelte";
+  import Breakpoint from "../Breakpoint.svelte";
 
 </script>
 

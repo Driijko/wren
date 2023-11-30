@@ -1,5 +1,7 @@
 <!-- SCRIPTS ///////////////////////////////////////////// -->
 <script>
+  // IMPORTS ----------------------------------------
+  import { breakpoint } from "../../dynamic/breakpoint";
 
 </script>
 
@@ -10,9 +12,15 @@
 
 </div>
 
+{#if $breakpoint === "mobile"}
+  <div class="vp-layer">
+
+  </div>
+{/if}
+
+
+
 <!-- STYLES /////////////////////////////////////////// -->
 <style>
-div {
-  background-color: blue;
-}
+
 </style>
