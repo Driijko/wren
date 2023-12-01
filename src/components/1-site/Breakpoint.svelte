@@ -10,9 +10,9 @@
 
 <!-- Background ---------------- -->
 <div class="vp">
-
 </div>
 
+<!-- MOBILE --------------------- -->
 {#if $breakpoint === "mobile"}
   <div class="vp-layer mobile-container">
     <div class="content-container">
@@ -20,7 +20,14 @@
     </div>
     <Toolbar />
   </div>
+
+<!-- DESKTOP -------------------- -->
+{:else if $breakpoint === "desktop"}
+  <div class="vp-layer desktop-container">
+    
+  </div>
 {/if}
+
 
 
 
