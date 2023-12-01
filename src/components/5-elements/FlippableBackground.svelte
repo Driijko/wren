@@ -12,16 +12,24 @@
   export let duration = 30;
 
   // RESPONSIVE ----------------------------------------
-  let src;
+  let alignment;
+  let size;
+  // src = `./backgrounds/back${picNum}/v-small.webp`;
+
+
   $: if ($breakpoint === "mobile") {
-    if (window.innerWidth <= 600) {
-      src = `./backgrounds/back${picNum}-v-small.webp`;
-    } else {
-      src = `./backgrounds/back${picNum}-v.webp`;
-    }
-  } else {
-    src = `./backgrounds/back${picNum}-h.webp`;
+    alignment = "v";
+    if (window.innerWidth <= 600) { size = "small"; }
+    else if (window.innerWidth <= 1024) { size = "medium"}
+    else { size = "large"}
+  } else if ($breakpoint === "desktop") {
+    alignment = "h";
+    if (window.innerWidth <= 1920) { size = "small" }
+    else if (window.innerWidth <= 2560) { size = "medium" }
+    else { size = "large" }
   };
+
+  $: src = `./backgrounds/back${picNum}/${alignment}-${size}.webp`;
 
 // `url(${ $breakpoint === "mobile" ? src.portrait : src.landscape})`
 
@@ -44,7 +52,7 @@
 }
 
 div {
-  background-size: 150%;
+  background-size: 200%;
   background-position: 0% 0%;
   animation-name: background-shift;
   animation-timing-function: linear;
