@@ -5,6 +5,12 @@
   import Toolbar from "./interface/toolbar/Toolbar.svelte";
   import Panel from "./interface/Panel.svelte";
   import FlippableBackground from "../5-elements/FlippableBackground.svelte";
+  import ContentRouter from "./routers/ContentRouter.svelte";
+
+  // src={{
+  //     portrait: "./backgrounds/back1-v.webp",
+  //     landscape: "./backgrounds/back1-h.webp"
+  //   }}
 
 </script>
 
@@ -12,10 +18,7 @@
 
 <!-- Background ---------------- -->
 <div class="vp background-container">
-  <FlippableBackground src={{
-      portrait: "./backgrounds/back1-v.webp",
-      landscape: "./backgrounds/back1-h.webp"
-    }}
+  <FlippableBackground picNum="1"
     duration={25}
   ></FlippableBackground>
 </div>
@@ -24,7 +27,7 @@
 {#if $breakpoint === "mobile"}
   <div class="vp-layer mobile-container">
     <div class="content-container">
-
+      <ContentRouter />
     </div>
     <Toolbar />
   </div>
@@ -34,7 +37,7 @@
   <div class="vp-layer desktop-container">
     <Panel />
     <div class="content-container">
-
+      <ContentRouter />
     </div>
   </div>
 {/if}

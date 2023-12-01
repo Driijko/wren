@@ -183,14 +183,3 @@ a line, button line {
   from { opacity: 1; }
   to { opacity: 0; }
 }
-
-
-
-
-
-@keyframes background-shift {
-  0% {background-position: 0% 0%; opacity: 0;}
-  5% {background-position: 5% 5%; opacity: 1;}
-  95% {background-position: 95% 95%; opacity: 1;}
-  100% {background-position: 100% 100%; opacity: 0;}
-}

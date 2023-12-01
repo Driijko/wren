@@ -28,3 +28,10 @@
     <div class="fill"></div>
   </Page>
 {/if}
+
+<!-- STYLES //////////////////////////////////////// -->
+<style>
+div {
+  background-color: hsla(30, 100%, 50%, 0.5);
+}
+</style>
