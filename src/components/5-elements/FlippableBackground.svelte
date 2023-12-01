@@ -24,7 +24,7 @@
 div {
   background-size: 150%;
   background-position: 0% 0%;
-  animation-name: backgroundShift;
+  animation-name: background-shift;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }

@@ -63,11 +63,22 @@ p {
   border-color: black;
 }
 
-.loading-page div:nth-of-type(1) {
-  animation: rotateClockwise 4s ease-in-out infinite;
+@keyframes rotate-clockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
+
+.loading-page div:nth-of-type(1) {
+  animation: rotate-clockwise 4s ease-in-out infinite;
+}
+
+@keyframes rotate-counter-clockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
 .loading-page div:nth-of-type(2) {
-  animation: rotateCounterClockwise 4s ease-in-out infinite;
+  animation: rotate-counter-clockwise 4s ease-in-out infinite;
 }
 
 /* PORTRAIT -------------------------------- */

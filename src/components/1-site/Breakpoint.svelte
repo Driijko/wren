@@ -11,7 +11,7 @@
 <!-- MARKUP ///////////////////////////////////////////// -->
 
 <!-- Background ---------------- -->
-<div class="vp">
+<div class="vp background-container">
   <FlippableBackground src={{
       portrait: "./backgrounds/back1-v.webp",
       landscape: "./backgrounds/back1-h.webp"
@@ -44,6 +44,10 @@
 
 <!-- STYLES /////////////////////////////////////////// -->
 <style>
+.background-container {
+  opacity: 0;
+  animation: fade-in 2s ease-out forwards;
+}
 .mobile-container {
   display: flex;
   flex-direction: column;
