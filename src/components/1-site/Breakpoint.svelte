@@ -58,5 +58,7 @@
 .content-container {
   flex: 1;
   border: 4px solid green;
+  opacity: 0;
+  animation: fade-in 2s 2s ease-out forwards;
 }
 </style>
