@@ -4,6 +4,7 @@
   import { breakpoint } from "../../dynamic/breakpoint";
   import Toolbar from "./interface/toolbar/Toolbar.svelte";
   import Panel from "./interface/Panel.svelte";
+  import FlippableBackground from "../5-elements/FlippableBackground.svelte";
 
 </script>
 
@@ -11,6 +12,12 @@
 
 <!-- Background ---------------- -->
 <div class="vp">
+  <FlippableBackground src={{
+      portrait: "./backgrounds/back1-v.webp",
+      landscape: "./backgrounds/back1-h.webp"
+    }}
+    duration={20}
+  ></FlippableBackground>
 </div>
 
 <!-- MOBILE --------------------- -->
@@ -27,7 +34,7 @@
   <div class="vp-layer desktop-container">
     <Panel />
     <div class="content-container">
-      
+
     </div>
   </div>
 {/if}
