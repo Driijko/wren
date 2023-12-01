@@ -1,9 +1,18 @@
 <!-- SCRIPTS ////////////////////////////// -->
 <script>
-  // LOCAL STATIC --------------------------------
-  const panelWidth = 25; // percentage of viewport width
 
 </script>
 
-<div style:width={``}
+<!-- MARKUP ////////////////////////////////////// -->
+<div>
 
+</div>
+
+<!-- STYLES //////////////////////////////////////////// -->
+<style>
+div {
+  background-color: cyan;
+  border: 4px solid red;
+  width: 25%;
+}
+</style>
