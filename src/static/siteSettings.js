@@ -1,1 +1,1 @@
-export const startingPageName = "loading";
+export const startingPageName = "home";

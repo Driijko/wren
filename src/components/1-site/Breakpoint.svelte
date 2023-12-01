@@ -16,7 +16,7 @@
       portrait: "./backgrounds/back1-v.webp",
       landscape: "./backgrounds/back1-h.webp"
     }}
-    duration={20}
+    duration={25}
   ></FlippableBackground>
 </div>
 
@@ -45,8 +45,9 @@
 <!-- STYLES /////////////////////////////////////////// -->
 <style>
 .background-container {
-  opacity: 0;
-  animation: fade-in 2s ease-out forwards;
+  background-color: black;
+  /* opacity: 0;
+  animation: fade-in 2s ease-out forwards; */
 }
 .mobile-container {
   display: flex;
@@ -58,7 +59,7 @@
 .content-container {
   flex: 1;
   border: 4px solid green;
-  opacity: 0;
-  animation: fade-in 2s 2s ease-out forwards;
+  /* opacity: 0;
+  animation: fade-in 2s 2s ease-out forwards; */
 }
 </style>
