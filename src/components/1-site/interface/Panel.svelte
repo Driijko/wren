@@ -14,5 +14,6 @@ div {
   background-color: cyan;
   border: 4px solid red;
   width: 25%;
+  
 }
 </style>

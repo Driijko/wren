@@ -3,6 +3,7 @@
   // IMPORTS ----------------------------------------
   import { breakpoint } from "../../dynamic/breakpoint";
   import Toolbar from "./interface/toolbar/Toolbar.svelte";
+  import Panel from "./interface/Panel.svelte";
 
 </script>
 
@@ -24,7 +25,10 @@
 <!-- DESKTOP -------------------- -->
 {:else if $breakpoint === "desktop"}
   <div class="vp-layer desktop-container">
-    
+    <Panel />
+    <div class="content-container">
+      
+    </div>
   </div>
 {/if}
 
@@ -36,6 +40,9 @@
 .mobile-container {
   display: flex;
   flex-direction: column;
+}
+.desktop-container {
+  display: flex;
 }
 .content-container {
   flex: 1;
