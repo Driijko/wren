@@ -3,7 +3,6 @@
   // IMPORTS --------------------------------------------
   import { newPage, currentPage, setCurrentProduct } 
   from "../../../dynamic/currentPage";
-  import { breakpoint } from "../../../dynamic/breakpoint";
   import { modals, interfaceModal } from "../../../dynamic/modals";
 
   // PROPS -------------------------------------------
@@ -17,7 +16,7 @@
     };
     if (!($currentPage === pageName)) {
       newPage(pageName);
-      if ($breakpoint !== "large-desktop" && $interfaceModal) {
+      if ($interfaceModal) {
         modals.close("interfaceModal");
       };
     };
