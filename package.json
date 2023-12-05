@@ -14,5 +14,8 @@
     "gh-pages": "^6.1.0",
     "svelte": "^3.55.1",
     "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.3"
   }
 }
