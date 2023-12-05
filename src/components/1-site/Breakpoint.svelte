@@ -45,8 +45,8 @@
 <style>
 .background-container {
   background-color: black;
-  opacity: 0;
-  animation: fade-in 2s ease-out forwards;
+  /* opacity: 0;
+  animation: fade-in 2s ease-out forwards; */
 }
 .mobile-container {
   display: flex;
@@ -58,7 +58,7 @@
 .content-container {
   flex: 1;
   border: 4px solid green;
-  opacity: 0;
-  animation: fade-in 2s 2s ease-out forwards;
+  /* opacity: 0;
+  animation: fade-in 2s 2s ease-out forwards; */
 }
 </style>
