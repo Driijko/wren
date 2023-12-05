@@ -2,13 +2,12 @@
 <script>
   // IMPORTS ------------------------------------------
   import { onDestroy } from "svelte";
-    import { src_url_equal } from "svelte/internal";
 
   // PROPS -------------------------------------------------
   export let picNum = "0";
   export let duration = 30;
 
-  // PIC SRC ----------------------------------------
+  // IMAGE SRC & BACKGROUND SIZE ------------------------------------
   $: src = "";
   $: bkgSize = 0;
 
@@ -36,20 +35,16 @@
   $: getSrcAndSize();
 
   window.addEventListener("resize", getSrcAndSize);
-
-  onDestroy(()=> {
-    window.removeEventListener("resize", getSrcAndSize);
-  });
+  onDestroy(()=> window.removeEventListener("resize", getSrcAndSize));
 
 </script>
 
 <!-- MARKUP //////////////////////////////////////////// -->
-<div class="fill" style:background-image={`url(${src})`}
+<div class="fill" 
+  style:background-image={`url(${src})`}
   style:animation-duration={`${duration}s`}
   style:background-size={`${bkgSize}%`}
 ></div>
-
-
 
 <!-- STYLES //////////////////////////////////////////// -->
 <style>
@@ -61,7 +56,6 @@
 }
 
 div {
-  /* background-size: 200%; */
   background-position: 0% 0%;
   animation-name: background-shift;
   animation-timing-function: linear;

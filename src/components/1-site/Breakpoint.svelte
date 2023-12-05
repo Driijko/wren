@@ -7,19 +7,15 @@
   import FlippableBackground from "../5-elements/FlippableBackground.svelte";
   import ContentRouter from "./routers/ContentRouter.svelte";
 
-  // src={{
-  //     portrait: "./backgrounds/back1-v.webp",
-  //     landscape: "./backgrounds/back1-h.webp"
-  //   }}
-
 </script>
 
 <!-- MARKUP ///////////////////////////////////////////// -->
 
 <!-- Background ---------------- -->
 <div class="vp background-container">
-  <FlippableBackground picNum="1"
-    duration={25}
+  <FlippableBackground 
+    picNum="1"
+    duration={30}
   ></FlippableBackground>
 </div>
 
@@ -49,8 +45,8 @@
 <style>
 .background-container {
   background-color: black;
-  /* opacity: 0;
-  animation: fade-in 2s ease-out forwards; */
+  opacity: 0;
+  animation: fade-in 2s ease-out forwards;
 }
 .mobile-container {
   display: flex;
@@ -62,7 +58,7 @@
 .content-container {
   flex: 1;
   border: 4px solid green;
-  /* opacity: 0;
-  animation: fade-in 2s 2s ease-out forwards; */
+  opacity: 0;
+  animation: fade-in 2s 2s ease-out forwards;
 }
 </style>
