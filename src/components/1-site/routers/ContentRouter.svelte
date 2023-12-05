@@ -3,29 +3,34 @@
   // IMPORTS --------------------------------------------
   import { currentPage } from "../../../dynamic/currentPage";
   import Page from "./Page.svelte";
+  import HomePage from "../../2-pages/HomePage.svelte";
+  import CataloguePage from "../../2-pages/CataloguePage.svelte";
+  import AboutPage from "../../2-pages/AboutPage.svelte";
+  import DesignPage from "../../2-pages/DesignPage.svelte";
+  import ProductPage from "../../2-pages/ProductPage.svelte";
 
 </script>
 
 <!-- MARKUP ///////////////////////////////////////////// -->
 {#if $currentPage === "home"}
   <Page>
-    <div class="fill"></div>
+    <HomePage />
   </Page>
 {:else if $currentPage === "catalogue"}
   <Page>
-    <div class="fill"></div>
+    <CataloguePage />
   </Page>
 {:else if $currentPage === "about"}
   <Page>
-    <div class="fill"></div>
+    <AboutPage />
   </Page>
 {:else if $currentPage === "design"}
   <Page>
-    <div class="fill"></div>
+    <DesignPage />
   </Page>
 {:else if $currentPage === "product"}
   <Page>
-    <div class="fill"></div>
+    <ProductPage />
   </Page>
 {/if}
 
