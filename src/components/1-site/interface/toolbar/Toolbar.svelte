@@ -1,11 +1,14 @@
 <!-- SCRIPTS ///////////////////////////////////// -->
 <script>
   // IMPORTS ---------------------------------------
+  import SiteMenuModalToggleButton 
+  from "../../../5-elements/interface/SiteMenuModalToggleButton.svelte";
   
 </script>
 
 <!-- MARKUP //////////////////////////////////////// -->
 <div>
+  <SiteMenuModalToggleButton />
 </div>
 
 <!-- STYLES ////////////////////////////////////////// -->
