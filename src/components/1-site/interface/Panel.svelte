@@ -2,12 +2,15 @@
 <script>
   // IMPORTS -----------------------------------------
   import SiteHeader from "../../4-structures/SiteHeader.svelte";
+  import InterfaceSelection 
+  from "./interface-selection/InterfaceSelection.svelte";
 
 </script>
 
 <!-- MARKUP ////////////////////////////////////// -->
 <div>
   <SiteHeader />
+  <InterfaceSelection />
 </div>
 
 <!-- STYLES //////////////////////////////////////////// -->

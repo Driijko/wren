@@ -3,7 +3,8 @@
   // IMPORTS ----------------------------------------
   import { breakpoint } from "../../dynamic/breakpoint";
   import { interfaceModal } from "../../dynamic/interface";
-  import Toolbar from "./interface/toolbar/Toolbar.svelte";
+  import InterfaceSelection 
+  from "./interface/interface-selection/InterfaceSelection.svelte";
   import Panel from "./interface/Panel.svelte";
   import FlippableBackground from "../5-elements/FlippableBackground.svelte";
   import ContentRouter from "./routers/ContentRouter.svelte";
@@ -30,7 +31,7 @@
         <InterfaceModal />
       {/if}
     </div>
-    <Toolbar />
+    <InterfaceSelection />
   </div>
 
 <!-- DESKTOP -------------------- -->
@@ -63,7 +64,6 @@
 .content-container {
   position: relative;
   flex: 1;
-  border: 4px solid green;
   /* opacity: 0;
   animation: fade-in 2s 2s ease-out forwards; */
 }
