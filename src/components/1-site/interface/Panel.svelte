@@ -1,11 +1,13 @@
 <!-- SCRIPTS ////////////////////////////// -->
 <script>
+  // IMPORTS -----------------------------------------
+  import SiteHeader from "../../4-structures/SiteHeader.svelte";
 
 </script>
 
 <!-- MARKUP ////////////////////////////////////// -->
 <div>
-
+  <SiteHeader />
 </div>
 
 <!-- STYLES //////////////////////////////////////////// -->

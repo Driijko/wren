@@ -19,7 +19,6 @@ div {
   background-color: black;
   border: 4px solid red;
   height: 8%;
-  /* padding: 0.5%; */
   /* opacity: 0;
   animation: fade-in 2s 1s ease-out forwards; */
 }
