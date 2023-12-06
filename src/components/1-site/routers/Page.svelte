@@ -2,6 +2,7 @@
 <script>
   // IMPORTS ----------------------------------------
   import { setPageExit } from "../../../dynamic/currentPage";
+  import { interfaceModal } from "../../../dynamic/interface";
 
   let fadeOut = false;
 
@@ -10,7 +11,7 @@
 </script>
 
 <!-- MARKUP ////////////////////////////////////// -->
-<div class="fill" class:fadeOut>
+<div class="fill" class:fadeOut inert={$interfaceModal}>
   <slot />
 </div>
 

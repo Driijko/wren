@@ -6,6 +6,7 @@
   import Panel from "./interface/Panel.svelte";
   import FlippableBackground from "../5-elements/FlippableBackground.svelte";
   import ContentRouter from "./routers/ContentRouter.svelte";
+  import InterfaceModal from "./interface/InterfaceModal.svelte";
 
 </script>
 
@@ -24,6 +25,7 @@
   <div class="vp-layer mobile-container">
     <div class="content-container">
       <ContentRouter />
+      <InterfaceModal />
     </div>
     <Toolbar />
   </div>
@@ -56,6 +58,7 @@
   display: flex;
 }
 .content-container {
+  position: relative;
   flex: 1;
   border: 4px solid green;
   /* opacity: 0;
