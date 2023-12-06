@@ -1,4 +1,4 @@
 <hgroup>
-  <h1>Nel Symington</h1>
-  <h2>writer of erotic literature</h2>
+  <h1>NelSymLit</h1>
+  <h2>Erotic worlds and lewd stories</h2>
 </hgroup>
