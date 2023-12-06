@@ -1,15 +1,14 @@
 <!-- SCRIPTS //////////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------
-  import { interfaceModal } from "../../../dynamic/interface";
+  import Interface from "./Interface.svelte";
 
 </script>
 
-{#if $interfaceModal}
-  <div class="fill">
-    <slot />
-  </div>
-{/if}
+<!-- MARKUP /////////////////////////////////////////////// -->
+<div class="fill">
+  <Interface />
+</div>
 
 <!-- STYLES //////////////////////////////////// -->
 <style>

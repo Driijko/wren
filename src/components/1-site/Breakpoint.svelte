@@ -2,6 +2,7 @@
 <script>
   // IMPORTS ----------------------------------------
   import { breakpoint } from "../../dynamic/breakpoint";
+  import { interfaceModal } from "../../dynamic/interface";
   import Toolbar from "./interface/toolbar/Toolbar.svelte";
   import Panel from "./interface/Panel.svelte";
   import FlippableBackground from "../5-elements/FlippableBackground.svelte";
@@ -25,7 +26,9 @@
   <div class="vp-layer mobile-container">
     <div class="content-container">
       <ContentRouter />
-      <InterfaceModal />
+      {#if $interfaceModal}
+        <InterfaceModal />
+      {/if}
     </div>
     <Toolbar />
   </div>

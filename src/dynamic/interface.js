@@ -3,6 +3,7 @@ import { breakpoint } from "./breakpoint";
 
 // STATE ---------------------------------
 export const interfaceModal = writable(false);
+export const interfaceModalOpening = writable(false);
 export const currentInterface = writable("siteMenu");
 export const currentSiteMenuTab = writable("navigation");
 export const prevSiteMenuTab = writable("");
@@ -16,6 +17,11 @@ const tabPositionMap = {
 // FUNCTIONS ------------------------------
 export function setInterface(interfaceName, tab) {
   if (get(breakpoint) === "mobile" && get(interfaceModal) === false) {
+    interfaceModalOpening.set(true);
+    const timerId = setTimeout(()=> {
+      interfaceModalOpening.set(false);
+      clearTimeout(timerId);
+    }, 500);
     interfaceModal.set(true);
   };
   if (get(currentInterface) !== interfaceName) {
