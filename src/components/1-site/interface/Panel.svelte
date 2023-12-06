@@ -4,6 +4,7 @@
   import SiteHeader from "../../4-structures/SiteHeader.svelte";
   import InterfaceSelection 
   from "./interface-selection/InterfaceSelection.svelte";
+  import Interface from "./Interface.svelte";
 
 </script>
 
@@ -11,6 +12,7 @@
 <div>
   <SiteHeader />
   <InterfaceSelection />
+  <Interface />
 </div>
 
 <!-- STYLES //////////////////////////////////////////// -->
