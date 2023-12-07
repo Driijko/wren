@@ -3,8 +3,8 @@
   // IMPORTS ----------------------------------------
   import { breakpoint } from "../../dynamic/breakpoint";
   import { interfaceModal } from "../../dynamic/interface";
-  import InterfaceSelection 
-  from "./interface/interface-selection/InterfaceSelection.svelte";
+  import InterfaceSelect 
+  from "./interface/interface-selection/InterfaceSelect.svelte";
   import Panel from "./interface/Panel.svelte";
   import FlippableBackground from "../5-elements/FlippableBackground.svelte";
   import ContentRouter from "./routers/ContentRouter.svelte";
@@ -31,7 +31,7 @@
         <InterfaceModal />
       {/if}
     </div>
-    <InterfaceSelection />
+    <InterfaceSelect />
   </div>
 
 <!-- DESKTOP -------------------- -->

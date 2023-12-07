@@ -49,11 +49,11 @@
 menu {
   display: flex;
   width: 100%;
-  border: 4px solid blue;
+  /* border: 4px solid blue; */
 }
 li {
   height: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 /* MOBILE ---------------------------------------- */
@@ -91,11 +91,12 @@ menu.open {
   height: 10%;
 }
 li {
+  padding-top: 3%;
   width: 25%;
 }
 li :global(button) {
   padding: 30%;
-  border-radius: 0 50% 0 0;
+  border-radius: 50% 50% 0 0;
   background-color: yellow;
 }
 }
