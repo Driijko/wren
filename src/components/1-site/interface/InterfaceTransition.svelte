@@ -4,7 +4,6 @@
   import shift from "../../../scripts/transitions/shift";
   import { fly } from "svelte/transition";
   import { linear } from "svelte/easing";
-  import { interfaceModalOpening } from "../../../dynamic/interface";
   
 </script>
 

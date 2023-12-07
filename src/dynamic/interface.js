@@ -3,8 +3,6 @@ import { breakpoint } from "./breakpoint";
 
 // STATE ---------------------------------
 export const interfaceModal = writable(false);
-export const interfaceModalOpening = writable(false);
-// export const currentInterface = writable("siteMenu");
 export const currentInterfaceSite = writable("siteMenu");
 export const currentSiteMenuTab = writable("navigation");
 export const prevSiteMenuTab = writable("");
