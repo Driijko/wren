@@ -1,12 +1,20 @@
 <!-- SCRIPTS //////////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------
+  import shift from "../../../scripts/transitions/shift";
+  import { linear } from "svelte/easing";
   import Interface from "./SiteInterface.svelte";
 
 </script>
 
 <!-- MARKUP /////////////////////////////////////////////// -->
-<div class="fill">
+<div class="fill"
+  transition:shift="{{
+    y: -window.innerHeight,
+    duration: 500,
+    easing: linear,
+  }}"
+>
   <Interface />
 </div>
 
