@@ -3,6 +3,8 @@
   // IMPORTS -----------------------------------------
   import SiteHeader from "../../4-structures/SiteHeader.svelte";
   import InterfaceSelect from "./interface-select/InterfaceSelect.svelte";
+  import InterfaceSelectSite 
+  from "./interface-select/InterfaceSelectSite.svelte";
   import Interface from "./Interface.svelte";
 
 </script>
@@ -10,7 +12,9 @@
 <!-- MARKUP ////////////////////////////////////// -->
 <div>
   <SiteHeader />
-  <InterfaceSelect />
+  <InterfaceSelect>
+    <InterfaceSelectSite />
+  </InterfaceSelect>
   <Interface />
 </div>
 

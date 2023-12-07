@@ -33,7 +33,7 @@
 
 </script>
 
-// MARKUP /////////////////////////////////////////////
+<!-- MARKUP ////////////////////////////////////// -->
 {#each buttons as button (button.id)}
   <li class="center">
     <svelte:component this={button.component} />

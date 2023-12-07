@@ -9,6 +9,8 @@
   import FlippableBackground from "../5-elements/FlippableBackground.svelte";
   import ContentRouter from "./routers/ContentRouter.svelte";
   import InterfaceModal from "./interface/InterfaceModal.svelte";
+  import InterfaceSelectSite 
+  from "./interface/interface-select/InterfaceSelectSite.svelte";
 
 </script>
 
@@ -31,7 +33,9 @@
         <InterfaceModal />
       {/if}
     </div>
-    <InterfaceSelect />
+    <InterfaceSelect >
+      <InterfaceSelectSite />
+    </InterfaceSelect>
   </div>
 
 <!-- DESKTOP -------------------- -->

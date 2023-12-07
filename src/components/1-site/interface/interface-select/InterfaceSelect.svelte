@@ -65,6 +65,7 @@ menu {
 }
 menu :global(li) {
   width: 8dvh;
+  border: 1px solid red;
 }
 menu :global(button) {
   height: 100%;
