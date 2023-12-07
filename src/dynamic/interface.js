@@ -4,38 +4,24 @@ import { breakpoint } from "./breakpoint";
 // STATE ---------------------------------
 export const interfaceModal = writable(false);
 export const currentInterfaceSite = writable("siteMenu");
-export const currentSiteMenuTab = writable("navigation");
-export const prevSiteMenuTab = writable("");
-
-// TAB POSITION MAP --------------------------
-const tabPositionMap = {
-  "navigation": 0,
-  "email": 1,
-};
+export const currentInterfaceSiteMenu = writable("navigation");
 
 // FUNCTIONS ------------------------------
-export function setInterface(interfaceName, tab) {
+export function setInterface(siteInterface, siteMenuInterface) {
   if (get(breakpoint) === "mobile" && get(interfaceModal) === false) {
-    interfaceModalOpening.set(true);
-    const timerId = setTimeout(()=> {
-      interfaceModalOpening.set(false);
-      clearTimeout(timerId);
-    }, 500);
     interfaceModal.set(true);
   };
-  if (get(currentInterface) !== interfaceName) {
-    currentInterface.set(interfaceName);
+  if (get(currentInterfaceSite) !== siteInterface) {
+    currentInterfaceSite.set(siteInterface);
   };
-  if(tab && get(currentSiteMenuTab) !== tab) {
-    prevSiteMenuTab.set(get(currentSiteMenuTab));
-    currentSiteMenuTab.set(tab);
+  if(
+    siteMenuInterface 
+    && get(currentInterfaceSiteMenu) !== siteMenuInterface
+  ) {
+    currentInterfaceSiteMenu.set(siteMenuInterface);
   };
 };
 
 export function closeInterfaceModal() {
   interfaceModal.set(false);
-};
-
-export function getSiteMenuTabPosition(tab) {
-  return tabPositionMap[tab];
 };
