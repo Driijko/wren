@@ -4,7 +4,7 @@
   import { breakpoint } from "../../dynamic/breakpoint";
   import { interfaceModal } from "../../dynamic/interface";
   import InterfaceSelect 
-  from "./interface/interface-selection/InterfaceSelect.svelte";
+  from "./interface/interface-select/InterfaceSelect.svelte";
   import Panel from "./interface/Panel.svelte";
   import FlippableBackground from "../5-elements/FlippableBackground.svelte";
   import ContentRouter from "./routers/ContentRouter.svelte";

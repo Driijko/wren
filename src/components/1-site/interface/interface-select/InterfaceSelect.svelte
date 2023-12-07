@@ -5,7 +5,6 @@
   import { currentPage } from "../../../../dynamic/currentPage";
   import SiteMenuModalToggleButton 
   from "../../../5-elements/interface/SiteMenuModalToggleButton.svelte";
-  import InterfaceSelectionMobile from "./InterfaceSelectionMobile.svelte";
 
   // INTERFACE ELEMENTS -----------------------------------------
   const siteMenuToggleButton = {id: 0, component: SiteMenuModalToggleButton};
@@ -35,12 +34,8 @@
 </script>
 
 <!-- MARKUP //////////////////////////////////////// -->
-<menu class:open={buttons.length > 0}>
-  {#each buttons as button (button.id)}
-    <li class="center">
-      <svelte:component this={button.component} />
-    </li>
-  {/each}
+<menu>
+  <slot />
 </menu>
 
 <!-- STYLES ////////////////////////////////////////// -->

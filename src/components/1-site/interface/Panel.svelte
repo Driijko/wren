@@ -2,7 +2,7 @@
 <script>
   // IMPORTS -----------------------------------------
   import SiteHeader from "../../4-structures/SiteHeader.svelte";
-  import InterfaceSelect from "./interface-selection/InterfaceSelect.svelte";
+  import InterfaceSelect from "./interface-select/InterfaceSelect.svelte";
   import Interface from "./Interface.svelte";
 
 </script>
