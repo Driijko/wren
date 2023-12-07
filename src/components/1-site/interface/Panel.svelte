@@ -4,8 +4,8 @@
   import SiteHeader from "../../4-structures/SiteHeader.svelte";
   import InterfaceSelect from "./interface-select/InterfaceSelect.svelte";
   import InterfaceSelectSite 
-  from "./interface-select/InterfaceSelectSite.svelte";
-  import Interface from "./Interface.svelte";
+  from "./interface-select/SiteInterfaceSelect.svelte";
+  import Interface from "./SiteInterface.svelte";
 
 </script>
 

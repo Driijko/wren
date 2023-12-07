@@ -1,7 +1,7 @@
 <!-- SCRIPTS //////////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------
-  import Interface from "./Interface.svelte";
+  import Interface from "./SiteInterface.svelte";
 
 </script>
 

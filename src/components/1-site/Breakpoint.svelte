@@ -10,7 +10,7 @@
   import ContentRouter from "./routers/ContentRouter.svelte";
   import InterfaceModal from "./interface/InterfaceModal.svelte";
   import InterfaceSelectSite 
-  from "./interface/interface-select/InterfaceSelectSite.svelte";
+  from "./interface/interface-select/SiteInterfaceSelect.svelte";
 
 </script>
 

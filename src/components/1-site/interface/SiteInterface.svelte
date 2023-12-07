@@ -1,24 +1,24 @@
 <!-- SCRIPTS //////////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------------
-  import { currentInterface } from "../../../dynamic/interface";
+  import { currentInterfaceSite } from "../../../dynamic/interface";
   import InterfaceTransition from "./InterfaceTransition.svelte";
 
 </script>
 
-{#if $currentInterface === "siteMenu"}
+{#if $currentInterfaceSite === "siteMenu"}
   <InterfaceTransition>
     <p>Site Menu</p>
   </InterfaceTransition>
-{:else if $currentInterface === "search"}
+{:else if $currentInterfaceSite === "search"}
   <InterfaceTransition>
     <p>Search Products</p>
   </InterfaceTransition>
-{:else if $currentInterface === "filter"}
+{:else if $currentInterfaceSite === "filter"}
   <InterfaceTransition>
     <p>Filter Products</p>
   </InterfaceTransition>
-{:else if $currentInterface === "sort"}
+{:else if $currentInterfaceSite === "sort"}
   <InterfaceTransition>
     <p>Sort Products</p>
   </InterfaceTransition>
