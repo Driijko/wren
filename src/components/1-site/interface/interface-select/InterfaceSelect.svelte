@@ -46,7 +46,7 @@ menu {
   width: 100%;
   /* border: 4px solid blue; */
 }
-li {
+menu :global(li) {
   height: 100%;
   /* border: 1px solid green; */
 }
@@ -63,10 +63,10 @@ menu {
   /* opacity: 0;
   animation: fade-in 2s 1s ease-out forwards; */
 }
-li {
+menu :global(li) {
   width: 8dvh;
 }
-li :global(button) {
+menu :global(button) {
   height: 100%;
   color: white;
   padding: 20%;
@@ -82,14 +82,14 @@ menu {
   transition-duration: 0.5s;
   overflow: hidden;
 }
-menu.open {
+menu {
   height: 10%;
 }
-li {
+menu :global(li) {
   padding-top: 3%;
   width: 25%;
 }
-li :global(button) {
+menu :global(button) {
   padding: 30%;
   border-radius: 50% 50% 0 0;
   background-color: yellow;
@@ -98,10 +98,10 @@ li :global(button) {
 
 /* TRANSITIONS -------------------------------- */
 @media(hover: hover) {
-  li :global(button svg) {
+  menu :global(button svg) {
     transition: transform 0.3s ease-out;
   }
-  li :global(button:hover svg), li :global(button:focus-visible svg) {
+  menu :global(button:hover svg), menu :global(button:focus-visible svg) {
     transform: scale(1.4);
   }
 }
