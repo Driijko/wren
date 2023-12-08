@@ -2,7 +2,7 @@
 <script>
   // IMPORTS -------------------------------------
   import InterfaceSelectButton from "./InterfaceSelectButton.svelte";
-  import CompassIcon from "../../6-icons/CompassIcon.svelte";
+  import EnvelopeIcon from "../../6-icons/EnvelopeIcon.svelte";
 
 </script>
 
@@ -13,5 +13,5 @@
     siteMenu: "email",
   }}
 >
-  <CompassIcon />
+  <EnvelopeIcon />
 </InterfaceSelectButton>
