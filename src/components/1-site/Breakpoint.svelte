@@ -33,9 +33,7 @@
         <InterfaceModal />
       {/if}
     </div>
-    <InterfaceSelect >
-      <InterfaceSelectSite />
-    </InterfaceSelect>
+    <InterfaceSelectSite />
   </div>
 
 <!-- DESKTOP -------------------- -->

@@ -12,8 +12,12 @@ menu {
   /* border: 4px solid blue; */
 }
 menu :global(li) {
-  height: 100%;
+  /* height: 100%; */
   /* border: 1px solid green; */
+}
+menu :global(button) {
+  width: 100%;
+  height: 100%;
 }
 menu :global(button svg) {
   transition: transform 0.3s ease-out;
@@ -36,6 +40,7 @@ menu {
 }
 menu :global(li) {
   width: 8dvh;
+  height: 8dvh;
   color: white;
   /* border: 1px solid red; */
 }
@@ -57,15 +62,17 @@ menu {
   transition-timing-function: ease-out;
   transition-duration: 0.5s;
   overflow: hidden;
+  margin-top: 1dvh;
 }
 menu {
-  height: 10%;
+  height: 10dvh;
 }
 menu :global(li) {
   padding-top: 3%;
   width: 25%;
 }
 menu :global(button) {
+  width: 100%;
   padding: 30%;
   border-radius: 50% 50% 0 0;
   background-color: yellow;
