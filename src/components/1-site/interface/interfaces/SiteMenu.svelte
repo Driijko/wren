@@ -9,7 +9,7 @@
 
 </script>
 
-<div>
+<div class="fill">
   {#if $breakpoint === "mobile"}
     <SiteHeader />
   {:else if $breakpoint === "desktop"}
@@ -22,3 +22,11 @@
     <SiteMenuInterfaceSelect />
   {/if}
 </div>
+
+<!-- STYLES ///////////////////////////////////////// -->
+<style>
+div {
+  display: flex;
+  flex-direction: column;
+}
+</style>

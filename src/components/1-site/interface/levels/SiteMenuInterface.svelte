@@ -12,3 +12,10 @@
 {:else if $currentInterfaceSiteMenu === "design"}
   <p>Web Design</p>
 {/if}
+
+<!-- STYLES ////////////////////////////////////// -->
+<style>
+p {
+  flex: 1;
+}
+</style>

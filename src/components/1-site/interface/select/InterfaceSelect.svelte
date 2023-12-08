@@ -20,18 +20,21 @@ menu {
 }
 menu :global(li) {
   /* height: 100%; */
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 menu :global(button) {
   width: 100%;
   height: 100%;
 }
 menu :global(button svg) {
+  width: 100%;
+  height: 100%;
+  /* border: 4px solid blue; */
   transition: transform 0.3s ease-out;
 }
 menu :global(li.selected svg) {
   transform-origin: 50% 50%;
-  transform: scale(1.4);
+  /* transform: scale(1.4); */
 }
 
 /* MOBILE ---------------------------------------- */
@@ -39,7 +42,7 @@ menu :global(li.selected svg) {
 menu {
   justify-content: center;
   gap: 4dvh;
-  height: 8%;
+  height: 8dvh;
   /* border-top-color: hsl(0, 0%, 15%);
   border-top-style: solid;
   border-top-width: 0.3dvh; */
@@ -50,21 +53,37 @@ menu.site {
   background-color: black;
 }
 menu.site-menu {
-  background-color: hsl(0, 0%, 15%);
+  background-color: hsl(0, 0%, 10%);
 }
 menu :global(li) {
   width: 8dvh;
   height: 8dvh;
   color: white;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 menu :global(button) {
+  width: 100%;
   height: 100%;
-  padding: 20%;
+  border: 1px solid red;
+  /* padding: 20%; */
 }
-menu :global(li.selected) {
-  background-color: hsl(0, 0%, 15%);
+menu :global(.site-menu-modal-toggle-button) {
+  padding: 25%;
+}
+menu :global(.nav-select-button) {
+  
+}
+menu :global(svg) {
+  max-width: 100%;
+  max-height: 100%;
+  /* border: 1px solid red; */
+}
+menu.site :global(li.selected) {
+  background-color: hsl(0, 0%, 10%);
   /* color: black; */
+}
+menu.site-menu :global(li.selected) {
+  background-color: hsl(0, 0%, 20%);
 }
 }
 

@@ -12,6 +12,7 @@
     site: "siteMenu",
     siteMenu: "navigation",
   }}
+  className="nav-select-button"
 >
   <CompassIcon />
 </InterfaceSelectButton>
