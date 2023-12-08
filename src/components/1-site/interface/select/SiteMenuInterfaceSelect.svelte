@@ -4,16 +4,20 @@
   import { breakpoint } from "../../../../dynamic/breakpoint";
   import { interfaceModal, currentInterfaceSiteMenu } 
   from "../../../../dynamic/interface";
+  import NavInterfaceSelectButton 
+  from "../../../5-elements/interface/NavInterfaceSelectButton.svelte";
 
   // INTERFACE ELEMENTS -----------------------------------------
-  const siteMenuToggleButton = {
+  const navButton = {
     id: 0, 
-    component: SiteMenuModalToggleButton,
-    interface: "siteMenu"
+    component: NavInterfaceSelectButton,
+    interface: "navigation"
   };
 
   // INTERFACE ARRAY --------------------------------------
-  const buttons = [];
+  const buttons = [
+    navButton,
+  ];
 
 </script>
 
