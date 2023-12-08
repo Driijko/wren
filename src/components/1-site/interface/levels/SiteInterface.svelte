@@ -2,11 +2,12 @@
 <script>
   // IMPORTS ------------------------------------------
   import { currentInterfaceSite } from "../../../../dynamic/interface";
+  import SiteMenu from "../interfaces/SiteMenu.svelte";
 
 </script>
 
 {#if $currentInterfaceSite === "siteMenu"}
-  <p>Site Menu</p>
+  <SiteMenu />
 {:else if $currentInterfaceSite === "search"}
   <p>Search Products</p>
 {:else if $currentInterfaceSite === "filter"}

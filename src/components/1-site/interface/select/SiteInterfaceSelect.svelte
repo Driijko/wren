@@ -5,6 +5,7 @@
   import { currentPage } from "../../../../dynamic/currentPage";
   import { interfaceModal, currentInterfaceSite } 
   from "../../../../dynamic/interface";
+  import InterfaceSelect from "./InterfaceSelect.svelte";
   import SiteMenuModalToggleButton 
   from "../../../5-elements/interface/SiteMenuModalToggleButton.svelte";
 
@@ -40,14 +41,16 @@
 </script>
 
 <!-- MARKUP ////////////////////////////////////// -->
-{#each buttons as button (button.id)}
-  <li 
-    class="center" 
-    class:selected={
-      $currentInterfaceSite === button.interface
-      && $breakpoint === "mobile" ? $interfaceModal : true
-    }
-  >
-    <svelte:component this={button.component} />
-  </li>
-{/each}
+<InterfaceSelect>
+  {#each buttons as button (button.id)}
+    <li 
+      class="center" 
+      class:selected={
+        $currentInterfaceSite === button.interface
+        && $breakpoint === "mobile" ? $interfaceModal : true
+      }
+    >
+      <svelte:component this={button.component} />
+    </li>
+  {/each}
+</InterfaceSelect>
