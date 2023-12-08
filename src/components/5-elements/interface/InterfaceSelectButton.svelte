@@ -8,7 +8,6 @@
     site: "",
     siteMenu: "",
   };
-  export let className = "";
 
   // EVENT HANDLERS -----------------------------------------
   function handleClick() {
@@ -21,6 +20,6 @@
 </script>
 
 <!-- MARKUP ////////////////////////////////////////////////// -->
-<button class={className} on:click={handleClick}>
+<button on:click={handleClick}>
   <slot />
 </button>

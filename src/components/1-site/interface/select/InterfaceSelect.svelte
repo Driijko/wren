@@ -34,7 +34,7 @@ menu :global(button svg) {
 }
 menu :global(li.selected svg) {
   transform-origin: 50% 50%;
-  /* transform: scale(1.4); */
+  transform: scale(1.4);
 }
 
 /* MOBILE ---------------------------------------- */
@@ -64,14 +64,8 @@ menu :global(li) {
 menu :global(button) {
   width: 100%;
   height: 100%;
-  border: 1px solid red;
-  /* padding: 20%; */
-}
-menu :global(.site-menu-modal-toggle-button) {
+  /* border: 1px solid red; */
   padding: 25%;
-}
-menu :global(.nav-select-button) {
-  
 }
 menu :global(svg) {
   max-width: 100%;
