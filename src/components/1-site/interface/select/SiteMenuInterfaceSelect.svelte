@@ -9,6 +9,8 @@
   from "../../../5-elements/interface/NavInterfaceSelectButton.svelte";
   import EmailInterfaceSelectButton 
   from "../../../5-elements/interface/EmailInterfaceSelectButton.svelte";
+  import DesignInterfaceSelectButton 
+  from "../../../5-elements/interface/DesignInterfaceSelectButton.svelte";
 
   // INTERFACE ELEMENTS -----------------------------------------
   const navButton = {
@@ -21,11 +23,14 @@
     component: EmailInterfaceSelectButton,
     interface: "email"
   };
+  const designButton = {
+    id: 2,
+    component: DesignInterfaceSelectButton,
+    interface: "design"
+  };
 
   // INTERFACE ARRAY --------------------------------------
-  const buttons = [
-    navButton, emailButton,
-  ];
+  const buttons = [navButton, emailButton, designButton];
 
 </script>
 

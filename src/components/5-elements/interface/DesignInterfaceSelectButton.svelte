@@ -2,7 +2,7 @@
 <script>
   // IMPORTS -------------------------------------
   import InterfaceSelectButton from "./InterfaceSelectButton.svelte";
-  import EnvelopeIcon from "../../6-icons/EnvelopeIcon.svelte";
+  import PenToSquareIcon from "../../6-icons/PenToSquareIcon.svelte";
 
 </script>
 
@@ -13,5 +13,5 @@
     siteMenu: "design",
   }}
 >
-  <EnvelopeIcon />
+  <PenToSquareIcon />
 </InterfaceSelectButton>

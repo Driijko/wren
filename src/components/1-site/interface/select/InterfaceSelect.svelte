@@ -23,6 +23,7 @@ menu :global(button svg) {
   transition: transform 0.3s ease-out;
 }
 menu :global(li.selected svg) {
+  transform-origin: 50% 50%;
   transform: scale(1.4);
 }
 
@@ -30,6 +31,7 @@ menu :global(li.selected svg) {
 @media (orientation:portrait) {
 menu {
   justify-content: center;
+  gap: 4dvh;
   background-color: black;
   height: 8%;
   border-top-color: white;
@@ -42,7 +44,7 @@ menu :global(li) {
   width: 8dvh;
   height: 8dvh;
   color: white;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 menu :global(button) {
   height: 100%;
@@ -73,7 +75,7 @@ menu :global(li) {
 menu :global(button) {
   width: 100%;
   padding: 30%;
-  padding-top: 33%;
+  padding-bottom: 40%;
   border-radius: 50% 50% 0 0;
   background-color: yellow;
 }
