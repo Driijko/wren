@@ -40,7 +40,7 @@
 </script>
 
 <!-- MARKUP ////////////////////////////////////// -->
-<InterfaceSelect>
+<InterfaceSelect className="site">
   {#each buttons as button (button.id)}
     <li 
       class="center" 

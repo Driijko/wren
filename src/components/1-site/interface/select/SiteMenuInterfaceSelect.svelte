@@ -35,7 +35,7 @@
 </script>
 
 <!-- MARKUP ////////////////////////////////////// -->
-<InterfaceSelect>
+<InterfaceSelect className="site-menu">
   {#each buttons as button (button.id)}
     <li 
       class="center" 

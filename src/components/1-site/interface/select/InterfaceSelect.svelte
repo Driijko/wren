@@ -1,5 +1,12 @@
+<!-- SCRIPTS ////////////////////////////////////////// -->
+<script>
+  // PROPS ----------------------------------------
+  export let className;
+
+</script>
+
 <!-- MARKUP //////////////////////////////////////// -->
-<menu>
+<menu class={className}>
   <slot />
 </menu>
 
