@@ -11,12 +11,15 @@
 
   // EVENT HANDLERS -----------------------------------------
   function handleClick() {
-    setInterface({...interfaceSelect});
+    setInterface(
+      interfaceSelect.site, 
+      interfaceSelect.siteMenu ? interfaceSelect.siteMenu : null
+    );
   }
 
 </script>
 
 <!-- MARKUP ////////////////////////////////////////////////// -->
-<button on:click={()=> setInterface({...interfaceSelect})}>
+<button on:click={handleClick}>
   <slot />
 </button>
