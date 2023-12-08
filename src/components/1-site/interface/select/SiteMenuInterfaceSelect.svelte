@@ -36,7 +36,7 @@
       class="center" 
       class:selected={
         $currentInterfaceSiteMenu === button.interface
-        && $breakpoint === "mobile" ? $interfaceModal : true
+        && ($breakpoint === "mobile" ? $interfaceModal : true)
       }
     >
       <svelte:component this={button.component} />
