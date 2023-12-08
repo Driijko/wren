@@ -3,7 +3,8 @@
   // IMPORTS ---------------------------------------
   import { breakpoint } from "../../../../dynamic/breakpoint";
   import { currentPage } from "../../../../dynamic/currentPage";
-  import { currentInterfaceSite } from "../../../../dynamic/interface";
+  import { interfaceModal, currentInterfaceSite } 
+  from "../../../../dynamic/interface";
   import SiteMenuModalToggleButton 
   from "../../../5-elements/interface/SiteMenuModalToggleButton.svelte";
 
@@ -42,7 +43,10 @@
 {#each buttons as button (button.id)}
   <li 
     class="center" 
-    class:selected={$currentInterfaceSite === button.interface}
+    class:selected={
+      $currentInterfaceSite === button.interface
+      && $breakpoint === "mobile" ? $interfaceModal : true
+    }
   >
     <svelte:component this={button.component} />
   </li>

@@ -1,7 +1,7 @@
 <!-- SCRIPTS //////////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------------
-  import { currentInterfaceSite } from "../../../dynamic/interface";
+  import { currentInterfaceSite } from "../../../../dynamic/interface";
 
 </script>
 

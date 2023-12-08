@@ -1,38 +1,3 @@
-<!-- SCRIPTS ///////////////////////////////////// -->
-<script>
-  // IMPORTS ---------------------------------------
-  import { breakpoint } from "../../../../dynamic/breakpoint";
-  import { currentPage } from "../../../../dynamic/currentPage";
-  import SiteMenuModalToggleButton 
-  from "../../../5-elements/interface/SiteMenuModalToggleButton.svelte";
-
-  // INTERFACE ELEMENTS -----------------------------------------
-  const siteMenuToggleButton = {id: 0, component: SiteMenuModalToggleButton};
-
-  // INTERFACE ARRAY CONFIGURATIONS------------------------------
-  const config0 = [];
-  const config1 = [siteMenuToggleButton];
-
-  // INTERFACE ARRAY --------------------------------------
-  let buttons = [];
-
-  // RESPONSIVE ARRAY CONFIGURATION -----------------------------
-  $: if ($breakpoint === "mobile") {
-    if ($currentPage === "catalogue") {
-      buttons = config0;
-    } else {
-      buttons = config1;
-    };
-  } else {
-    if ($currentPage === "catalogue") {
-      buttons = config0;
-    } else {
-      buttons = config1;
-    };
-  };
-  
-</script>
-
 <!-- MARKUP //////////////////////////////////////// -->
 <menu>
   <slot />
@@ -50,6 +15,12 @@ menu :global(li) {
   height: 100%;
   /* border: 1px solid green; */
 }
+menu :global(button svg) {
+  transition: transform 0.3s ease-out;
+}
+menu :global(li.selected svg) {
+  transform: scale(1.4);
+}
 
 /* MOBILE ---------------------------------------- */
 @media (orientation:portrait) {
@@ -65,12 +36,16 @@ menu {
 }
 menu :global(li) {
   width: 8dvh;
-  border: 1px solid red;
+  color: white;
+  /* border: 1px solid red; */
 }
 menu :global(button) {
   height: 100%;
-  color: white;
   padding: 20%;
+}
+menu :global(li.selected) {
+  background-color: white;
+  color: black;
 }
 }
 
@@ -97,11 +72,8 @@ menu :global(button) {
 }
 }
 
-/* TRANSITIONS -------------------------------- */
+/* HOVER/FOCUS TRANSITIONS -------------------------------- */
 @media(hover: hover) {
-  menu :global(button svg) {
-    transition: transform 0.3s ease-out;
-  }
   menu :global(button:hover svg), menu :global(button:focus-visible svg) {
     transform: scale(1.4);
   }

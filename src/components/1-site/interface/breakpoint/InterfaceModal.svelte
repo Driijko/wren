@@ -1,9 +1,9 @@
 <!-- SCRIPTS //////////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------
-  import shift from "../../../scripts/transitions/shift";
+  import shift from "../../../../scripts/transitions/shift";
   import { linear } from "svelte/easing";
-  import Interface from "./SiteInterface.svelte";
+  import Interface from "../levels/SiteInterface.svelte";
 
 </script>
 
