@@ -39,13 +39,18 @@ menu :global(li.selected svg) {
 menu {
   justify-content: center;
   gap: 4dvh;
-  background-color: black;
   height: 8%;
-  border-top-color: white;
+  /* border-top-color: hsl(0, 0%, 15%);
   border-top-style: solid;
-  border-top-width: 0.3dvh;
+  border-top-width: 0.3dvh; */
   /* opacity: 0;
   animation: fade-in 2s 1s ease-out forwards; */
+}
+menu.site {
+  background-color: black;
+}
+menu.site-menu {
+  background-color: hsl(0, 0%, 15%);
 }
 menu :global(li) {
   width: 8dvh;
@@ -58,8 +63,8 @@ menu :global(button) {
   padding: 20%;
 }
 menu :global(li.selected) {
-  background-color: white;
-  color: black;
+  background-color: hsl(0, 0%, 15%);
+  /* color: black; */
 }
 }
 
