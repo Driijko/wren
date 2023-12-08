@@ -7,8 +7,8 @@
 
 {#if $currentInterfaceSiteMenu === "navigation"}
   <p>Navigation</p>
-{:else if $currentInterfaceSite === "email"}
+{:else if $currentInterfaceSiteMenu === "email"}
   <p>Email</p>
-{:else if $currentInterfaceSite === "design"}
+{:else if $currentInterfaceSiteMenu === "design"}
   <p>Web Design</p>
 {/if}
