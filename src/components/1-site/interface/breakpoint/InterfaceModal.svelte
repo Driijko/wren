@@ -11,7 +11,7 @@
 <div class="fill"
   transition:shift="{{
     y: -window.innerHeight,
-    duration: 500,
+    duration: 350,
     easing: linear,
   }}"
 >
