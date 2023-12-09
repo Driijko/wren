@@ -10,6 +10,8 @@
   from "../../../5-elements/interface/SiteMenuSelectButton.svelte";
   import SiteMenuModalToggleButton 
   from "../../../5-elements/interface/SiteMenuModalToggleButton.svelte";
+  import InterfaceModalCloserButton 
+  from "../../../5-elements/interface/InterfaceModalCloserButton.svelte";
   import SearchInterfaceSelectButton 
   from "../../../5-elements/interface/SearchInterfaceSelectButton.svelte";
 
@@ -22,19 +24,39 @@
   const siteMenuSelectButton = {
     id: 1,
     component: SiteMenuSelectButton,
-    interface: "siteMenu"
+    interface: "siteMenu",
   };
+  const closerButton = {
+    id: 2,
+    component: InterfaceModalCloserButton,
+  };
+  const searchButton = {
+    id: 3,
+    component: SearchInterfaceSelectButton,
+    interface: "search",
+  }
 
   // INTERFACE ARRAY CONFIGURATIONS------------------------------
   const config0 = [siteMenuToggleButton];
   const config1 = [siteMenuSelectButton];
+  const config2 = [searchButton, siteMenuSelectButton];
+  const config3 = [searchButton, siteMenuSelectButton, closerButton];
+
 
   // INTERFACE ARRAY --------------------------------------
   let buttons = [];
 
   // RESPONSIVE ARRAY CONFIGURATION -----------------------------
   $: if ($breakpoint === "mobile") {
-    buttons = config0;
+    if ($currentPage === "catalogue") {
+      if ($interfaceModal) {
+        buttons = config3;
+      } else {
+        buttons = config2;
+      }
+    } else {
+      buttons = config0;
+    }
   } else {
     buttons = config1;
   };
@@ -48,7 +70,7 @@
       class="center" 
       class:selected={
         $currentInterfaceSite === button.interface
-        && $breakpoint === "mobile" ? $interfaceModal : true
+        && ($breakpoint === "mobile" ? $interfaceModal : true)
       }
     >
       <svelte:component this={button.component} />
