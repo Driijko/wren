@@ -56,10 +56,16 @@
   function handleClick() {
     if ($interfaceModal) {
       closeInterfaceModal();
-      animation.open();
     } else { 
       setInterface("siteMenu");
+    };
+  };
+
+  $: if (animation) {
+    if ($interfaceModal) {
       animation.close();
+    } else {
+      animation.open();
     };
   };
 

@@ -2,10 +2,18 @@
 <script>
   // IMPORTS ---------------------------------------------
   import { breakpoint } from "../../../../dynamic/breakpoint";
+  import { currentInterfaceSiteMenu } from "../../../../dynamic/interface";
   import SiteHeader from "../../../4-structures/SiteHeader.svelte";
   import SiteMenuInterfaceSelect 
   from "../select/SiteMenuInterfaceSelect.svelte";
   import SiteMenuInterface from "../levels/SiteMenuInterface.svelte";
+
+  // MAP: currentInterfaceSiteMenu -----------------------
+  const map = {
+    navigation: "navigation",
+    email: "contact & newsletter",
+    design: "web-design",
+  };
 
 </script>
 
@@ -16,6 +24,9 @@
     <SiteMenuInterfaceSelect />
   {/if}
 
+  <h3>
+    {map[$currentInterfaceSiteMenu]}
+  </h3>
   <SiteMenuInterface />
 
   {#if $breakpoint === "mobile"}

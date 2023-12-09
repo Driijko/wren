@@ -4,10 +4,7 @@
   import { setInterface } from "../../../dynamic/interface";
 
   // PROPS ------------------------------------------------
-  export let interfaceSelect = {
-    site: "",
-    siteMenu: "",
-  };
+  export let interfaceSelect;
 
   // EVENT HANDLERS -----------------------------------------
   function handleClick() {

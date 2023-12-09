@@ -9,8 +9,7 @@
 <!-- MARKUP ///////////////////////////////////// -->
 <InterfaceSelectButton 
   interfaceSelect={{
-    site: "siteMenu",
-    siteMenu: "navigation",
+    site: "search",
   }}
 >
   <MagnifyingGlassIcon />

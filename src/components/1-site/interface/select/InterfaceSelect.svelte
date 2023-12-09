@@ -34,7 +34,7 @@ menu :global(svg) {
   transition: transform 0.3s ease-out;
 }
 menu :global(li.selected svg) {
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 
 /* MOBILE ---------------------------------------- */
@@ -94,19 +94,19 @@ menu {
   margin-top: 1dvh;
 }
 menu {
-  height: 10dvh;
+  height: 9dvh;
 }
 menu :global(li) {
-  width: 25%;
+  width: 10dvh;
   height: 100%;
 }
 menu :global(button) {
   width: 100%;
-  padding: 25%;
+  padding: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 35%;
+  padding-top: 30%;
   border-radius: 50% 50% 0 0;
   background-color: yellow;
 }
@@ -119,7 +119,7 @@ menu :global(svg) {
 /* HOVER/FOCUS TRANSITIONS -------------------------------- */
 @media(hover: hover) {
   menu :global(button:hover svg), menu :global(button:focus-visible svg) {
-    transform: scale(1.4);
+    transform: scale(1.3);
   }
 }
 </style>
