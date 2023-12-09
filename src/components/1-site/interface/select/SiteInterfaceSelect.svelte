@@ -10,6 +10,8 @@
   from "../../../5-elements/interface/SiteMenuSelectButton.svelte";
   import SiteMenuModalToggleButton 
   from "../../../5-elements/interface/SiteMenuModalToggleButton.svelte";
+  import SearchInterfaceSelectButton 
+  from "../../../5-elements/interface/SearchInterfaceSelectButton.svelte";
 
   // INTERFACE ELEMENTS -----------------------------------------
   const siteMenuToggleButton = {
@@ -21,7 +23,7 @@
     id: 1,
     component: SiteMenuSelectButton,
     interface: "siteMenu"
-  }
+  };
 
   // INTERFACE ARRAY CONFIGURATIONS------------------------------
   const config0 = [siteMenuToggleButton];
