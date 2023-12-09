@@ -16,6 +16,8 @@
   from "../../../5-elements/interface/SearchInterfaceSelectButton.svelte";
   import FilterInterfaceSelectButton 
   from "../../../5-elements/interface/FilterInterfaceSelectButton.svelte";
+  import SortInterfaceSelectButton
+  from "../../../5-elements/interface/SortInterfaceSelectButton.svelte";
 
   // INTERFACE ELEMENTS -----------------------------------------
   const siteMenuToggleButton = {
@@ -42,15 +44,34 @@
     component: FilterInterfaceSelectButton,
     interface: "filter"
   };
+  const sortButton = {
+    id: 5,
+    component: SortInterfaceSelectButton,
+    interface: "sort"
+  };
 
   // INTERFACE ARRAY CONFIGURATIONS------------------------------
   const config0 = [siteMenuToggleButton];
   const config1 = [siteMenuSelectButton];
-  const config2 = [searchButton, filterButton, siteMenuSelectButton];
-  const config3 = [
-    searchButton, filterButton, siteMenuSelectButton, closerButton
+  const config2 = [
+    searchButton, 
+    filterButton, 
+    sortButton,
+    siteMenuSelectButton
   ];
-  const config4 = [siteMenuSelectButton, searchButton, filterButton];
+  const config3 = [
+    searchButton, 
+    filterButton, 
+    sortButton, 
+    siteMenuSelectButton, 
+    closerButton
+  ];
+  const config4 = [
+    siteMenuSelectButton, 
+    searchButton, 
+    filterButton,
+    sortButton
+  ];
 
 
   // INTERFACE ARRAY --------------------------------------
