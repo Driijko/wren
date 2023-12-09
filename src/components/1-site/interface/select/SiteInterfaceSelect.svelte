@@ -14,6 +14,8 @@
   from "../../../5-elements/interface/InterfaceModalCloserButton.svelte";
   import SearchInterfaceSelectButton 
   from "../../../5-elements/interface/SearchInterfaceSelectButton.svelte";
+  import FilterInterfaceSelectButton 
+  from "../../../5-elements/interface/FilterInterfaceSelectButton.svelte";
 
   // INTERFACE ELEMENTS -----------------------------------------
   const siteMenuToggleButton = {
@@ -34,14 +36,21 @@
     id: 3,
     component: SearchInterfaceSelectButton,
     interface: "search",
-  }
+  };
+  const filterButton = {
+    id: 4,
+    component: FilterInterfaceSelectButton,
+    interface: "filter"
+  };
 
   // INTERFACE ARRAY CONFIGURATIONS------------------------------
   const config0 = [siteMenuToggleButton];
   const config1 = [siteMenuSelectButton];
-  const config2 = [searchButton, siteMenuSelectButton];
-  const config3 = [searchButton, siteMenuSelectButton, closerButton];
-  const config4 = [siteMenuSelectButton, searchButton];
+  const config2 = [searchButton, filterButton, siteMenuSelectButton];
+  const config3 = [
+    searchButton, filterButton, siteMenuSelectButton, closerButton
+  ];
+  const config4 = [siteMenuSelectButton, searchButton, filterButton];
 
 
   // INTERFACE ARRAY --------------------------------------
