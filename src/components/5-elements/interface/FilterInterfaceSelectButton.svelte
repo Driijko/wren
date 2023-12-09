@@ -2,7 +2,7 @@
 <script>
   // IMPORTS -------------------------------------
   import InterfaceSelectButton from "./InterfaceSelectButton.svelte";
-  import MagnifyingGlassIcon from "../../6-icons/MagnifyingGlassIcon.svelte";
+  import FilterIcon from "../../6-icons/FilterIcon.svelte";
 
 </script>
 
@@ -12,5 +12,5 @@
     site: "filter",
   }}
 >
-  <MagnifyingGlassIcon />
+  <FilterIcon />
 </InterfaceSelectButton>
