@@ -65,7 +65,7 @@ menu :global(button) {
   width: 100%;
   height: 100%;
   /* border: 1px solid red; */
-  padding: 30%;
+  padding: 25%;
 }
 menu :global(svg) {
   max-width: 100%;
