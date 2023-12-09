@@ -41,6 +41,7 @@
   const config1 = [siteMenuSelectButton];
   const config2 = [searchButton, siteMenuSelectButton];
   const config3 = [searchButton, siteMenuSelectButton, closerButton];
+  const config4 = [siteMenuSelectButton, searchButton];
 
 
   // INTERFACE ARRAY --------------------------------------
@@ -53,12 +54,16 @@
         buttons = config3;
       } else {
         buttons = config2;
-      }
+      };
     } else {
       buttons = config0;
-    }
-  } else {
-    buttons = config1;
+    };
+  } else if ($breakpoint === "desktop") {
+    if ($currentPage === "catalogue") {
+      buttons = config4;
+    } else {
+      buttons = config1;
+    };
   };
 
 </script>
