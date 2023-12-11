@@ -1,14 +1,13 @@
 <!-- SCRIPTS /////////////////////////////////////////// -->
 <script>
   // IMPORTS ---------------------------------------
+  import { quintOut, quintIn, sineOut,  } from "svelte/easing";
   import { flip } from "svelte/animate";
   import shift from "../../../../scripts/transitions/shift";
   import { breakpoint } from "../../../../dynamic/breakpoint";
   import { currentPage } from "../../../../dynamic/currentPage";
   import { interfaceModal, currentInterfaceSite } 
   from "../../../../dynamic/interface";
-  import { interfaceSelectTransitionsMobile } 
-  from "../../../../scripts/transitions/interfaceSelectTransitions";
   import InterfaceSelect from "./InterfaceSelect.svelte";
   import SiteMenuSelectButton 
   from "../../../5-elements/interface/SiteMenuSelectButton.svelte";
@@ -82,16 +81,29 @@
   let buttons = [];
 
   // TRANSITIONS ---------------------------------------
-  let animate;
-  let inTrans;
-  let outTrans;
+  let transitions;
 
   // RESPONSIVE ARRAY CONFIGURATION -----------------------------
   $: if ($breakpoint === "mobile") {
-    const transitions = interfaceSelectTransitionsMobile();
-    animate = transitions.animate;
-    inTrans = transitions.in;
-    outTrans = transitions.out;
+    transitions = {
+      animate: {
+        duration: 250,
+        // duration: 700,
+        delay: 300,
+        easing: sineOut
+      },
+      in: {
+        duration: 1000,
+        x: -window.innerWidth,
+        easing: quintOut
+      },
+      out: {
+        duration: 500,
+        x: -window.innerWidth,
+        easing: quintIn
+      }
+    };
+
     if ($currentPage === "catalogue") {
       if ($interfaceModal) {
         buttons = config3;
@@ -120,7 +132,9 @@
         $currentInterfaceSite === button.interface
         && ($breakpoint === "mobile" ? $interfaceModal : true)
       }
-      animate:flip="{animate}" in:shift="{inTrans}" out:shift="{outTrans}"
+      animate:flip="{transitions.animate}" 
+      in:shift="{transitions.in}" 
+      out:shift="{transitions.out}"
     >
       <svelte:component this={button.component} />
     </li>

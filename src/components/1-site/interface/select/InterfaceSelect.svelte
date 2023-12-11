@@ -44,6 +44,7 @@ menu {
   justify-content: space-around;
   /* gap: 2dvh; */
   height: calc(var(--hpx) * 0.08);
+  height: calc(var(--hpx) * 0.09);
   /* padding-left: 5dvh; */
   /* border-top-color: hsl(0, 0%, 15%);
   border-top-style: solid;
@@ -113,7 +114,7 @@ menu :global(li.selected svg) {
   transform: scale(1.4);
 }
 menu :global(.site-menu-modal-toggle-button.open svg) {
-  transform: scale(1.8);
+  transform: scale(1.6);
   color: red;
 }
 menu :global(li:has(.interface-modal-closer-button)) {
