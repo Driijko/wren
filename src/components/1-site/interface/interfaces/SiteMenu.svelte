@@ -11,7 +11,7 @@
   // MAP: currentInterfaceSiteMenu -----------------------
   const map = {
     navigation: "navigation",
-    email: "contact & newsletter",
+    email: "contact, newsletter & social media",
     design: "web-design",
   };
 
@@ -47,7 +47,7 @@ h3 {
   background-color: black;
   color: white;
 }
-div :global(nav) {
+div :global(.site-menu-interface) {
   flex: 1;
 }
 </style>
