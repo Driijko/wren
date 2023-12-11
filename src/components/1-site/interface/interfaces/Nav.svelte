@@ -5,7 +5,7 @@
 </script>
 
 <!-- MARKUP ///////////////////////////////////////// -->
-<nav>
+<nav class="site-menu-interface">
   <ul class="center fill">
     <li>
       <PageLink page="home">Home</PageLink>
@@ -21,9 +21,6 @@
 
 <!-- STYLES ////////////////////////////////////// -->
 <style>
-nav {
-  background-color: hsl(0, 0%, 20%);
-}
 ul {
   flex-direction: column;
   color: white;

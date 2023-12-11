@@ -49,5 +49,6 @@ h3 {
 }
 div :global(.site-menu-interface) {
   flex: 1;
+  background-color: hsl(0, 0%, 20%);
 }
 </style>
