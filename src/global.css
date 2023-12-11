@@ -160,10 +160,10 @@ a line, button line {
 }
 
 /* VIEWPORT-BASED LAYOUTS /////////////////////////////// */
-/* :root {
+:root {
   --wpx: calc(var(--w) * 1px);
   --hpx: calc(var(--h) * 1px);
-} */
+}
 
 .vp {
   width: 100vw;
