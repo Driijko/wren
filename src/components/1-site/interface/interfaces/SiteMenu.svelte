@@ -43,6 +43,10 @@ div {
 div :global(.site-header) {
   background-color: white;
 }
+h3 {
+  background-color: black;
+  color: white;
+}
 div :global(nav) {
   flex: 1;
 }
