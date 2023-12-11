@@ -85,13 +85,13 @@
 
   const closeButtonTransition = {
     in: {
-      duration: 650,
+      duration: 900,
       x: window.innerWidth,
       easing: quintOut,
-      delay: 100
+      // delay: 100
     },
     out: {
-      duration: 500,
+      duration: 900,
       x: window.innerWidth,
       easing: quintIn,
       delay: 0
@@ -150,12 +150,14 @@
         }
         animate:flip="{transitions.animate}" 
         in:shift="{
-          buttonIndex === buttons.length - 1 ?
+          buttonIndex === buttons.length - 1  
+          && buttons.length === 5 ?
           closeButtonTransition.in :
           transitions.in
         }" 
         out:shift="{
-          buttonIndex === buttons.length - 1 ?
+          buttonIndex === buttons.length - 1 
+          && buttons.length === 5 ?
           closeButtonTransition.out :
           transitions.out
         }"

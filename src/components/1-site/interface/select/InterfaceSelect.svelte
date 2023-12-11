@@ -101,6 +101,12 @@ menu.site-menu :global(li.selected) {
   border-top: none;
   transform: scaleY(1.03) translateY(1.9%);
 }
+menu.site-menu :global(li.selected:has(.interface-modal-closer-button)) {
+  background-color: hsl(0, 0%, 20%);
+  border: var(--b) solid grey;
+  border-top: var(--b) solid grey;
+  transform: scaleY(1.03) translateY(1.9%);
+}
 menu.site-menu :global(li.selected:first-child) {
   border-left: none;
 }
@@ -120,7 +126,8 @@ menu :global(.site-menu-modal-toggle-button.open svg) {
 menu :global(li:has(.interface-modal-closer-button)) {
   /* margin-left: auto; */
   /* width: 14dvh; */
-  /* border: 1px solid blue; */
+  /* border: var(--b) solid hsl(0, 100%, 50%); */
+  /* border-top: var(--b) solid grey; */
 }
 menu :global(.interface-modal-closer-button svg) {
   width: calc(var(--hpx) * 0.05);
