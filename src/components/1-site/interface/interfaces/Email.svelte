@@ -1,11 +1,12 @@
 <!-- SCRIPTS //////////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------
-  
+  import TwitterIcon from "../../../6-icons/TwitterIcon.svelte";
+
 </script>
 
 <!-- MARKUP ///////////////////////////////////// -->
-<menu>
+<menu class="site-menu-interface">
   <li>
     Contact me at:<br/>
     <address>
@@ -22,6 +23,10 @@
     </form>
   </li>
   <li>
-
+    <TwitterIcon />
+    Follow me at:<br/>
+    <a href="twitter.com/nelsymington">
+      twitter.com/nelsymington
+    </a>
   </li>
 </menu>
