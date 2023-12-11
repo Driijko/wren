@@ -83,17 +83,33 @@
   // TRANSITIONS ---------------------------------------
   let transitions;
 
+  const closeButtonTransition = {
+    in: {
+      duration: 650,
+      x: window.innerWidth,
+      easing: quintOut,
+      delay: 100
+    },
+    out: {
+      duration: 500,
+      x: window.innerWidth,
+      easing: quintIn,
+      delay: 0
+    },
+  };
+
   // RESPONSIVE ARRAY CONFIGURATION -----------------------------
   $: if ($breakpoint === "mobile") {
     transitions = {
       animate: {
-        duration: 250,
-        // duration: 700,
-        delay: 300,
+        duration: 700,
+        // duration: 100,
+        // delay: 300,
         easing: sineOut
       },
       in: {
-        duration: 1000,
+        // duration: 1000,
+        duration: 650,
         x: -window.innerWidth,
         easing: quintOut
       },
@@ -125,18 +141,26 @@
 
 <!-- MARKUP ////////////////////////////////////// -->
 <InterfaceSelect className="site">
-  {#each buttons as button (button.id)}
-    <li 
-      class="center" 
-      class:selected={
-        $currentInterfaceSite === button.interface
-        && ($breakpoint === "mobile" ? $interfaceModal : true)
-      }
-      animate:flip="{transitions.animate}" 
-      in:shift="{transitions.in}" 
-      out:shift="{transitions.out}"
-    >
-      <svelte:component this={button.component} />
-    </li>
+  {#each buttons as button, buttonIndex (button.id)}
+      <li 
+        class="center" 
+        class:selected={
+          $currentInterfaceSite === button.interface
+          && ($breakpoint === "mobile" ? $interfaceModal : true)
+        }
+        animate:flip="{transitions.animate}" 
+        in:shift="{
+          buttonIndex === buttons.length - 1 ?
+          closeButtonTransition.in :
+          transitions.in
+        }" 
+        out:shift="{
+          buttonIndex === buttons.length - 1 ?
+          closeButtonTransition.out :
+          transitions.out
+        }"
+      >
+        <svelte:component this={button.component} />
+      </li>
   {/each}
 </InterfaceSelect>
