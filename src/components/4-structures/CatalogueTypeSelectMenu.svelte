@@ -1,12 +1,12 @@
 <!-- SCRIPTS /////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------
-  import { catalogueType } from "../../dynamic/catalogueDisplay";
   import CatalogueTypeSelectButton 
   from "../5-elements/catalogue/CatalogueTypeSelectButton.svelte";
 
 </script>
 
+<!-- MARKUP //////////////////////////////////// -->
 <menu>
   <li>
     <CatalogueTypeSelectButton type="series">

@@ -9,6 +9,9 @@
 </script>
 
 <!-- MARKUP ////////////////////////////////////////// -->
-<button on:click={()=> catalogueType.set(type)}>
+<button 
+  on:click={()=> catalogueType.set(type)}
+  class:current={$catalogueType === type}
+>
   <slot />
 </button>
