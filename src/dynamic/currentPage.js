@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 
 // STATE ----------------------------------------
-export const currentPage = writable("home");
+export const currentPage = writable("catalogue");
 export const currentProduct = writable("");
 export const exiting = writable(false);
 const currentPageExit = {
