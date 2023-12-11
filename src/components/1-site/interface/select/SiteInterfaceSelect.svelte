@@ -1,10 +1,14 @@
 <!-- SCRIPTS /////////////////////////////////////////// -->
 <script>
   // IMPORTS ---------------------------------------
+  import { flip } from "svelte/animate";
+  import shift from "../../../../scripts/transitions/shift";
   import { breakpoint } from "../../../../dynamic/breakpoint";
   import { currentPage } from "../../../../dynamic/currentPage";
   import { interfaceModal, currentInterfaceSite } 
   from "../../../../dynamic/interface";
+  import { interfaceSelectTransitionsMobile } 
+  from "../../../../scripts/transitions/interfaceSelectTransitions";
   import InterfaceSelect from "./InterfaceSelect.svelte";
   import SiteMenuSelectButton 
   from "../../../5-elements/interface/SiteMenuSelectButton.svelte";
@@ -77,8 +81,17 @@
   // INTERFACE ARRAY --------------------------------------
   let buttons = [];
 
+  // TRANSITIONS ---------------------------------------
+  let animate;
+  let inTrans;
+  let outTrans;
+
   // RESPONSIVE ARRAY CONFIGURATION -----------------------------
   $: if ($breakpoint === "mobile") {
+    const transitions = interfaceSelectTransitionsMobile();
+    animate = transitions.animate;
+    inTrans = transitions.in;
+    outTrans = transitions.out;
     if ($currentPage === "catalogue") {
       if ($interfaceModal) {
         buttons = config3;
@@ -107,6 +120,7 @@
         $currentInterfaceSite === button.interface
         && ($breakpoint === "mobile" ? $interfaceModal : true)
       }
+      animate:flip="{animate}" in:shift="{inTrans}" out:shift="{outTrans}"
     >
       <svelte:component this={button.component} />
     </li>
