@@ -40,9 +40,10 @@ menu :global(svg) {
 /* MOBILE ---------------------------------------- */
 @media (orientation:portrait) {
 menu {
+  --b: calc(var(--hpx) * 0.004);
   justify-content: space-around;
   /* gap: 2dvh; */
-  height: 8dvh;
+  height: calc(var(--hpx) * 0.08);
   /* padding-left: 5dvh; */
   /* border-top-color: hsl(0, 0%, 15%);
   border-top-style: solid;
@@ -60,7 +61,7 @@ menu :global(li) {
   /* width: 8dvh; */
   /* border: 1px solid hsl(0, 0%, 50%); */
   flex: 1;
-  height: 8dvh;
+  height: 100%;
   color: white;
   /* border: 1px solid red; */
 }
@@ -77,26 +78,27 @@ menu :global(button) {
   align-items: center;
 }
 menu :global(svg) {
-  width: 20px;
-  height: 22px;
+  width: calc(var(--hpx) * 0.03);
+  height: calc(var(--hpx) * 0.035);
+  /* height: 22px; */
   /* border: 1px solid red; */
 }
 menu.site :global(li.selected) {
   background-color: hsl(0, 0%, 10%);
-  border-left: 2px solid grey;
-  border-right: 2px solid grey;
+  border-left: var(--b) solid grey;
+  border-right: var(--b) solid grey;
 }
 menu.site :global(li.selected:nth-child(1)) {
   border-left: none;
 }
 menu.site :global(li:not(.selected)) {
-  border-top: 2px solid grey;
+  border-top: var(--b) solid grey;
 }
 menu.site-menu :global(li.selected) {
   background-color: hsl(0, 0%, 20%);
-  border: 2px solid grey;
+  border: var(--b) solid grey;
   border-top: none;
-  transform: scaleY(1.04) translateY(1.9%);
+  transform: scaleY(1.03) translateY(1.9%);
 }
 menu.site-menu :global(li.selected:first-child) {
   border-left: none;
@@ -105,13 +107,14 @@ menu.site-menu :global(li.selected:last-child) {
   border-right: none;
 }
 menu.site-menu :global(li:not(.selected)) {
-  border-top: 2px solid grey;
+  border-top: var(--b) solid grey;
 }
 menu :global(li.selected svg) {
   transform: scale(1.4);
 }
 menu :global(.site-menu-modal-toggle-button.open svg) {
   transform: scale(1.8);
+  color: red;
 }
 menu :global(li:has(.interface-modal-closer-button)) {
   /* margin-left: auto; */
@@ -119,8 +122,8 @@ menu :global(li:has(.interface-modal-closer-button)) {
   /* border: 1px solid blue; */
 }
 menu :global(.interface-modal-closer-button svg) {
-  width: 45px;
-  height: 45px;
+  width: calc(var(--hpx) * 0.05);
+  height: calc(var(--hpx) * 0.05);
 }
 }
 
