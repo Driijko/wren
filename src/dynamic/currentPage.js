@@ -1,8 +1,7 @@
 import { writable } from "svelte/store";
-import { startingPageName } from "../static/siteSettings";
 
 // STATE ----------------------------------------
-export const currentPage = writable(startingPageName);
+export const currentPage = writable("catalogue");
 export const currentProduct = writable("");
 export const exiting = writable(false);
 const currentPageExit = {
@@ -11,6 +10,9 @@ const currentPageExit = {
 };
 
 // FUNCTIONS -----------------------------------
+export function setCurrentPage(pageName) {
+  currentPage.set(pageName);
+};
 export function newPage(pageName) {
   currentPageExit.exitMethod();
   exiting.set(true);

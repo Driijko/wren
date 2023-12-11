@@ -10,7 +10,6 @@
 <InterfaceSelectButton 
   interfaceSelect={{
     site: "siteMenu",
-    siteMenu: "navigation",
   }}
 >
   <MenuIcon />

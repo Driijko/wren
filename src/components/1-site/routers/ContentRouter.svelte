@@ -9,6 +9,7 @@
   import DesignPage from "../../2-pages/DesignPage.svelte";
   import ProductPage from "../../2-pages/ProductPage.svelte";
 
+
 </script>
 
 <!-- MARKUP ///////////////////////////////////////////// -->
@@ -36,7 +37,5 @@
 
 <!-- STYLES //////////////////////////////////////// -->
 <style>
-div {
-  background-color: hsla(30, 100%, 50%, 0.5);
-}
+
 </style>

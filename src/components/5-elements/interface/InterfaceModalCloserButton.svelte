@@ -6,6 +6,13 @@
 </script>
 
 <!-- MARKUP ///////////////////////////////////////////////////// -->
-<button on:click={closeInterfaceModal}>
+<button class="interface-modal-closer-button" on:click={closeInterfaceModal}>
   <XIcon />
 </button>
+
+<!-- STYLES //////////////////////////////////////// -->
+<style>
+button {
+  color: red;
+}
+</style>
