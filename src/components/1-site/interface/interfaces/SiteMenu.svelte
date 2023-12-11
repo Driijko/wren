@@ -40,4 +40,10 @@ div {
   display: flex;
   flex-direction: column;
 }
+div :global(.site-header) {
+  background-color: white;
+}
+div :global(nav) {
+  flex: 1;
+}
 </style>

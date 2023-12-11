@@ -3,7 +3,8 @@
   // IMPORTS --------------------------------------------
   import { newPage, currentPage, setCurrentProduct } 
   from "../../../dynamic/currentPage";
-  import { modals, interfaceModal } from "../../../dynamic/modals";
+  import { interfaceModal, closeInterfaceModal } 
+  from "../../../dynamic/interface";
 
   // PROPS -------------------------------------------
   export let page = "";
@@ -17,7 +18,7 @@
     if (!($currentPage === page)) {
       newPage(page);
       if ($interfaceModal) {
-        modals.close("interfaceModal");
+        closeInterfaceModal();
       };
     };
   };
@@ -25,6 +26,9 @@
 </script>
 
 <!-- MARKUP //////////////////////////////////////////// -->
-<a href={page} on:click|preventDefault={handleClick}>
+<a href={page} 
+  on:click|preventDefault={handleClick} 
+  class:current={page === $currentPage}
+>
   <slot />
 </a>
