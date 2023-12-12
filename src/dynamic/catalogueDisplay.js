@@ -1,6 +1,7 @@
 import { writable } from "svelte/store";
-import { series, books, tags } from "../static/catalogue";
+import { series, books, compilations, tags } from "../static/catalogue";
 
 // STATE -----------------------------------------------
 export const catalogueType = writable("series");
-export const seriesDisplay = writable(series); 
+export const seriesDisplay = writable(series);
+export const compilationsDisplay = writable(compilations); 

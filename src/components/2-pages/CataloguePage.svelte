@@ -6,6 +6,8 @@
   from "../4-structures/catalogue/CatalogueTypeSelectMenu.svelte";
   import SeriesDisplay 
   from "../4-structures/catalogue/SeriesDisplay.svelte";
+  import CompilationsDisplay 
+  from "../4-structures/catalogue/CompilationsDisplay.svelte";
 
 </script>
 
@@ -15,6 +17,8 @@
 
   {#if $catalogueType === "series"}
     <SeriesDisplay />
+  {:else if $catalogueType === "compilations"}
+    <CompilationsDisplay />
   {/if}
 </div>
 
