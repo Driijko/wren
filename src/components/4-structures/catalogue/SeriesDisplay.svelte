@@ -56,6 +56,7 @@
 <style>
 ul {
   background-color: white;
+  /* background-color: hsla(0, 0%, 100%, 0.5); */
   padding: 10px;
   padding-bottom: 20px;
   display: flex;
@@ -64,10 +65,16 @@ ul {
 }
 li {
   background-color: hsl(0, 0%, 80%);
-  padding: 10px;
+  border-top: 6px solid black;
+  border-bottom: 6px solid black;
+  /* padding: 10px; */
 }
 img {
+  padding: 10px 0px;
   object-fit: contain;
+  border-right: 3px solid black;
+  background-color: black;
+  /* object-position: 0% 0%; */
 }
 li > div {
   display: flex;
@@ -77,6 +84,7 @@ li > div > div {
   flex-direction: column;
   /* border: 4px solid green; */
   flex: 1;
+  padding: 10px;
 }
 li > div > div > * {
   width: 100%;
@@ -93,15 +101,18 @@ li > div > div > * {
   align-items: center;
 }
 .wide {
-  gap: 20px;
+  gap: 10px;
 }
 .wide > div > p:nth-child(3) {
   /* border: 1px solid red; */
   flex: 1;
   display: flex;
   align-items: center;
+  padding: 15px 0px;
 }
 p {
   line-height: 1.3;
+  max-width: 30rem;
+  /* border: 1px solid blue; */
 }
 </style>

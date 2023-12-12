@@ -15,18 +15,12 @@
 
   // EVENT HANDLERS --------------------------
   function handleLoad() {
-    newPage("opening-prompt");
+    newPage("home");
   };
   
   // LOAD EVENT ----------------------------------
   onMount(()=> {
     window.addEventListener("load", handleLoad);
-
-    // Timeout just in case...
-    const timeoutId = setTimeout(()=> {
-      handleLoad();
-      clearTimeout(timeoutId);
-    },3000);
     
     return ()=> {
       window.removeEventListener("load", handleLoad);

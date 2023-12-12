@@ -9,7 +9,6 @@
   import DesignPage from "../../2-pages/DesignPage.svelte";
   import ProductPage from "../../2-pages/ProductPage.svelte";
 
-
 </script>
 
 <!-- MARKUP ///////////////////////////////////////////// -->

@@ -25,7 +25,7 @@
   </li>
   <li>
     <CatalogueTypeSelectButton type="subjects">
-      Subjects
+      Themes
     </CatalogueTypeSelectButton>
   </li>
 </menu>
