@@ -43,7 +43,7 @@ menu {
   --b: calc(var(--hpx) * 0.004);
   justify-content: space-around;
   /* gap: 2dvh; */
-  height: calc(var(--hpx) * 0.08);
+  /* height: calc(var(--hpx) * 0.08); */
   height: calc(var(--hpx) * 0.09);
   /* padding-left: 5dvh; */
   /* border-top-color: hsl(0, 0%, 15%);

@@ -34,6 +34,7 @@
 <style>
 menu {
   display: flex;
+  height: 14%;
 }
 menu :global(button) {
   display: flex;
@@ -60,13 +61,18 @@ menu {
 }
 li {
   width: 50%;
-  height: calc(var(--hpx) * 0.06);
+  height: 50%;
+  /* height: calc(var(--hpx) * 0.06); */
 }
 }
 
 @media screen and (orientation: portrait) and (min-width: 600px) {
+menu {
+  height: 7%;
+}
 li {
   width: 25%;
+  height: 100%;
 }
 }
 

@@ -65,7 +65,8 @@
 }
 .content-container {
   position: relative;
-  flex: 1;
+  height: calc(100dvh - (var(--hpx) * 0.09));
+  /* flex: 1; */
   /* opacity: 0;
   animation: fade-in 2s 2s ease-out forwards; */
 }
