@@ -58,6 +58,7 @@ menu :global(.current) {
 @media screen and (orientation: portrait) {
 menu {
   flex-wrap: wrap;
+  height: 14%;
 }
 li {
   width: 50%;
@@ -82,6 +83,7 @@ menu {
   background-color: black;
   justify-content: flex-end;
   height: calc(var(--hpx) * 0.05);
+  width: 100%;
 }
 li {
   width: 150px;

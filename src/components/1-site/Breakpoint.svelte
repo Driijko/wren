@@ -64,10 +64,16 @@
   display: flex;
 }
 .content-container {
-  position: relative;
-  height: calc(100dvh - (var(--hpx) * 0.09));
   /* flex: 1; */
   /* opacity: 0;
   animation: fade-in 2s 2s ease-out forwards; */
+}
+.mobile-container > .content-container {
+  position: relative;
+  height: calc(100dvh - (var(--hpx) * 0.09));
+  width: 100%;
+}
+.desktop-container > .content-container {
+  height: 100%;
 }
 </style>
