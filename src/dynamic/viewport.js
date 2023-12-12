@@ -9,7 +9,9 @@ function determineBreakpoint() {
 };
 
 export const breakpoint = writable(determineBreakpoint());
+export const vpwidth = writable(window.innerWidth);
 
-export function updateBreakpoint() {
+export function updateViewport() {
   breakpoint.set(determineBreakpoint());
+  vpwidth.set(window.innerWidth);
 };

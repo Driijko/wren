@@ -1,7 +1,7 @@
 <!-- SCRIPTS /////////////////////////////////////////// -->
 <script>
   // IMPORTS ---------------------------------------
-  import { breakpoint } from "../../../../dynamic/breakpoint";
+  import { breakpoint } from "../../../../dynamic/viewport";
   import { interfaceModal, currentInterfaceSiteMenu } 
   from "../../../../dynamic/interface";
   import InterfaceSelect from "./InterfaceSelect.svelte";

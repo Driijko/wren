@@ -19,7 +19,6 @@
 <style>
 div {
   animation: fade-in 1s ease-out forwards;
-  border: 4px solid green;
 }
 .fadeOut {
   animation: fade-out 1s ease-out forwards;

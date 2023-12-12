@@ -1,6 +1,6 @@
 <!-- SCRIPTS ///////////////////////////////////// -->
 <script>
-  import { breakpoint } from "../../../../dynamic/breakpoint";
+  import { breakpoint } from "../../../../dynamic/viewport";
   import PageLink from "../../../5-elements/links/PageLink.svelte";
 
 </script>

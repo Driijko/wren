@@ -4,7 +4,7 @@
   import { quintOut, quintIn, sineOut,  } from "svelte/easing";
   import { flip } from "svelte/animate";
   import shift from "../../../../scripts/transitions/shift";
-  import { breakpoint } from "../../../../dynamic/breakpoint";
+  import { breakpoint } from "../../../../dynamic/viewport";
   import { currentPage } from "../../../../dynamic/currentPage";
   import { interfaceModal, currentInterfaceSite } 
   from "../../../../dynamic/interface";

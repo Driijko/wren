@@ -3,7 +3,7 @@
   // IMPORTS ---------------------------------------
   import { onDestroy } from "svelte";
   import { seriesDisplay } from "../../../dynamic/catalogueDisplay";
-  import { breakpoint } from "../../../dynamic/breakpoint";
+  import { breakpoint } from "../../../dynamic/viewport";
 
   // REACTIVE TO VIEWPORT WIDTH ----------------------
   let count = 0;
@@ -16,7 +16,7 @@
 </script>
 
 <!-- MARKUP /////////////////////////////////////// -->
-<ul class="reg-scroll catalogue-display">
+<!-- <ul class="reg-scroll catalogue-display">
   {#each $seriesDisplay as series}
     {#key count}
       <li>
@@ -49,6 +49,20 @@
         {/if}
       </li>
     {/key}
+  {/each}
+</ul> -->
+<ul class="reg-scroll catalogue-display">
+  {#each $seriesDisplay as series}
+      <li 
+        class:narrow={window.innerWidth < 600} 
+        class:wide={window.innerWidth >= 600}
+      >
+        {#if window.innerWidth < 600}
+          <p>narrow</p>
+        {:else if window.innerWidth >= 600}
+          <p>wide</p>
+        {/if}
+      </li>
   {/each}
 </ul>
 

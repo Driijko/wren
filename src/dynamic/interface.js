@@ -1,5 +1,5 @@
 import { writable, get } from "svelte/store";
-import { breakpoint } from "./breakpoint";
+import { breakpoint } from "./viewport";
 
 // STATE ---------------------------------
 export const interfaceModal = writable(false);
