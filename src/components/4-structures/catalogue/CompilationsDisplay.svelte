@@ -1,46 +1,46 @@
 <!-- SCRIPTS ////////////////////////////////// -->
 <script>
   // IMPORTS ---------------------------------------
-  import { seriesDisplay } from "../../../dynamic/catalogueDisplay";
+  import { compilationsDisplay } from "../../../dynamic/catalogueDisplay";
   import { vpwidth } from "../../../dynamic/viewport";
 
 </script>
 
 <!-- MARKUP /////////////////////////////////////// -->
 <ul class="reg-scroll catalogue-display">
-  {#each $seriesDisplay as series}
+  {#each $compilationsDisplay as comp}
       <li>
 
         <!-- Narrow Viewport ------------------- -->
         {#if $vpwidth < 600}
           <div class="narrow">
-            <img src={series.pic} alt={series.title} />
+            <img src={comp.pic} alt={comp.title} />
             <div class="center">
-              <h4>{series.title}</h4>
+              <h4>{comp.title1}<br/>{comp.title2}</h4>
               <p>
-                <a href={series.title}>
-                  {series.books.length} books
+                <a href={comp.title}>
+                  {comp.books.length} books
                 </a>
               </p>
             </div>
           </div>
-          <p>{series.description}</p>
+          <p>{comp.description}</p>
 
         <!-- Wider Viewport --------------------- -->
         {:else if $vpwidth >= 600}
         <div class="wide">
-          <img src={series.pic} alt={series.title} />
+          <img src={comp.pic} alt={comp.title} />
           <div>
             <div>
-              <h4>{series.title}</h4>
+              <h4>{comp.title1} {comp.title2}</h4>
               &middot
               <p>
-                <a href={series.title}>
-                  {series.books.length} books
+                <a href={comp.title}>
+                  {comp.books.length} books
                 </a>
               </p>
             </div>
-            <p>{series.description}</p>
+            <p>{comp.description}</p>
           </div>
         </div>
 
@@ -68,7 +68,12 @@ li {
   /* border: 5px solid black; */
   /* padding: 10px; */
 }
+h4 {
+  text-align: center;
+  line-height: 1.5;
+}
 img {
+  width: 133px;
   object-fit: contain;
 }
 li > div {

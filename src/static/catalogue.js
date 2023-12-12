@@ -92,7 +92,8 @@ export const series = [
 export const compilations = [
   {
     id: 8,
-    title: "Mirror World Complete",
+    title1: "Mirror World",
+    title2: "Complete",
     description: "Emmett is a nice guy but can't seem to keep a girlfriend. One night he enters a world inside his mirror in which all women not only have huge tits and asses but who also can't seem to keep their hands off of him. Even his sister can't resist his charms. But soon Emmett realizes that he can't control when he enters and leaves this mirror world and that there's more going on than meets the eye.",
     series: ["Mirror World"],
     price: "$16.95",
@@ -105,7 +106,8 @@ export const compilations = [
   },
   {
     id: 7,
-    title: "Bimbo Stories Bundle 3",
+    title1: "Bimbo Stories",
+    title2: "Bundle 3",
     description: "Another hypnotizing, breast-expanding bundle has arrived for Nel Symington's beloved Bimbo Stories series. Peek into the life of an executive before her mind shrinks and her bust grows. Watch as an indignant woman turns sex-crazy just from a pack of bubblegum. Enjoy as a secretary tries to uncover a conspiracy but ends up on her knees. Want more? Need more? Bimbo Stories are here for you.",
     series: ["Bimbo Stories"],
     price: "$16.95",
@@ -118,7 +120,8 @@ export const compilations = [
   },
   {
     id: 6,
-    title: "Hypnosis Erotica 14-Pack!",
+    title1: "Hypnosis Erotica",
+    title2: "14-Pack!",
     description: "Well over 100k words of mind-draining libido-pumping bra-busting erotica swirl the pages of this collection that stretches over 3 years of Nel's library. What a way to get caught up! Just dive in and fall under the spell. You can't resist.",
     series: [],
     price: "$34.95",
@@ -131,7 +134,8 @@ export const compilations = [
   },
   {
     id: 5,
-    title: "Daddy Daughter Incest 5-Pack",
+    title1: "Daddy Daughter",
+    title2: "Incest 5-Pack",
     description: "All of my books about fathers and the incestuous relationships they have with their daughters to date! Over 42k words all showcasing this special taboo relationship in one convenient discounted package!",
     series: [],
     price: "$13.95",
@@ -144,7 +148,8 @@ export const compilations = [
   },
   {
     id: 4,
-    title: "Nurse Mommy Complete",
+    title1: "Nurse Mommy",
+    title2: "Complete",
     description: "All four entries of Nurse Mommy are now available as one convenient collection! Jason gets injured and runs into trouble when his massively busty mother insists on taking care of him. Things get both heated and complicated as another gorgeous nurse gets hired and enters the mix. There are two busty MILFs but only one Jason, who will he choose?",
     series: ["Nurse Mommy"],
     price: "$9.95",
@@ -157,7 +162,8 @@ export const compilations = [
   },
   {
     id: 3,
-    title: "Hypno Sister Complete",
+    title1: "Hypno Sister",
+    title2: "Complete",
     description: "All five entries of Hypno Sister are now available as one convenient collection! Join Philip Hughes as he finds his uncle's old amulet, accidentally hypnotizes his beautiful huge-titted sister, and then gets addicted to building an eager hypno harem. All five books at bulk pricing! ",
     series: ["Hypno Sister"],
     price: "$12.95",
@@ -170,7 +176,8 @@ export const compilations = [
   },
   {
     id: 2,
-    title: "Incest Inn: Bundle",
+    title1: "Incest Inn:",
+    title2: "Bundle",
     description: "Finally the Incest Inn series gets a bundle to call its own! From an ashamed mother who wants her son to dominate her to a young man who gets his wish of a free use family to a grandfather obsessed with his mega-busty granddaughter, there's plenty of naughty taboo treats to be found in the old and mysterious Home Nest Hotel! Come take a room, it's very discreet.",
     series: ["Incest Inn"],
     price: "$14.95",
@@ -183,7 +190,8 @@ export const compilations = [
   },
   {
     id: 1,
-    title: "Bimbo Stories Bundle 2",
+    title1: "Bimbo Stories", 
+    title2: "Bundle 2",
     description: "This bra-busting bundle is stuffed with shocking transformations, lewd hypnotism, and - most importantly of all - huge-titted cock-hungry Bimbo babes. From a patient and devious psychiatrist to a cross between Willy Wonka's factory and the Playboy mansion to an uptight professor and more, these stories all head in one head-bobbing direction: *slurrrrp*!",
     series: ["Bimbo Stories"],
     price: "$14.95",
@@ -196,7 +204,8 @@ export const compilations = [
   },
   {
     id: 0,
-    title: "Bimbo Stories Bundle",
+    title1: "Bimbo Stories",
+    title2: "Bundle",
     description: "Nel Symington's first Bimbo Bundle arrives! Enjoy 9 mini stories and 3 short stories of perverted hypnotism, breast expansion, and Bimbofication in this collection of varied and lewd tales of transformation. Settle in and let your mind go blank. ",
     series: ["Bimbo Stories"],
     price: "$12.95",
