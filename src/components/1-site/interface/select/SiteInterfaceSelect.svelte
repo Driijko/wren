@@ -23,9 +23,6 @@
   import SortInterfaceSelectButton
   from "../../../5-elements/interface/SortInterfaceSelectButton.svelte";
 
-  // VERSION ------------------------------------------------
-  const breakpointVersion = $breakpoint;
-
   // INTERFACE ELEMENTS -----------------------------------------
   const siteMenuToggleButton = {
     id: 0, 
@@ -87,7 +84,7 @@
   // TRANSITIONS ---------------------------------------
   let transitions;
 
-  if (breakpointVersion === "mobile") {
+  if ($breakpoint === "mobile") {
     transitions = {
       animate: {
         duration: 700,
@@ -104,7 +101,7 @@
         easing: quintIn
       }
     };
-  } else if (breakpointVersion === "desktop") {
+  } else if ($breakpoint === "desktop") {
     transitions = {
       animate: {
         duration: 700,
@@ -139,7 +136,7 @@
   };
 
   // RESPONSIVE ARRAY CONFIGURATION -----------------------------
-  $: if (breakpointVersion === "mobile") {
+  $: if ($breakpoint === "mobile") {
     if ($currentPage === "catalogue") {
       if ($interfaceModal) {
         buttons = config3;
@@ -149,7 +146,7 @@
     } else {
       buttons = config0;
     };
-  } else if (breakpointVersion === "desktop") {
+  } else if ($breakpoint === "desktop") {
     if ($currentPage === "catalogue") {
       buttons = config4;
     } else {
@@ -160,7 +157,7 @@
 </script>
 
 <!-- MARKUP ////////////////////////////////////// -->
-<!-- This conditional prevents a bug caused by elements with transitions -->
+<!-- This key block prevents a bug caused by elements with transitions -->
 {#key $breakpoint}
 
   <InterfaceSelect className="site">
