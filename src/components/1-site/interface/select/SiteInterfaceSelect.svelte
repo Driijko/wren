@@ -1,6 +1,7 @@
 <!-- SCRIPTS /////////////////////////////////////////// -->
 <script>
   // IMPORTS ---------------------------------------
+  import { onDestroy } from "svelte";
   import { quintOut, quintIn, sineOut,  } from "svelte/easing";
   import { flip } from "svelte/animate";
   import shift from "../../../../scripts/transitions/shift";
@@ -21,6 +22,9 @@
   from "../../../5-elements/interface/FilterInterfaceSelectButton.svelte";
   import SortInterfaceSelectButton
   from "../../../5-elements/interface/SortInterfaceSelectButton.svelte";
+
+  // VERSION ------------------------------------------------
+  const breakpointVersion = $breakpoint;
 
   // INTERFACE ELEMENTS -----------------------------------------
   const siteMenuToggleButton = {
@@ -83,6 +87,42 @@
   // TRANSITIONS ---------------------------------------
   let transitions;
 
+  if (breakpointVersion === "mobile") {
+    transitions = {
+      animate: {
+        duration: 700,
+        easing: sineOut
+      },
+      in: {
+        duration: 650,
+        x: -window.innerWidth,
+        easing: quintOut
+      },
+      out: {
+        duration: 500,
+        x: -window.innerWidth,
+        easing: quintIn
+      }
+    };
+  } else if (breakpointVersion === "desktop") {
+    transitions = {
+      animate: {
+        duration: 700,
+        easing: sineOut
+      },
+      in: {
+        duration: 650,
+        x: -window.innerWidth,
+        easing: quintOut
+      },
+      out: {
+        duration: 500,
+        x: -window.innerWidth,
+        easing: quintIn
+      }
+    };
+  };
+
   const closeButtonTransition = {
     in: {
       duration: 900,
@@ -99,27 +139,7 @@
   };
 
   // RESPONSIVE ARRAY CONFIGURATION -----------------------------
-  $: if ($breakpoint === "mobile") {
-    transitions = {
-      animate: {
-        duration: 700,
-        // duration: 100,
-        // delay: 300,
-        easing: sineOut
-      },
-      in: {
-        // duration: 1000,
-        duration: 650,
-        x: -window.innerWidth,
-        easing: quintOut
-      },
-      out: {
-        duration: 500,
-        x: -window.innerWidth,
-        easing: quintIn
-      }
-    };
-
+  $: if (breakpointVersion === "mobile") {
     if ($currentPage === "catalogue") {
       if ($interfaceModal) {
         buttons = config3;
@@ -129,7 +149,7 @@
     } else {
       buttons = config0;
     };
-  } else if ($breakpoint === "desktop") {
+  } else if (breakpointVersion === "desktop") {
     if ($currentPage === "catalogue") {
       buttons = config4;
     } else {
@@ -140,29 +160,35 @@
 </script>
 
 <!-- MARKUP ////////////////////////////////////// -->
-<InterfaceSelect className="site">
-  {#each buttons as button, buttonIndex (button.id)}
-      <li 
-        class="center" 
-        class:selected={
-          $currentInterfaceSite === button.interface
-          && ($breakpoint === "mobile" ? $interfaceModal : true)
-        }
-        animate:flip="{transitions.animate}" 
-        in:shift="{
-          buttonIndex === buttons.length - 1  
-          && buttons.length === 5 ?
-          closeButtonTransition.in :
-          transitions.in
-        }" 
-        out:shift="{
-          buttonIndex === buttons.length - 1 
-          && buttons.length === 5 ?
-          closeButtonTransition.out :
-          transitions.out
-        }"
-      >
-        <svelte:component this={button.component} />
-      </li>
-  {/each}
-</InterfaceSelect>
+<!-- This conditional prevents a bug caused by elements with transitions -->
+{#key $breakpoint}
+
+  <InterfaceSelect className="site">
+
+    {#each buttons as button, buttonIndex (button.id)}
+
+        <li class="center" 
+          class:selected={
+            $currentInterfaceSite === button.interface
+            && ($breakpoint === "mobile" ? $interfaceModal : true)
+          }
+          animate:flip="{transitions.animate}" 
+          in:shift="{
+            buttonIndex === buttons.length - 1  
+            && buttons.length === 5 ?
+            closeButtonTransition.in :
+            transitions.in
+          }" 
+          out:shift="{
+            buttonIndex === buttons.length - 1 
+            && buttons.length === 5 ?
+            closeButtonTransition.out :
+            transitions.out
+          }"
+        >
+          <svelte:component this={button.component} />
+        </li>
+
+    {/each}
+  </InterfaceSelect>
+{/key}

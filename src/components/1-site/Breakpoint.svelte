@@ -3,13 +3,12 @@
   // IMPORTS ----------------------------------------
   import { breakpoint } from "../../dynamic/viewport";
   import { interfaceModal } from "../../dynamic/interface";
-  import InterfaceSelect 
-  from "./interface/select/InterfaceSelect.svelte";
   import Panel from "./interface/breakpoint/Panel.svelte";
-  import FlippableBackground from "../5-elements/FlippableBackground.svelte";
+  import FlippableBackground 
+  from "../5-elements/FlippableBackground.svelte";
   import ContentRouter from "./routers/ContentRouter.svelte";
   import InterfaceModal from "./interface/breakpoint/InterfaceModal.svelte";
-  import InterfaceSelectSite 
+  import SiteInterfaceSelect 
   from "./interface/select/SiteInterfaceSelect.svelte";
 
 </script>
@@ -33,7 +32,7 @@
         <InterfaceModal />
       {/if}
     </div>
-    <InterfaceSelectSite />
+    <SiteInterfaceSelect />
   </div>
 
 <!-- DESKTOP -------------------- -->
@@ -45,9 +44,6 @@
     </div>
   </div>
 {/if}
-
-
-
 
 <!-- STYLES /////////////////////////////////////////// -->
 <style>
@@ -62,6 +58,7 @@
 }
 .desktop-container {
   display: flex;
+  /* border: 4px solid red; */
 }
 .content-container {
   /* flex: 1; */
@@ -75,5 +72,7 @@
 }
 .desktop-container > .content-container {
   height: 100%;
+  width: calc(100vw - 40dvh);
+  border: 4px solid green;
 }
 </style>
