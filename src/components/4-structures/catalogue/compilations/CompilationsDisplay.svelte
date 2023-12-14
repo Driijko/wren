@@ -63,7 +63,6 @@
 /* GENERAL ----------------------------------------- */
 ul {
   background-color: white;
-  /* background-color: hsla(0, 0%, 100%, 0.5); */
   padding: 10px;
   padding-bottom: 20px;
   display: flex;
@@ -74,8 +73,6 @@ ul :global(li) {
   background-color: hsl(0, 0%, 80%);
   border-style: solid;
   border-color: black;
-  /* border: 5px solid black; */
-  /* padding: 10px; */
 }
 ul :global(h4) {
   text-align: center;
@@ -85,20 +82,13 @@ ul :global(img) {
   width: 133px;
   object-fit: contain;
 }
-ul :global(li > div) {
+ul :global(.narrow > div) {
   display: flex;
-}
-ul :global(li > div > div) {
-  display: flex;
-  flex-direction: column;
-  /* border: 4px solid green; */
-  flex: 1;
-  padding: 10px;
+  border: 4px solid green;
 }
 ul :global(p) {
   line-height: 1.3;
   max-width: 30rem;
-  /* border: 1px solid blue; */
 }
 
 /* NARROW VP ----------------------------------- */
@@ -108,11 +98,17 @@ ul :global(.narrow) {
 }
 ul :global(.narrow > div) {
   border-bottom: 5px solid black;
-}
-ul :global(.narrow > div) {
   background-color: black;
   color: white;
   gap: 20px;
+}
+ul :global(.narrow > div > div) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid blue;
+  gap: 20px;
+  flex: 1;
 }
 ul :global(.narrow > p) {
   border-top: none;
@@ -120,12 +116,13 @@ ul :global(.narrow > p) {
 }
 
 /* WIDER VP ------------------------------------ */
-ul :global(li.wide) {
+ul :global(.wide) {
   border-top-width: 6px;
   border-bottom-width: 6px;
   border-right-width: 30px;
   border-left-width: 5px;
   border-radius: 10px;
+  display: flex;
 }
 ul :global(.wide) {
   gap: 10px;
@@ -136,15 +133,14 @@ ul :global(.wide img) {
   border-right: 5px solid black;
   background-color: black;
 }
-ul :global(.wide > div) {
+ul :global(.wide > div > div) {
   display: flex;
   align-items: center;
+  padding-top: 10px;
   gap: 10px;
 }
 ul :global(.wide > div > p:nth-child(2)) {
   flex: 1;
-  /* display: flex;
-  align-items: center; */
   padding: 15px 0px;
 }
 </style>
