@@ -18,8 +18,13 @@
             <div class="center">
               <h4>{series.title}</h4>
               <p>
-                <a href={series.title}>
+                <a href={`${series.title}:books`}>
                   {series.books.length} books
+                </a>
+              </p>
+              <p>
+                <a href={`${series.title}:compilations`}>
+                  {series.compilations.length} compilations
                 </a>
               </p>
             </div>
@@ -35,8 +40,14 @@
               <h4>{series.title}</h4>
               &middot
               <p>
-                <a href={series.title}>
+                <a href={`${series.title}:books`}>
                   {series.books.length} books
+                </a>
+              </p>
+              &middot
+              <p>
+                <a href={`${series.title}:compilations`}>
+                  {series.compilations.length} compilations
                 </a>
               </p>
             </div>

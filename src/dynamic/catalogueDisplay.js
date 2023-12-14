@@ -9,4 +9,4 @@ export const catalogueType = writable("compilations");
 export const seriesDisplay = writable(series);
 export const compilationsDisplay = writable(compilations); 
 export const booksDisplay = writable(books);
-export const themesDisplay = writable(themes)
+export const themesDisplay = writable(themes);

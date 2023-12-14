@@ -56,7 +56,7 @@ menu.site {
   background-color: black;
 }
 menu.site-menu {
-  background-color: hsl(0, 0%, 10%);
+  background-color: hsl(0, 0%, 20%);
 }
 menu :global(li) {
   /* width: 8dvh; */
@@ -99,7 +99,10 @@ menu.site-menu :global(li.selected) {
   background-color: hsl(0, 0%, 20%);
   border: var(--b) solid grey;
   border-top: none;
-  transform: scaleY(1.03) translateY(1.9%);
+  /* border-top: 1px solid hsl(0, 0%, 20%); */
+  /* outline: 1px solid hsl(0, 0%, 20%); */
+
+  transform: scaleY(1.035) translateY(1.9%);
 }
 menu.site-menu :global(li.selected:has(.interface-modal-closer-button)) {
   background-color: hsl(0, 0%, 20%);
@@ -115,6 +118,7 @@ menu.site-menu :global(li.selected:last-child) {
 }
 menu.site-menu :global(li:not(.selected)) {
   border-top: var(--b) solid grey;
+  background-color: hsl(0, 0%, 10%);
 }
 menu :global(li.selected svg) {
   transform: scale(1.4);
