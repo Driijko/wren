@@ -4,7 +4,7 @@ const series = [
     title: "Bimbo Stories",
     pic: "./series/bimbo-stories.jpeg",
     description: "If you love huge tits, empty brains, and hungry blowjobs, then Bimbo Stories has been waiting for you. Set in a universe in which the large mysterious corporation Pink Industries has made Pink Pills and Pink Milk a socially tolerated - if not always accepted - way to transform a person's mind and body into a huge-titted plump-lipped cum-loving Bimbo, most Bimbo Stories are standalone tales with hints at a larger mythology for the avid return reader. No matter the method or resistance, mind after mind - and body after body - will change to suit the greedy desires of lust. *slurrrrp*",
-    books: [],
+    books: [70, 69],
     tags: [],
     sale: "",
     date: [0, 0, 0],
@@ -87,6 +87,17 @@ const series = [
     compilations: [],
     date: [0, 0, 0],
   },
+  {
+    id: 8,
+    title: "Holiday Specials",
+    pic: "./series/holiday-specials.jpeg",
+    description: "Looking for a little holiday spirit to go with your curvy mindless Bimbos? They've been collected here for your convenience. Pull up some eggnog or a margarita, because these pervy tales can be enjoyed any time of the year.",
+    books: [],
+    tags: [],
+    sale: "",
+    compilations: [],
+    date: [0, 0, 0],
+  }
 ];
 
 export default series;
