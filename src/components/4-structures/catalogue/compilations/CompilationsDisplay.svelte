@@ -5,6 +5,7 @@
   import { vpwidth } from "../../../../dynamic/viewport";
   import CompilationDisplaySmall from "./CompilationDisplaySmall.svelte";
   import CompilationDisplayMedium from "./CompilationDisplayMedium.svelte";
+  import CompilationDisplayLarge from "./CompilationDisplayLarge.svelte";
 
 </script>
 
@@ -14,49 +15,16 @@
     {#each $compilationsDisplay as comp}
       <CompilationDisplaySmall {comp} />
     {/each}
-  {:else if $vpwidth >= 600}
+  {:else if $vpwidth >= 600 && $vpwidth <= 900}
     {#each $compilationsDisplay as comp}
       <CompilationDisplayMedium {comp} />
     {/each}
+  {:else}
+    {#each $compilationsDisplay as comp}
+      <CompilationDisplayLarge {comp} extra={$vpwidth - 900} />
+    {/each}
   {/if}
 </ul>
-        <!-- Narrow Viewport ------------------- -->
-        <!-- {#if $vpwidth < 600}
-          <div class="narrow">
-            <img src={comp.pic} alt={comp.title} />
-            <div class="center">
-              <h4>{comp.title1}<br/>{comp.title2}</h4>
-              <p>
-                <a href={comp.title}>
-                  {comp.books.length} books
-                </a>
-              </p>
-            </div>
-          </div>
-          <p>{comp.description}</p> -->
-
-        <!-- Wider Viewport --------------------- -->
-        <!-- {:else if $vpwidth >= 600}
-        <div class="wide">
-          <img src={comp.pic} alt={comp.title} />
-          <div>
-            <div>
-              <h4>{comp.title1} {comp.title2}</h4>
-              &middot
-              <p>
-                <a href={comp.title}>
-                  {comp.books.length} books
-                </a>
-              </p>
-            </div>
-            <p>{comp.description}</p>
-          </div>
-        </div> -->
-
-        <!-- {/if}
-      </li>
-  {/each} -->
-<!-- </ul> -->
 
 <!-- STYLES //////////////////////////////////////// -->
 <style>
@@ -140,7 +108,28 @@ ul :global(.wide > div > div) {
   gap: 10px;
 }
 ul :global(.wide > div > p:nth-child(2)) {
-  flex: 1;
   padding: 15px 0px;
+}
+
+/* WITH SUB-LIST */
+ul :global(.sub-list) {
+  /* border: 4px solid red; */
+  overflow-x: hidden;
+  flex: 1;
+  height: 100%;
+}
+ul :global(.sub-list li) {
+  width: 200px;
+  /* border: 4px solid green; */
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  height: 100%;
+}
+ul :global(.sub-list img) {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  width: 100px;
 }
 </style>

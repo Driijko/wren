@@ -9,7 +9,9 @@ const compilations = [
     words: "33,380",
     date: [23, 2, 2],
     pic: "./compilations/mirror-world-complete.jpeg",
-    books: [],
+    books: [
+      {id: 14, title: "Mirror World #6", pic: "./books/mirror-world-6.jpeg"}
+    ],
     sale: "",
     tags: [],
   },
