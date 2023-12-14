@@ -8,6 +8,7 @@
   from "../4-structures/catalogue/SeriesDisplay.svelte";
   import CompilationsDisplay 
   from "../4-structures/catalogue/CompilationsDisplay.svelte";
+  import BooksDisplay from "../4-structures/catalogue/BooksDisplay.svelte";
 
 </script>
 
@@ -17,6 +18,8 @@
 
   {#if $catalogueType === "series"}
     <SeriesDisplay />
+  {:else if $catalogueType === "books"}
+    <BooksDisplay />
   {:else if $catalogueType === "compilations"}
     <CompilationsDisplay />
   {/if}

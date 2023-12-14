@@ -2,7 +2,7 @@ const books = [
   {
     id: 0,
     title: "The Holiday Party",
-    pic: "",
+    pic: "./books/holiday-party.jpeg",
     description: "Tim hasn’t thrown one of his famous Christmas Parties in almost 5 years and the old gang is filled with nervous excitement to see each other again. Tim’s parties always get a little wild but an uninvited Santa and a strange pink-coloured punch turn the night into a Bimbo-filled lust-fest.",
     series: "Bimbo Stories",
     price: "$2.99",
@@ -15,7 +15,7 @@ const books = [
   {
     id: 1,
     title: "Kimmy's Experiment",
-    pic: "",
+    pic: "./books/kimmys-experiment.jpeg",
     description: "Kimberly Baker is driven by her mission to develop an antidote for Bimbofication. She has a sponsor for her research in her handsome professor and support from her boyfriend, but when her own creation backfires and she starts to succumbs to it, will she be able to discover who is trying to sabotage her plan before she becomes a mindless Bimbo?",
     series: "Bimbo Stories",
     price: "$2.99",
@@ -28,7 +28,7 @@ const books = [
   {
     id: 2,
     title: "Babe Island #5",
-    pic: "",
+    pic: "./books/babe-island-5.jpeg",
     description: "Cole tries to ready himself for his upcoming mission, but his focus wavers as he navigates through a tempting maze of stunning and extremely busty distractions. Meanwhile, Abbi, the mission's enigmatic leader, displays increasingly cryptic behaviour. Cole's determination clashes with Abbi's mysterious aura, as Cole tries to unravel the tangled web of secrets on the horizon of Babe Island.",
     series: "Babe Island",
     price: "$2.99",
@@ -41,7 +41,7 @@ const books = [
   {
     id: 3,
     title: "Busty Barista",
-    pic: "",
+    pic: "./books/busty-barista.jpeg",
     description: "By day, spirited Pella rejects advances, but by night, she craves attention. When a ghosted lover begins to twist her into a submissive bimbo, Pella gets trapped in her altered self and battles inner contradictions until all that remains is her new bight, Bimbo self.",
     series: "Bimbo Stories",
     price: "$2.99",
@@ -54,7 +54,7 @@ const books = [
   {
     id: 4,
     title: "Bimbo Lake",
-    pic: "",
+    pic: "./books/bimbo-lake.jpeg",
     description: "Simon, his girlfriend Erin, and their three friends travel to a secluded cottage, shrouded in the mysterious rumor of Bimbo Lake. Whispers of the lake's water transforming women into empty-headed, curvaceous Bimbos seem ridiculous at first but soon all five friends will have to face their true desires on a journey of erotic self-discovery. ",
     series: "Bimbo Stories",
     price: "$2.99",
@@ -67,7 +67,7 @@ const books = [
   {
     id: 5,
     title: "Babe Island #4",
-    pic: "",
+    pic: "./books/babe-island-4.jpeg",
     description: "Cole finds safety in the secret base of Abbi's rebel crew. He learns more about the island of Recintus and the city of Embaj while getting to know the extremely curvy and aroused women of Abbi's crew. There's the dark haired strategist, Pellina, the bouncy shortstack Vanika, the timid lookout Espy, and the mega-thick second-in-command Emine. There are so many babes but only one Cole. ",
     series: "Babe Island",
     price: "$2.99",
@@ -80,7 +80,7 @@ const books = [
   {
     id: 6,
     title: "Babe Island #3",
-    pic: "",
+    pic: "./books/babe-island-3.jpeg",
     description: "Cole has found himself on a strange island full of beautiful curvy babes and a culture that revolves around him as a god, but things have taken a turn for the worse. The leader of the city has exposed Cole as a fraud and even his most ardent follower is starting to doubt him. Cole will need to secure new allies - and lovers - to solve the mysteries of Recintus Island",
     series: "Babe Island",
     price: "$2.99",
@@ -93,7 +93,7 @@ const books = [
   {
     id: 7,
     title: "Babe Island #2",
-    pic: "",
+    pic: "./books/babe-island-2.jpeg",
     description: "Cole can't help but love being seen as a god by the beautiful busty women of the mysterious Recintus island. But when Cole enters the palace in the middle of the city, he meets his match in the powerful leader Regina. There are clearly many secrets to uncover but Cole is going to collect as many beautiful busty babes along the way as he can.",
     series: "Babe Island",
     price: "$2.99",
@@ -106,7 +106,7 @@ const books = [
   {
     id: 8,
     title: "Casey the Bimbo Librarian",
-    pic: "",
+    pic: "./books/casey-the-bimbo-librarian.jpeg",
     description: "Casey loves her job as a librarian. Everything always falls into its place until a man named Alan starts to frequent her work. He not only checks out gross books but he also brings in giggling embarrassing Bimbos who cheapen the library. Casey grows obsessed with her hate for Alan until she realizes that he's been leading her into a trap and soon she'll just be another of his horny Bimbos. ",
     series: "Bimbo Stories",
     price: "$2.99",
@@ -119,7 +119,7 @@ const books = [
   {
     id: 9,
     title: "Babe Island #1",
-    pic: "",
+    pic: "./books/babe-island-1.jpeg",
     description: "Cole Campbell is driving up to his cottage for a stress-free getaway when he gets lost and ends up on a mysterious island where an incredibly stacked and beautiful woman claims that he's the god of the island who has returned after 1000 years. Cole finds it hard to believe but also finds the woman to be very convincing, especially when she sinks to her knees in front of him.",
     series: "Babe Island",
     price: "$2.99",
@@ -132,7 +132,7 @@ const books = [
   {
     id: 10,
     title: "The Bimbo Wife",
-    pic: "",
+    pic: "./books/the-bimbo-wife.jpeg",
     description: "Sarah drives up to visit her best friend Kayla and her husband Craig in their new rural home but is devastated to discover that Kayla has become a fully fledged Bimbo. As Sarah tries to unravel the mystery of how Kayla became a buxom submissive housewife, she gets lost in the labyrinthine house and finds that she's losing track of time, space, and her own identity.",
     series: "Bimbo Stories",
     price: "$2.99",
@@ -173,7 +173,7 @@ const books = [
     sale: "",
     words: "4,910",
     date: [23, 1, 5],
-    compilations: [8],
+    compilations: [{title: "Mirror World Complete", id: 8}],
     tags: [],
   },
   {
