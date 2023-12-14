@@ -7,7 +7,7 @@
   import SeriesDisplay 
   from "../4-structures/catalogue/SeriesDisplay.svelte";
   import CompilationsDisplay 
-  from "../4-structures/catalogue/CompilationsDisplay.svelte";
+  from "../4-structures/catalogue/compilations/CompilationsDisplay.svelte";
   import BooksDisplay from "../4-structures/catalogue/BooksDisplay.svelte";
 
 </script>
