@@ -18,5 +18,5 @@
       </p>
     </div>
   </div>
-  <p>{comp.description}</p>
+  <p class="description">{comp.description}</p>
 </li>

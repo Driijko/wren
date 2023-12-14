@@ -18,6 +18,6 @@
         </a>
       </p>
     </div>
-    <p>{comp.description}</p>
+    <p class="description">{comp.description}</p>
   </div>
 </li>

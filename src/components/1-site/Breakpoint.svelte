@@ -18,8 +18,8 @@
 <!-- Background ---------------- -->
 <div class="vp background-container">
   <FlippableBackground 
-    picNum="1"
-    duration={30}
+    picNum="2"
+    duration={50}
   ></FlippableBackground>
 </div>
 

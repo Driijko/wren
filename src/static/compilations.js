@@ -10,7 +10,8 @@ const compilations = [
     date: [23, 2, 2],
     pic: "./compilations/mirror-world-complete.jpeg",
     books: [
-      {id: 14, title: "Mirror World #6", pic: "./books/mirror-world-6.jpeg"}
+      {id: 14, title: "Mirror World #6", pic: "./books/mirror-world-6.jpeg"},
+      {id: 5, title: "Mirror World #5", pic: "./books/mirror-world-5.jpeg"}
     ],
     sale: "",
     tags: [],

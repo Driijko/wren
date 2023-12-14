@@ -22,14 +22,17 @@
         </a>
       </p>
     </div>
-    <p>{comp.description}</p>
+    <p class="description">{comp.description}</p>
   </div>
-  <ul class="sub-list">
-    {#each comp.books as book}
-      <li class="center">
-        <img src={book.pic} alt={book.title} />
-        <h4>{book.title}</h4>
-      </li>
-    {/each}
-  </ul>
+  <div class="sub-list-container">
+    <ul class="sub-list">
+      {#each comp.books as book}
+        <li class="center">
+          <img src={book.pic} alt={book.title} />
+          <h4>{book.title}</h4>
+        </li>
+      {/each}
+    </ul>
+    <div class="foreground"></div>
+  </div>
 </li>
