@@ -22,6 +22,14 @@
           {item.books.length} books
         </a>
       </p>
+      {#if type === "series" && item.compilations.length > 0}
+        &middot
+        <p>
+          <a href={`${item.title}:compilations`}>
+            {item.compilations.length} compilations
+          </a>
+        </p>
+      {/if}
     </div>
     <p class="description">{item.description}</p>
   </div>
