@@ -10,3 +10,13 @@ export const seriesDisplay = writable(series);
 export const compilationsDisplay = writable(compilations); 
 export const booksDisplay = writable(books);
 export const themesDisplay = writable(themes);
+export const catalogueModal = writable(false);
+
+// FUNCTIONS ---------------------------------------
+export function openCatalogueModal() {
+  catalogueModal.set(true);
+}
+
+export function closeCatalogueModal() {
+  catalogueModal.set(false);
+}
