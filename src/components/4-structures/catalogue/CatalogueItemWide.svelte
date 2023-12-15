@@ -11,17 +11,19 @@
   <img src={item.pic} alt={item.title} />
   <div>
     <div>
-      {#if type === "compilation"}
+      {#if type === "compilation" || type === "book"}
         <h4>{item.title1} {item.title2}</h4>
       {:else}
         <h4>{item.title}</h4>
       {/if}
-      &middot
-      <p>
-        <a href={item.title}>
-          {item.books.length} books
-        </a>
-      </p>
+      {#if type === "compilation" || type === "series"}
+        &middot
+        <p>
+          <a href={item.title}>
+            {item.books.length} books
+          </a>
+        </p>
+      {/if}
       {#if type === "series" && item.compilations.length > 0}
         &middot
         <p>

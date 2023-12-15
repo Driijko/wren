@@ -1,59 +1,65 @@
 <!-- SCRIPTS ////////////////////////////////// -->
 <script>
   // IMPORTS ---------------------------------------
-  import { seriesDisplay } from "../../../dynamic/catalogueDisplay";
+  import { booksDisplay } from "../../../dynamic/catalogueDisplay";
   import { vpwidth } from "../../../dynamic/viewport";
 
 </script>
 
 <!-- MARKUP /////////////////////////////////////// -->
 <ul class="reg-scroll catalogue-display">
-  {#each $seriesDisplay as series}
+  {#each $booksDisplay as book}
       <li>
 
         <!-- Narrow Viewport ------------------- -->
         {#if $vpwidth < 600}
           <div class="narrow">
-            <img src={series.pic} alt={series.title} />
+            <img src={book.pic} alt={book.title} />
             <div class="center">
-              <h4>{series.title}</h4>
+              <h4>{book.title}</h4>
               <p>
-                <a href={`${series.title}:books`}>
-                  {series.books.length} books
+                Series:
+                <a href={book.series}>
+                  {book.series}
                 </a>
               </p>
-              <p>
-                <a href={`${series.title}:compilations`}>
-                  {series.compilations.length} compilations
-                </a>
-              </p>
+              {#if book.compilations}
+                <p>
+                  Included in 
+                  {#each book.compilations as compilation}
+                    <a href={`${compilation}`}>
+                      
+                    </a>
+                  {/each}
+                </p>
+              {/if}
             </div>
           </div>
-          <p>{series.description}</p>
+          <p>{book.description}</p>
 
         <!-- Wider Viewport --------------------- -->
-        {:else if $vpwidth >= 600}
+        <!-- {:else if $vpwidth >= 600}
         <div class="wide">
-          <img src={series.pic} alt={series.title} />
+          <img src={book.pic} alt={book.title} />
           <div>
             <div>
-              <h4>{series.title}</h4>
+              <h4>{book.title}</h4>
               &middot
               <p>
-                <a href={`${series.title}:books`}>
-                  {series.books.length} books
+                <a href={`${book.title}:books`}>
+                  {book.books.length} books
                 </a>
               </p>
               &middot
               <p>
-                <a href={`${series.title}:compilations`}>
-                  {series.compilations.length} compilations
+                <a href={`${book.title}:compilations`}>
+                  {book.compilations.length} compilations
                 </a>
               </p>
             </div>
-            <p>{series.description}</p>
+            <p>{book.description}</p>
           </div>
-        </div>
+        </div> -->
 
         {/if}
       </li>
@@ -81,6 +87,7 @@ li {
 }
 img {
   object-fit: contain;
+  width: 133px;
 }
 li > div {
   display: flex;

@@ -131,6 +131,8 @@ export default compilations;
 
 export function findCompilationById(id) {
   for (let i = 0; i < compilations.length ; i++) {
-    
-  }
-}
+    if (compilations[i].id === id) {
+      return compilations[i];
+    };
+  };
+};
