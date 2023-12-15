@@ -1,22 +1,27 @@
 <!-- SCRIPTS ///////////////////////////////////////// -->
 <script>
   // PROPS ------------------------------------------
-  export let comp;
+  export let item;
+  export let type;
 
 </script>
 
 <!-- MARKUP ////////////////////////////////////////////// -->
 <li class="narrow">
   <div>
-    <img src={comp.pic} alt={comp.title} />
+    <img src={item.pic} alt={item.title} />
     <div class="center">
-      <h4>{comp.title1}<br/>{comp.title2}</h4>
+      {#if type === "compilation"}
+        <h4>{item.title1}<br/>{item.title2}</h4>
+      {:else}
+        <h4>{item.title}</h4>
+      {/if}
       <p>
-        <a href={comp.title}>
-          {comp.books.length} books
+        <a href={item.title}>
+          {item.books.length} books
         </a>
       </p>
     </div>
   </div>
-  <p class="description">{comp.description}</p>
+  <p class="description">{item.description}</p>
 </li>

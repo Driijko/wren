@@ -5,6 +5,7 @@
   import { vpwidth } from "../../../../dynamic/viewport";
   import CompilationDisplaySmall from "./CompilationDisplayNarrow.svelte";
   import CompilationDisplayMedium from "./CompilationDisplayWide.svelte";
+  import CatalogueItemNarrow from "../CatalogueItemNarrow.svelte";
 
 </script>
 
@@ -12,7 +13,7 @@
 <ul class="reg-scroll fill">
   {#if $vpwidth < 500}
     {#each $compilationsDisplay as comp}
-      <CompilationDisplaySmall {comp} />
+      <CatalogueItemNarrow item={comp} type="compilation" />
     {/each}
   {:else if $vpwidth >= 500}
     {#each $compilationsDisplay as comp}
