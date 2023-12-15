@@ -3,7 +3,7 @@
   import { catalogueType } from "../../../dynamic/catalogueDisplay";
   import SeriesDisplay from "./SeriesDisplay.svelte";
   import BooksDisplay from "./BooksDisplay.svelte";
-  import CompilationsDisplay from "./compilations/CompilationsDisplay.svelte";
+  import CompilationsDisplay from "./CompilationsDisplay.svelte";
 
 </script>
 

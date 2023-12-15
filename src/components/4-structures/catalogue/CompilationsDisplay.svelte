@@ -1,11 +1,10 @@
 <!-- SCRIPTS ////////////////////////////////// -->
 <script>
   // IMPORTS ---------------------------------------
-  import { compilationsDisplay } from "../../../../dynamic/catalogueDisplay";
-  import { vpwidth } from "../../../../dynamic/viewport";
-  import CompilationDisplaySmall from "./CompilationDisplayNarrow.svelte";
-  import CompilationDisplayMedium from "./CompilationDisplayWide.svelte";
-  import CatalogueItemNarrow from "../CatalogueItemNarrow.svelte";
+  import { compilationsDisplay } from "../../../dynamic/catalogueDisplay";
+  import { vpwidth } from "../../../dynamic/viewport";
+  import CatalogueItemWide from "./CatalogueItemWide.svelte";
+  import CatalogueItemNarrow from "./CatalogueItemNarrow.svelte";
 
 </script>
 
@@ -17,7 +16,7 @@
     {/each}
   {:else if $vpwidth >= 500}
     {#each $compilationsDisplay as comp}
-      <CompilationDisplayMedium {comp} />
+      <CatalogueItemWide item={comp} type="compilation" />
     {/each}
   {/if}
 </ul>
