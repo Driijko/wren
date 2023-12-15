@@ -26,7 +26,8 @@
         &middot
         <p>
           <a href={`${item.title}:compilations`}>
-            {item.compilations.length} compilations
+            {item.compilations.length} 
+            compilation{item.compilations.length > 1 ? "s" : ""}
           </a>
         </p>
       {/if}

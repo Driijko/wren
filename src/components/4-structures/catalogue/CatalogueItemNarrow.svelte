@@ -23,8 +23,9 @@
       </p>
       {#if type === "series" && item.compilations.length > 0}
         <p>
-          <a href={`${item.title}:compilations`}>
-            {item.compilations.length} compilations
+          <a href={`${item.title}:compilation`}>
+            {item.compilations.length} 
+            compilation{item.compilations.length > 1 ? "s" : ""}
           </a>
         </p>
       {/if}

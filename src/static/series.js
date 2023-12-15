@@ -8,7 +8,7 @@ const series = [
     tags: [],
     sale: "",
     date: [0, 0, 0],
-    compilations: [],
+    compilations: [0, 1, 7],
   },
   {
     id: 1,
@@ -29,7 +29,7 @@ const series = [
     books: [],
     tags: [],
     sale: "",
-    compilations: [],
+    compilations: [8],
     date: [0, 0, 0],
   },
   {
@@ -40,7 +40,7 @@ const series = [
     books: [],
     tags: [],
     sale: "",
-    compilations: [],
+    compilations: [2],
     date: [0, 0, 0],
   },
   {
@@ -51,7 +51,7 @@ const series = [
     books: [],
     tags: [],
     sale: "",
-    compilations: [],
+    compilations: [4],
     date: [0, 0, 0],
   },
   {
@@ -84,7 +84,7 @@ const series = [
     books: [],
     tags: [],
     sale: "",
-    compilations: [],
+    compilations: [3],
     date: [0, 0, 0],
   },
   {
