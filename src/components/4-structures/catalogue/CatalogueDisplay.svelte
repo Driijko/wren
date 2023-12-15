@@ -22,17 +22,82 @@
 <style>
 /* GENERAL ----------------------------------- */
 div :global(ul) {
-  /* border: 4px solid red; */
-  /* background-color: white; */
   padding: 40px 10px 80px 10px;
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: center; */
   gap: 3dvh;
   flex-wrap: wrap;
-  width: fit-content;
   justify-content: center;
 }
+div :global(li) {
+  background-color: hsl(0, 0%, 90%);
+  border-style: solid;
+  border-color: black;
+}
+div :global(img) {
+  width: 133px;
+  object-fit: contain;
+}
+div :global(.description) {
+  line-height: 1.3;
+}
+
+/* NARROW VP ----------------------------------- */
+div :global(.narrow) {
+  border-width: 5px;
+  border-radius: 5px;
+}
+div :global(.narrow > div) {
+  display: flex;
+  border-bottom: 5px solid black;
+  background-color: black;
+  color: white;
+}
+div :global(.narrow h4) {
+  text-align: center;
+  line-height: 1.5;
+}
+div :global(.narrow > div > div) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+div :global(.narrow > p) {
+  padding: 20px 15px;
+}
+
+/* WIDER VP ------------------------------------ */
+div :global(.wide) {
+  border-top-width: 6px;
+  border-bottom-width: 6px;
+  border-right-width: 30px;
+  border-left-width: 5px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+div :global(.wide > img) {
+  padding: 10px 0px;
+  border-right: 5px solid black;
+  background-color: black;
+}
+div :global(.wide > div:nth-child(2)) {
+  width: 35rem;
+  max-width: 60dvw;
+}
+div :global(.wide > div > div) {
+  display: flex;
+  align-items: center;
+  padding-top: 18px;
+  gap: 10px;
+}
+div :global(.wide .description) {
+  padding: 15px 40px 30px 0px;
+  width: 30rem;
+  max-width: 60dvw;
+}
+
 /* PORTRAIT ------------------------------------- */
 @media screen and (orientation: portrait) {
   div {
@@ -49,7 +114,6 @@ div :global(ul) {
 @media screen and (orientation: landscape) {
   div {
     height: calc(100dvh - (var(--hpx) * 0.05));
-    border: 4px solid red;
   }
 }
 </style>

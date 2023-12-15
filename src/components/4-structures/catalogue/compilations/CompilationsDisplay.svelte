@@ -3,8 +3,8 @@
   // IMPORTS ---------------------------------------
   import { compilationsDisplay } from "../../../../dynamic/catalogueDisplay";
   import { vpwidth } from "../../../../dynamic/viewport";
-  import CompilationDisplaySmall from "./CompilationDisplaySmall.svelte";
-  import CompilationDisplayMedium from "./CompilationDisplayMedium.svelte";
+  import CompilationDisplaySmall from "./CompilationDisplayNarrow.svelte";
+  import CompilationDisplayMedium from "./CompilationDisplayWide.svelte";
 
 </script>
 
@@ -24,7 +24,7 @@
 <!-- STYLES //////////////////////////////////////// -->
 <style>
 /* GENERAL ----------------------------------------- */
-
+/* 
 ul > :global(li) {
   background-color: hsl(0, 0%, 80%);
   border-style: solid;
@@ -41,11 +41,11 @@ ul :global(img) {
 }
 ul :global(.description) {
   line-height: 1.3;
-  /* width: 30rem; */
-}
+  width: 30rem;
+} */
 
 /* NARROW VP ----------------------------------- */
-ul :global(.narrow) {
+/* ul :global(.narrow) {
   border-width: 5px;
   border-radius: 5px;
 }
@@ -66,10 +66,10 @@ ul :global(.narrow > div > div) {
 ul :global(.narrow > p) {
   border-top: none;
   padding: 20px 15px;
-}
+} */
 
 /* WIDER VP ------------------------------------ */
-ul :global(.wide) {
+/* ul :global(.wide) {
   border-top-width: 6px;
   border-bottom-width: 6px;
   border-right-width: 30px;
@@ -92,56 +92,14 @@ ul :global(.wide > div > div) {
   display: flex;
   align-items: center;
   padding-top: 10px;
-  /* border: 4px solid green; */
+  border: 4px solid green;
   gap: 10px;
 }
 ul :global(.wide .description) {
   padding: 15px 40px 30px 0px;
-  /* padding: 15px 0px 30px 0px; */
+  padding: 15px 0px 30px 0px;
   width: 30rem;
   max-width: 60dvw;
-  /* border: 4px solid blue; */
-}
-
-/* WITH SUB-LIST */
-ul :global(.sub-list-container) {
-  /* border: 4px solid red; */
-  overflow-x: hidden;
-  flex: 1;
-  position: relative;
-  border: none;
-}
-ul :global(.sub-list-container .foreground) {
-  position: absolute;
-  /* border: 4px solid green; */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  /* background-image: linear-gradient(
-    90deg,
-    transparent, 
-    white 150%
-  ); */
-}
-ul :global(.sub-list) {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  border: none;
-}
-ul :global(.sub-list li) {
-  width: 200px;
-  /* border: 4px solid green; */
-  display: flex;
-  flex-direction: column;
-  /* padding: 20px; */
-  height: 100%;
-}
-ul :global(.sub-list img) {
-  padding: 5px;
-  background-color: transparent;
-  border: none;
-  width: 100px;
-}
+  border: 4px solid blue;
+} */
 </style>
