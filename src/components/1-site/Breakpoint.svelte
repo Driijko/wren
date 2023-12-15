@@ -73,6 +73,6 @@
 .desktop-container > .content-container {
   height: 100%;
   width: calc(100vw - 40dvh);
-  border: 4px solid green;
+  /* border: 4px solid green; */
 }
 </style>

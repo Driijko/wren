@@ -9,12 +9,12 @@
 </script>
 
 <!-- MARKUP /////////////////////////////////////// -->
-<ul class="reg-scroll catalogue-display">
-  {#if $vpwidth < 600}
+<ul class="reg-scroll fill">
+  {#if $vpwidth < 500}
     {#each $compilationsDisplay as comp}
       <CompilationDisplaySmall {comp} />
     {/each}
-  {:else if $vpwidth >= 600}
+  {:else if $vpwidth >= 500}
     {#each $compilationsDisplay as comp}
       <CompilationDisplayMedium {comp} />
     {/each}
@@ -24,18 +24,7 @@
 <!-- STYLES //////////////////////////////////////// -->
 <style>
 /* GENERAL ----------------------------------------- */
-ul {
-  /* background-color: white; */
-  padding: 10px;
-  padding-bottom: 20px;
-  display: flex;
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  gap: 3dvh;
-  flex-wrap: wrap;
-  width: fit-content;
-  justify-content: center;
-}
+
 ul > :global(li) {
   background-color: hsl(0, 0%, 80%);
   border-style: solid;
@@ -87,7 +76,7 @@ ul :global(.wide) {
   border-left-width: 5px;
   border-radius: 10px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 ul :global(.wide > img) {
   padding: 10px 0px;
@@ -97,6 +86,7 @@ ul :global(.wide > img) {
 }
 ul :global(.wide > div:nth-child(2)) {
   width: 35rem;
+  max-width: 60dvw;
 }
 ul :global(.wide > div > div) {
   display: flex;
@@ -106,8 +96,10 @@ ul :global(.wide > div > div) {
   gap: 10px;
 }
 ul :global(.wide .description) {
-  padding: 15px 0px 30px 0px;
+  padding: 15px 40px 30px 0px;
+  /* padding: 15px 0px 30px 0px; */
   width: 30rem;
+  max-width: 60dvw;
   /* border: 4px solid blue; */
 }
 
