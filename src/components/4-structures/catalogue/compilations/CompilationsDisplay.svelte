@@ -5,7 +5,6 @@
   import { vpwidth } from "../../../../dynamic/viewport";
   import CompilationDisplaySmall from "./CompilationDisplaySmall.svelte";
   import CompilationDisplayMedium from "./CompilationDisplayMedium.svelte";
-  import CompilationDisplayLarge from "./CompilationDisplayLarge.svelte";
 
 </script>
 
@@ -19,10 +18,6 @@
     {#each $compilationsDisplay as comp}
       <CompilationDisplayMedium {comp} />
     {/each}
-  <!-- {:else}
-    {#each $compilationsDisplay as comp}
-      <CompilationDisplayLarge {comp} extra={$vpwidth - 900} />
-    {/each} -->
   {/if}
 </ul>
 
