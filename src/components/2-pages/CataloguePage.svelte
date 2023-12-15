@@ -1,29 +1,17 @@
 <!-- SCRIPTS /////////////////////////////////////// -->
 <script>
   // IMPORTS --------------------------------------
-  import { catalogueType } from "../../dynamic/catalogueDisplay";
   import CatalogueTypeSelectMenu 
   from "../4-structures/catalogue/CatalogueTypeSelectMenu.svelte";
-  import SeriesDisplay 
-  from "../4-structures/catalogue/SeriesDisplay.svelte";
-  import CompilationsDisplay 
-  from "../4-structures/catalogue/compilations/CompilationsDisplay.svelte";
-  import BooksDisplay from "../4-structures/catalogue/BooksDisplay.svelte";
+  import CatalogueDisplay 
+  from "../4-structures/catalogue/CatalogueDisplay.svelte";
 
 </script>
 
 <!-- MARKUP //////////////////////////////////////////// -->
-<div class="fill">
-  <CatalogueTypeSelectMenu />
+<CatalogueTypeSelectMenu />
 
-  {#if $catalogueType === "series"}
-    <SeriesDisplay />
-  {:else if $catalogueType === "books"}
-    <BooksDisplay />
-  {:else if $catalogueType === "compilations"}
-    <CompilationsDisplay />
-  {/if}
-</div>
+<CatalogueDisplay />
 
 <!-- STYLES /////////////////////////////////////// -->
 <style>
