@@ -4,6 +4,7 @@
   import { vpwidth } from "../../../../dynamic/viewport";
 
   // PROPS ------------------------------------------
+  export let context;
   export let items;
   
 </script>
