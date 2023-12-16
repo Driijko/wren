@@ -23,13 +23,10 @@
       {/if}
       {#if type === "compilation" || type === "series"}
       <p>
-        <!-- <a href={item.title}>
-          {item.books.length} books
-        </a> -->
         <CatalogueModalButton data={{
           scope: "list",
           type: "book",
-          list: {type: "Series", title: item.title},
+          list: { type: type, title: item.title},
           items: getBooksById(item.books)
         }}>
           {item.books.length} books

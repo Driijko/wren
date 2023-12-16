@@ -14,8 +14,10 @@
   <h4>
     {#if scope === "list"}
       {#if type === "book"}
-        {#if list.type === "Series"}
-          All Books from the {list.title} {list.type}
+        {#if list.type === "series"}
+          All books from the<br/> {list.title} series
+        {:else if list.type === "compilation"}
+          All books included in the<br/> {list.title} compilation
         {/if}
       {/if}
     {/if}
@@ -32,16 +34,17 @@ header {
   align-items: center;
   padding-left: 10px;
   background-color: black;
+  line-height: 1.5;
 }
 h4 {
   flex: 1;
   color: white;
 }
 header :global(button) {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   /* border-left: 5px solid white; */
   background-color: hsl(0, 0%, 100%);
-  padding: 3px;
+  padding: 13px;
 }
 </style>
