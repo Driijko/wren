@@ -1,6 +1,7 @@
 const books = [
   {
     id: 0,
+    type: "book",
     title: "The Holiday Party",
     pic: "./books/holiday-party.jpeg",
     description: "Tim hasn’t thrown one of his famous Christmas Parties in almost 5 years and the old gang is filled with nervous excitement to see each other again. Tim’s parties always get a little wild but an uninvited Santa and a strange pink-coloured punch turn the night into a Bimbo-filled lust-fest.",
@@ -14,6 +15,7 @@ const books = [
   },
   {
     id: 1,
+    type: "book",
     title: "Kimmy's Experiment", 
     titleSplit: ["Kimmy's", " Experiment"],
     pic: "./books/kimmys-experiment.jpeg",
@@ -28,6 +30,7 @@ const books = [
   },
   {
     id: 2,
+    type: "book",
     title: "Babe Island #5",
     pic: "./books/babe-island-5.jpeg",
     description: "Cole tries to ready himself for his upcoming mission, but his focus wavers as he navigates through a tempting maze of stunning and extremely busty distractions. Meanwhile, Abbi, the mission's enigmatic leader, displays increasingly cryptic behaviour. Cole's determination clashes with Abbi's mysterious aura, as Cole tries to unravel the tangled web of secrets on the horizon of Babe Island.",
@@ -41,6 +44,7 @@ const books = [
   },
   {
     id: 3,
+    type: "book",
     title: "Busty Barista",
     pic: "./books/busty-barista.jpeg",
     description: "By day, spirited Pella rejects advances, but by night, she craves attention. When a ghosted lover begins to twist her into a submissive bimbo, Pella gets trapped in her altered self and battles inner contradictions until all that remains is her new bight, Bimbo self.",
@@ -54,6 +58,7 @@ const books = [
   },
   {
     id: 4,
+    type: "book",
     title: "Bimbo Lake",
     pic: "./books/bimbo-lake.jpeg",
     description: "Simon, his girlfriend Erin, and their three friends travel to a secluded cottage, shrouded in the mysterious rumor of Bimbo Lake. Whispers of the lake's water transforming women into empty-headed, curvaceous Bimbos seem ridiculous at first but soon all five friends will have to face their true desires on a journey of erotic self-discovery. ",
@@ -67,6 +72,7 @@ const books = [
   },
   {
     id: 5,
+    type: "book",
     title: "Babe Island #4",
     pic: "./books/babe-island-4.jpeg",
     description: "Cole finds safety in the secret base of Abbi's rebel crew. He learns more about the island of Recintus and the city of Embaj while getting to know the extremely curvy and aroused women of Abbi's crew. There's the dark haired strategist, Pellina, the bouncy shortstack Vanika, the timid lookout Espy, and the mega-thick second-in-command Emine. There are so many babes but only one Cole. ",
@@ -80,6 +86,7 @@ const books = [
   },
   {
     id: 6,
+    type: "book",
     title: "Babe Island #3",
     pic: "./books/babe-island-3.jpeg",
     description: "Cole has found himself on a strange island full of beautiful curvy babes and a culture that revolves around him as a god, but things have taken a turn for the worse. The leader of the city has exposed Cole as a fraud and even his most ardent follower is starting to doubt him. Cole will need to secure new allies - and lovers - to solve the mysteries of Recintus Island",
@@ -93,6 +100,7 @@ const books = [
   },
   {
     id: 7,
+    type: "book",
     title: "Babe Island #2",
     pic: "./books/babe-island-2.jpeg",
     description: "Cole can't help but love being seen as a god by the beautiful busty women of the mysterious Recintus island. But when Cole enters the palace in the middle of the city, he meets his match in the powerful leader Regina. There are clearly many secrets to uncover but Cole is going to collect as many beautiful busty babes along the way as he can.",
@@ -106,6 +114,7 @@ const books = [
   },
   {
     id: 8,
+    type: "book",
     title: "Casey the Bimbo Librarian", 
     titleSplit: ["Casey the", " Bimbo Librarian"],
     pic: "./books/casey-the-bimbo-librarian.jpeg",
@@ -120,6 +129,7 @@ const books = [
   },
   {
     id: 9,
+    type: "book",
     title: "Babe Island #1",
     pic: "./books/babe-island-1.jpeg",
     description: "Cole Campbell is driving up to his cottage for a stress-free getaway when he gets lost and ends up on a mysterious island where an incredibly stacked and beautiful woman claims that he's the god of the island who has returned after 1000 years. Cole finds it hard to believe but also finds the woman to be very convincing, especially when she sinks to her knees in front of him.",
@@ -133,6 +143,7 @@ const books = [
   },
   {
     id: 10,
+    type: "book",
     title: "The Bimbo Wife",
     pic: "./books/the-bimbo-wife.jpeg",
     description: "Sarah drives up to visit her best friend Kayla and her husband Craig in their new rural home but is devastated to discover that Kayla has become a fully fledged Bimbo. As Sarah tries to unravel the mystery of how Kayla became a buxom submissive housewife, she gets lost in the labyrinthine house and finds that she's losing track of time, space, and her own identity.",
@@ -150,6 +161,7 @@ const books = [
   },
   {
     id: 12,
+    type: "book",
     title: "Mom is on the  Free Use List",
     titleSplit: ["Mom is on the", "Free Use List"],
     pic: "./books/mom-is-on-the-free-use-list.jpeg",
@@ -168,6 +180,7 @@ const books = [
   },
   {
     id: 14,
+    type: "book",
     title: "Mirror World #6",
     pic: "./books/mirror-world-6.jpeg",
     description: "Emmett finally learns the truth about the mirror world from the mysterious shortstack Via. The truth comes with a warning but Emmett wants to do nothing but continue to use his godlike sexual powers with the horny babes of the mirror world. Find out if Emmett's greed will pay off in this perverted conclusion.",
@@ -181,6 +194,7 @@ const books = [
   },
   {
     id: 15,
+    type: "book",
     title: "Holly's Christmas Cookies", 
     titleSplit: ["Holly's", " Christmas Cookies"],
     pic: "./books/hollys-christmas-cookies.jpeg",
@@ -195,6 +209,7 @@ const books = [
   },
   {
     id: 16,
+    type: "book",
     title: "Spiral Studio",
     pic: "./books/spiral-studio.jpeg",
     description: "Clara's regular yoga studio cancelled and so she begrudgingly decides to go to the cult-like Spiral Studio instead. Things immediately feel off when the mirrors turn into spirals but after the session Clara feels better than she ever has and her new friends agree! The fact that she's having a lot more sex and growing bigger tits is just a bonus, right?",
@@ -208,6 +223,7 @@ const books = [
   },
   {
     id: 17,
+    type: "book",
     title: "Mirror World #5",
     pic: "./books/mirror-world-5.jpeg",
     description: "Emmett goes back to his original world but feels frustrated at the women there. Even sex doesn't feel satisfying to him. He travels back to the mirror world and sinks right back into his porn-like experiences with the busty horny babes there. Is it sustainable?",
@@ -225,6 +241,7 @@ const books = [
   },
   {
     id: 19,
+    type: "book",
     title: "Dakota's Treadmill",
     titleSplit: ["Dakota's", " Treadmill"],
     pic: "./books/dakotas-treadmill.jpeg",
@@ -239,6 +256,7 @@ const books = [
   },
   {
     id: 20,
+    type: "book",
     title: "Mirror World #4",
     pic: "./books/mirror-world-4.jpeg",
     description: "Emmett's domination over the busty horny women of the mirror world continues but things get more complicated when he learns some ominous information from the blue-haired beauty, Via. Despite Via's warnings, Emmett can't help but continue to have his fill of the huge-titted mirror world sluts. Will he go too far?",
@@ -256,6 +274,7 @@ const books = [
   },
   {
     id: 22,
+    type: "book",
     title: "Mirror World #3",
     pic: "./books/mirror-world-3.jpeg",
     description: "After an incredible time in the mirror world in which Emmett is super hung and desirable and all the women of the world are overtly horny and mega-busty versions of themselves, Emmett can't find a way back in. He desperately wants to return. Will his lust be enough to bring him back to the paradise of the mirror world?",
@@ -269,6 +288,7 @@ const books = [
   },
   {
     id: 23,
+    type: "book",
     title: "Eager Evie",
     pic: "./books/eager-evie.jpeg",
     description: "Alan has secretly lusted after his beautiful confident daughter Evie for years. He tells himself he'll never act on his desires but when he enters the Home Nest Inn he can't help but enter a world in which the busty eager Evie wants to take care of her Daddy over and over again.",
@@ -282,6 +302,7 @@ const books = [
   },
   {
     id: 24,
+    type: "book",
     title: "Mirror World #2",
     pic: "./books/mirror-world-2.jpeg",
     description: "Life is passing Emmett by until he stumbles into a world in his mirror in which he is suddenly super hung and desirable and all the women of the world are overtly horny and mega-busty versions of themselves. Emmett's confidence skyrockets but he knows next to nothing about this mirror world. Is it too good to be true?",
@@ -295,6 +316,7 @@ const books = [
   },
   {
     id: 25,
+    type: "book",
     title: "Busty Secretary",
     pic: "./books/busty-secretary.jpeg",
     description: "Laura has been an executive assistant for 3 years but just transferred to a new boss, Mr. Titus. He is cold, distant, and worst of all he has assigned training for Laura to complete. Soon Laura uncovers that the company she works for is keeping major secrets and that the \"training\" is meant to brainwash her. Will Laura escape before it's too late and she becomes nothing but a mindless horny Bimbo?",
@@ -308,6 +330,7 @@ const books = [
   },
   {
     id: 26,
+    type: "book",
     title: "Mirror World #1",
     pic: "./books/mirror-world-1.jpeg",
     description: "Emmett is a nice guy but his social life is on life support and his love life looks even worse. When Emmett wakes up in the middle of the night he walks through his mirror to a world where the girls are both wildly busty and absolutely crazy about Emmett and his new huge cock. Even his own sister can't stay away. Is this Mirror World too good to be true?",
@@ -321,6 +344,7 @@ const books = [
   },
   {
     id: 27,
+    type: "book",
     title: "Sporty Sis",
     pic: "./books/sporty-sis.jpeg",
     description: "Miles has a complicated relationship with his gorgeous little sister Emma. Her baseball accomplishments make him both proud and jealous and her busty body puts him in denial. When Miles stumbles across the strange Home Nest Inn he finally has a chance to explore his incestuous fantasies and make things right with his sporty sis. ",
@@ -338,6 +362,7 @@ const books = [
   },
   {
     id: 29,
+    type: "book",
     title: "Free Use Fairy #2",
     pic: "./books/free-use-fairy-2.jpeg",
     description: "Cikwee is a fun-loving fairy who wakes up every 27 years to use her very special power: turning a normal situation into a free use paradise. In this chapter Cikwee helps to calm down an angry customer, start a threesome between three college students, and get a young professional woman pounded by a whole board room full of men! Cikwee loves to watch it all. Who wouldn't?",
@@ -351,6 +376,7 @@ const books = [
   },
   {
     id: 30,
+    type: "book",
     title: "Nurse Mommy #4",
     pic: "./books/nurse-mommy-4.jpeg",
     description: "My mom hired a nurse to take care of me with my injury, but this nurse is obsessed with my cock! I think my mom's jealous because she keeps sneaking into my room in the middle of the night to give me a blowjob. Is this the best situation ever or is something going to give?",
@@ -364,6 +390,7 @@ const books = [
   },
   {
     id: 31,
+    type: "book",
     title: "Free Use Fairy #1",
     pic: "./books/free-use-fairy-1.jpeg",
     description: "Cikwee is a fun-loving fairy who wakes up every 27 years to use her very special power: turning a normal situation into a free use paradise. In this chapter Cikwee helps to calm down an angry customer, start a threesome between three college students, and get a young professional woman pounded by a whole board room full of men! Cikwee loves to watch it all. Who wouldn't?",
@@ -377,6 +404,7 @@ const books = [
   },
   {
     id: 32,
+    type: "book",
     title: "Nurse Mommy #3",
     pic: "./books/nurse-mommy-3.jpeg",
     description: "My mom gave me the most amazing blowjob in the shower but now things are even MORE awkward! She hired a nurse to take care of me instead but this nurse is full service and likes being called \"Mommy\". I've got a bad feeling about this, but I'm not stopping now!",
@@ -390,6 +418,7 @@ const books = [
   },
   {
     id: 33,
+    type: "book",
     title: "Nurse Mommy #2",
     pic: "./books/nurse-mommy-2.jpeg",
     description: "My mom jerked me off last night and it was amazing! The only problem is that now things are really awkward. My hands are still out of commission however, so maybe I can convince my mom to help me out in the shower.",
@@ -403,6 +432,7 @@ const books = [
   },
   {
     id: 34,
+    type: "book",
     title: "Nurse Mommy #1",
     pic: "./books/nurse-mommy-1.jpeg",
     description: "I had a bad accident at work and I'm stuck at home for two weeks straight. Luckily my mom insisted on doting on me for the entire time. The only thing is that she's super hot and with my hands out of commission, I have no way to relieve myself! To make matters worse, I think she's starting to notice that I always have a boner every time she walks in. Can I convince my own mom to help me out?",
@@ -416,6 +446,7 @@ const books = [
   },
   {
     id: 35,
+    type: "book",
     title: "Jasper and the Nymph",
     titleSplit: ["Jasper and ", " the Nymph"],
     pic: "./books/jasper-and-the-nymph.jpeg",
@@ -434,6 +465,7 @@ const books = [
   },
   {
     id: 37,
+    type: "book",
     title: "Kate and the Mechanic", 
     titleSplit: ["Kate and", " the Mechanic"],
     pic: "./books/kate-and-the-mechanic.jpeg",
@@ -448,6 +480,7 @@ const books = [
   },
   {
     id: 38,
+    type: "book",
     title: "Hypno Sister #5",
     pic: "./books/hypno-sister-5.jpeg",
     description: "I wake up in a bed filled with my eager, busty, dedicated Hypno Harem of family members, friends, and near-strangers, but there are still mysteries to uncover behind the magical amulet that started it all. Maybe my mother knows more than she's let on?",
@@ -461,6 +494,7 @@ const books = [
   },
   {
     id: 39,
+    type: "book",
     title: "Hypno Sister #4",
     pic: "./books/hypno-sister-4.jpeg",
     description: "My cousin is obsessed with me, my sister is waking me up with blowjobs in the morning, but still I'm not satisfied! I need to find the secrets of this magic amulet to make the best incest Hypno Harem ever!",
@@ -474,6 +508,7 @@ const books = [
   },
   {
     id: 40,
+    type: "book",
     title: "Hypno Sister #3",
     pic: "./books/hypno-sister-3.jpeg",
     description: "My busty sister, her sexy friend, and my massive-titted aunt are all now part of my hypno harem! I thought I would be satisfied by now, but I just remembered about my ditzy cousin. Just one more hypno slut can't hurt, can it?",
@@ -487,6 +522,7 @@ const books = [
   },
   {
     id: 41,
+    type: "book",
     title: "Hypno Sister #2",
     pic: "./books/hypno-sister-2.jpeg",
     description: "I hypnotized my huge-titted sister with an old amulet I found, but then I did it to her sexy friend too! I keep telling myself to slow down, but now I've invited my curvy aunt over and I know I won't be able to resist showing the amulet to her. Just one more hypno incest sex slave isn't so bad, is it?",
@@ -500,6 +536,7 @@ const books = [
   },
   {
     id: 42,
+    type: "book",
     title: "Hypno Sister #1",
     pic: "./books/hypno-sister-1.jpeg",
     description: "I found an old amulet up in my attic and when I showed it to my irritating sister, it completely hypnotized her! I never knew I would be such a pervert, but I ended up making her get on her knees for me and now I'm completely addicted! Her sexy friends come over all the time too, I wonder if the amulet will work on them too...",
@@ -513,6 +550,7 @@ const books = [
   },
   {
     id: 43,
+    type: "book",
     title: "Christmas Special 2!",
     titleSplit: ["Christmas", " Special 2!"],
     pic: "./books/christmas-special-2.jpeg",
@@ -527,6 +565,7 @@ const books = [
   },
   {
     id: 44,
+    type: "book",
     title: "Pick Me, Daddy!",
     pic: "./books/pick-me-daddy.jpeg",
     description: "Russel is attracted to his two daughters: perky Lana and curvy Lizzy. He even supports them living at home just so that he can be around them. But leering isn’t enough for Russel anymore so he decides to hold a contest that only the perverted Home Nest Inn can provide.",
@@ -540,6 +579,7 @@ const books = [
   },
   {
     id: 45,
+    type: "book",
     title: "Busty Tavern Babe",
     titleSplit: ["Busty", " Tavern Babe"],
     pic: "./books/busty-tavern-babe.jpeg",
@@ -558,6 +598,7 @@ const books = [
   },
   {
     id: 47,
+    type: "book",
     title: "Annie",
     pic: "./books/annie.jpeg",
     description: "Andrew and his three friends have pooled their money to visit a Bimbo House and unwind with some busty horny babes. What Andrew doesn't know however, is that he has been offered as payment to bump them up to the premium experience. Soon Andrew starts to desire blowjobs from another perspective.",
@@ -571,6 +612,7 @@ const books = [
   },
   {
     id: 48,
+    type: "book",
     title: "Gabby Goes Down on Grandpa",
     titleSplit: ["Gabby Goes Down", " on Grandpa"],
     pic: "./books/gabby-goes-down-on-grandpa.jpeg",
@@ -585,6 +627,7 @@ const books = [
   },
   {
     id: 49,
+    type: "book",
     title: "Sophie Gets Bimbofied",
     titleSplit: ["Sophie Gets", " Bimbofied"],
     pic: "./books/sophie-gets-bimbofied.jpeg",
@@ -599,6 +642,7 @@ const books = [
   },
   {
     id: 50,
+    type: "book",
     title: "The Vision",
     pic: "./books/the-vision.jpeg",
     description: "Welcome to Nymphonia, a land that is as full of magic as it is beautiful busty women. Jasper North lives in the remote village of Rustmire; a place that has forgotten the true mystical nature of the world. He is thrust into adventure when Luxuria, a Goddess of Lust, visits him in a dream and reveals his perverted destiny... ...all while kneeling between his legs, of course.",
@@ -616,6 +660,7 @@ const books = [
   },
   {
     id: 52,
+    type: "book",
     title: "Kelly Wants Her Daddy",
     titleSplit: ["Kelly Wants", " Her Daddy"],
     pic: "./books/kelly-wants-her-daddy.jpeg",
@@ -630,6 +675,7 @@ const books = [
   },
   {
     id: 53,
+    type: "book",
     title: "Bimbo Mansion",
     pic: "./books/bimbo-mansion.jpeg",
     description: "Kyle wins a tour of the mysterious Pink Industries Bimbo Mansion and to his surprise his girlfriend Jennifer wants to come too. Kyle is suspicious of her angle but it isn't long before the busty horny babes of Bimbo Mansion help him feel better.",
@@ -643,6 +689,7 @@ const books = [
   },
   {
     id: 54,
+    type: "book",
     title: "Cody's Free Use Family",
     titleSplit: ["Cody's", " Free Use Family"],
     pic: "./books/codys-free-use-family.jpeg",
@@ -657,6 +704,7 @@ const books = [
   },
   {
     id: 55,
+    type: "book",
     title: "The 30 Minute Gong",
     titleSplit: ["The 30 Minute", " Gong"],
     pic: "./books/the-30-minute-gong.jpeg",
@@ -671,6 +719,7 @@ const books = [
   },
   {
     id: 56,
+    type: "book",
     title: "Petra's Secret",
     pic: "./books/petras-secret.jpeg",
     description: "Petra Lang stumbles across the mysterious Home Nest Inn and is shocked when the woman behind the desk knows about the twisted fantasy she's been having about her son. Petra agrees to take a room at the Inn and see the whole lewd fantasy through to the end.",
@@ -684,6 +733,7 @@ const books = [
   },
   {
     id: 57,
+    type: "book",
     title: "Isabelle's Pendant",
     pic: "./books/isabelles-pendant.jpeg",
     description: "Isabelle Moyer has been seeing Dr. Steven Aldi for almost three years but as far as she knows she's only arriving for her fourth appointment. When he asks her to retrieve a pendant from around her neck she feels confused. She doesn't wear a pendant, does she?",
@@ -697,6 +747,7 @@ const books = [
   },
   {
     id: 58,
+    type: "book",
     title: "Brian's Babygirls",
     pic: "./books/brians-babygirls.jpeg",
     description: "Brian has finally found the Home Nest Inn, a place where he can live out his fantasies with his daughters Mia, Ellie, and Hannah. It goes well with Mia, but she has surprising information to tell her father about her sisters.",
@@ -710,6 +761,7 @@ const books = [
   },
   {
     id: 59,
+    type: "book",
     title: "Professor Bimbo Lewis",
     titleSplit: ["Professor", " Bimbo Lewis"],
     pic: "./books/professor-bimbo-lewis.jpeg",
@@ -724,6 +776,7 @@ const books = [
   },
   {
     id: 60,
+    type: "book",
     title: "Busty Becky",
     pic: "./books/busty-becky.jpeg",
     description: "Todd Evans has lusted after his older sister Becky for years but when he hears rumours about a strange hotel that can grant its customers a night of their most taboo fantasies come to life he can't pass it up.",
@@ -737,6 +790,7 @@ const books = [
   },
   {
     id: 61,
+    type: "book",
     title: "Paul/ine",
     pic: "./books/pauline.jpeg",
     description: "Paul has been obsessed with Bimbos for as long as he can remember, but when he has an up close and personal encounter with one for the first time, he balks. When he's offered the opportunity to instead become a Bimbo himself, Paul finds it hard to resist.",
@@ -750,6 +804,7 @@ const books = [
   },
   {
     id: 62,
+    type: "book",
     title: "Connor's Bimbo Mommy",
     titleSplit: ["Connor's", " Bimbo Mommy"],
     pic: "./books/connors-bimbo-mommy.jpeg",
@@ -768,6 +823,7 @@ const books = [
   },
   {
     id: 64,
+    type: "book",
     title: "Suzy the Hot Wife",
     titleSplit: ["Suzy", " the Hot Wife"],
     pic: "./books/suzy-the-hot-wife.jpeg",
@@ -782,6 +838,7 @@ const books = [
   },
   {
     id: 65,
+    type: "book",
     title: "Bimbo Stories: Carnival",
     titleSplit: ["Bimbo Stories:", " Carnival"],
     pic: "./books/bimbo-stories-carnival.jpeg",
@@ -796,6 +853,7 @@ const books = [
   },
   {
     id: 66,
+    type: "book",
     title: "Emmy and Her Daddy",
     titleSplit: ["Emmy and", " Her Daddy"],
     pic: "./books/emmy-and-her-daddy.jpeg",
@@ -810,6 +868,7 @@ const books = [
   },
   {
     id: 67,
+    type: "book",
     title: "Bimbo Stories: Christmas Special",
     titleSplit: ["Bimbo Stories:", " Christmas Special"],
     pic: "./books/bimbo-stories-christmas-special.jpeg",
@@ -824,6 +883,7 @@ const books = [
   },
   {
     id: 68,
+    type: "book",
     title: "Bimbo Stories: Deep Dive",
     titleSplit: ["Bimbo Stories:", " Deep Dive"],
     pic: "./books/bimbo-stories-deep-dive.jpeg",
@@ -838,6 +898,7 @@ const books = [
   },
   {
     id: 69,
+    type: "book",
     title: "Bimbo Stories: Obedience & Betrayal",
     titleSplit: ["Bimbo Stories:", " Obedience & Betrayal"],
     pic: "./books/bimbo-stories-obedience-and-betrayal.jpeg",
@@ -852,6 +913,7 @@ const books = [
   },
   {
     id: 70,
+    type: "book",
     title: "Bimbo Stories: Origins",
     titleSplit: ["Bimbo Stories:", " Origins"],
     pic: "./books/bimbo-stories-origins.jpeg",

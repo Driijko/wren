@@ -2,7 +2,7 @@
 <script>
   // IMPORTS ------------------------------------
   import CatalogueMainTypeButton 
-  from "../../5-elements/catalogue/CatalogueMainTypeButton.svelte";
+  from "../../../5-elements/catalogue/CatalogueMainTypeButton.svelte";
 
 </script>
 

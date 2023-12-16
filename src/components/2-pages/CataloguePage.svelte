@@ -4,7 +4,7 @@
   import CatalogueTypeSelectMenu 
   from "../4-structures/catalogueOG/CatalogueTypeSelectMenu.svelte";
   import CatalogueMainTypeMenu 
-  from "../4-structures/catalogue/CatalogueMainTypeMenu.svelte";
+  from "../4-structures/catalogue/main/CatalogueMainTypeMenu.svelte";
   import CatalogueDisplay 
   from "../4-structures/catalogueOG/CatalogueDisplay.svelte";
   import CatalogueModal 
