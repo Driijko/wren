@@ -16,8 +16,8 @@
   <div>
     <img src={item.pic} alt={item.title} />
     <div class="center">
-      {#if type === "compilation" || type === "book"}
-        <h4>{item.title1}<br/>{item.title2}</h4>
+      {#if item.titleSplit !== undefined}
+        <h4>{item.titleSplit[0]}<br/>{item.titleSplit[1]}</h4>
       {:else}
         <h4>{item.title}</h4>
       {/if}
