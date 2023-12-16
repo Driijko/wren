@@ -1,6 +1,7 @@
 const series = [
   {
     id: 0,
+    type: "series",
     title: "Bimbo Stories",
     pic: "./series/bimbo-stories.jpeg",
     description: "If you love huge tits, empty brains, and hungry blowjobs, then Bimbo Stories has been waiting for you. Set in a universe in which the large mysterious corporation Pink Industries has made Pink Pills and Pink Milk a socially tolerated - if not always accepted - way to transform a person's mind and body into a huge-titted plump-lipped cum-loving Bimbo, most Bimbo Stories are standalone tales with hints at a larger mythology for the avid return reader. No matter the method or resistance, mind after mind - and body after body - will change to suit the greedy desires of lust. *slurrrrp*",
@@ -12,6 +13,7 @@ const series = [
   },
   {
     id: 1,
+    type: "series",
     title: "Babe Island",
     pic: "./series/babe-island.jpeg",
     description: "Cole Campbell is driving up to his cottage for a stress-free getaway when he gets lost and ends up on a mysterious island where the all-female population believes him to be a god! Cole slips into his powerful new role and starts to build a loyal harem but not everybody is pleased that he has come to stay at the island.",
@@ -23,6 +25,7 @@ const series = [
   },
   {
     id: 2,
+    type: "series",
     title: "Mirror World",
     pic: "./series/mirror-world.jpeg",
     description: "Emmett is a nice guy but can't seem to keep a girlfriend. One night he enters a world inside his mirror in which all women not only have huge tits and asses but also can't seem to keep their hands off of Emmett. Even his family can't resist his charms. But soon Emmett realizes that he can't control when he enters and leaves this Mirror World and that there's more going on than meets the eye.",
@@ -34,6 +37,7 @@ const series = [
   },
   {
     id: 3,
+    type: "series",
     title: "Incest Inn",
     pic: "./series/incest-inn.jpeg",
     description: "Lillian Bustmore is a beautiful, confident, and intelligent woman who has a very peculiar job. Lillian runs the Home Nest Inn, a large and strange old hotel where people can come to live out taboo fantasies. The mysterious hotel transports its customers to other places and sometimes other times so that they can finally be with that family member in that way they never thought they could. Come inside if you dare...",
@@ -45,6 +49,7 @@ const series = [
   },
   {
     id: 4,
+    type: "series",
     title: "Nurse Mommy",
     pic: "./series/nurse-mommy.jpeg",
     description: "Jason gets injured and runs into trouble when his massively busty mother insists on taking care of him. Things get both heated and complicated as another gorgeous nurse gets hired and enters the mix. There are two busty MILFs but only one Jason, who will he choose?",
@@ -56,6 +61,7 @@ const series = [
   },
   {
     id: 5,
+    type: "series",
     title: "Free Use Fairy",
     pic: "./series/free-use-fairy.jpeg",
     description: "Cikwee is a fun-loving fairy who wakes up every 27 years to use her very special power: turning a normal situation into a free use paradise. Nobody can see or hear this cute little fairy, but they certainly benefit from her magic! Cikwee believes that every situation is made better by some free-use sex and she hopes you agree.",
@@ -67,6 +73,7 @@ const series = [
   },
   {
     id: 6,
+    type: "series",
     title: "Silver Hero Saga",
     pic: "./series/silver-hero-saga.jpeg",
     description: "Nel Symington's Silver Hero Saga is a high fantasy serial featuring the massive tits, dutiful blowjobs, and moaning sluts that Nel's work is known for but set against a lush backdrop of magic and mystery. While each adventure can be read and enjoyed on its own, true satisfaction will come from following Jasper North's story from beginning to end. Jasper's main quest of finding his long lost wife might sound simple enough but there are plenty of twists, obstacles, and busty horny distractions that will get in his way. Dive into the deep world of Nymphonia to get lost in its rich lore, but stay for its desperate horny sluts.",
@@ -78,6 +85,7 @@ const series = [
   },
   {
     id: 7,
+    type: "series",
     title: "Hypno Sister",
     pic: "./series/hypno-sister.jpeg",
     description: "I found an amulet up in the attic that I definitely wasn't supposed to find and now my huge-boobed sister is my hypnotic sex slave! Every time I try to tell myself to hold back, I end up bringing somebody new into my hypno harem. Will I go too far? Or will my sexy sluts make it all worth it?",
@@ -89,6 +97,7 @@ const series = [
   },
   {
     id: 8,
+    type: "series",
     title: "Holiday Specials",
     pic: "./series/holiday-specials.jpeg",
     description: "Looking for a little holiday spirit to go with your curvy mindless Bimbos? They've been collected here for your convenience. Pull up some eggnog or a margarita, because these pervy tales can be enjoyed any time of the year.",
