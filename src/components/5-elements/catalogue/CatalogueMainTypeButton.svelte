@@ -9,7 +9,7 @@
 </script>
 
 <!-- MARKUP ////////////////////////////////////////// -->
-<button 
+<button class="center"
   on:click={()=> catalogueMainType.set(type)}
   class:current={$catalogueMainType === type}
 >
