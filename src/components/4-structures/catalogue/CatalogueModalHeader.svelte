@@ -5,7 +5,7 @@
   import CatalogueModalButtonCloser 
   from "../../5-elements/catalogue/CatalogueModalButtonCloser.svelte";
 
-  const { type, specifier } = $catalogueModalData;
+  const { type, list } = $catalogueModalData;
 
 </script>
 
@@ -13,7 +13,7 @@
 <header>
   <h4>
     {#if type === "books"}
-      All Books from the {specifier[0]} {specifier[1]}
+      All Books from the {list.name} {list.type}
     {/if}
   </h4>
   <CatalogueModalButtonCloser />
