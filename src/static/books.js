@@ -768,7 +768,7 @@ const books = [
   },
   {
     id: 64,
-    title: "Suzy",
+    title: "Suzy the Hot Wife",
     titleSplit: ["Suzy", " the Hot Wife"],
     pic: "./books/suzy-the-hot-wife.jpeg",
     description: "Matt's long-time fantasy of sharing his wife finally becomes a reality but the situation quickly spirals out of his control. Soon he can only think of one thing to make his wife loyal again.",
@@ -796,7 +796,7 @@ const books = [
   },
   {
     id: 66,
-    title: "Emmy and",
+    title: "Emmy and Her Daddy",
     titleSplit: ["Emmy and", " Her Daddy"],
     pic: "./books/emmy-and-her-daddy.jpeg",
     description: "Emily is home after six years of failing to make it in New York. Jason, her father, doesn't know how to handle her depression. Then he sees a strange pink bottle in her room and soon the family dynamics fly out of control to match his daughter's changing mind and body.",
