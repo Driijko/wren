@@ -12,7 +12,7 @@ export const booksDisplay = writable(books);
 export const themesDisplay = writable(themes);
 export const catalogueModal = writable(false);
 export const catalogueModalData = writable({
-  scope: "", type: "", specifier: [], items: [],
+  scope: "", type: "", list: {type: "", name: ""}, items: [],
 });
 
 // FUNCTIONS ---------------------------------------
@@ -32,4 +32,4 @@ export function setCatalogueModalData(data) {
 scope: item, list
 type: book, compilation, series
 list: {type: compilation/series, name: }
-items: 
+items: */
