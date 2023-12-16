@@ -34,12 +34,18 @@
       </p>
       {/if}
       {#if type === "series" && item.compilations.length > 0}
-        <p>
+        <CatalogueModalButton data={{
+          scope: "list",
+          type: "compilation",
+          list: { type: type, title: item.title },
+          items: getCompilationsById(item.compilations)
+        }}
+        <!-- <p>
           <a href={`${item.title}:compilation`}>
             {item.compilations.length} 
             compilation{item.compilations.length > 1 ? "s" : ""}
           </a>
-        </p>
+        </p> -->
       {/if}
     </div>
   </div>
