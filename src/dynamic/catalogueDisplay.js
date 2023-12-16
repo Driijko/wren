@@ -12,7 +12,7 @@ export const booksDisplay = writable(books);
 export const themesDisplay = writable(themes);
 export const catalogueModal = writable(false);
 export const catalogueModalData = writable({
-  type: "", specifier: [], items: [],
+  scope: "", type: "", specifier: [], items: [],
 });
 
 // FUNCTIONS ---------------------------------------
@@ -27,3 +27,9 @@ export function closeCatalogueModal() {
 export function setCatalogueModalData(data) {
   catalogueModalData.set(data);
 };
+
+/*
+scope: item, list
+type: book, compilation, series
+list: {type: compilation/series, name: }
+items: 
