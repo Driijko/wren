@@ -58,7 +58,7 @@ const compilations = [
   {
     id: 4,
     title: "Nurse Mommy Complete",
-    titleSplit: "Nurse Mommy Complete",
+    titleSplit: ["Nurse Mommy", " Complete"],
     description: "All four entries of Nurse Mommy are now available as one convenient collection! Jason gets injured and runs into trouble when his massively busty mother insists on taking care of him. Things get both heated and complicated as another gorgeous nurse gets hired and enters the mix. There are two busty MILFs but only one Jason, who will he choose?",
     series: ["Nurse Mommy"],
     price: "$9.95",

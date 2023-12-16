@@ -514,7 +514,7 @@ const books = [
   {
     id: 43,
     title: "Christmas Special 2!",
-    title2: ["Christams", " Special 2!"],
+    titleSplit: ["Christmas", " Special 2!"],
     pic: "./books/christmas-special-2.jpeg",
     description: "Against her better judgment, Ivy gets a job as a mall Santa elf. The job is bad enough, but her bosses are REALLY into acting the part of Santa and helper elf. When Ivy eats some pink candy and starts feeling happier, she can't help but get into the Christmas spirit too. After all, who wouldn't want to be a happy bouncy Bimbo for Santa?",
     series: "Bimbo Stories",
@@ -572,7 +572,7 @@ const books = [
   {
     id: 48,
     title: "Gabby Goes Down on Grandpa",
-    titleSplit: ["Gabby Goes", " on Grandpa"],
+    titleSplit: ["Gabby Goes Down", " on Grandpa"],
     pic: "./books/gabby-goes-down-on-grandpa.jpeg",
     description: "Theodore has it bad for his extremely busty and beautiful granddaughter Gabriella. He accepts a room at the Home Nest Inn and decides to find a way to not only make his taboo dreams come true but to make Gabby never want to look back after going down on Grandpa.",
     series: "Incest Inn",
@@ -586,7 +586,7 @@ const books = [
   {
     id: 49,
     title: "Sophie Gets Bimbofied",
-    titleSplit: "Sophie Gets Bimbofied",
+    titleSplit: ["Sophie Gets", " Bimbofied"],
     pic: "./books/sophie-gets-bimbofied.jpeg",
     description: "Sophia has already decided to become a Pink Industries Bimbo. She's had all the appropriate conversations with her friends and family and has changed to a Pink Industries-approved job at her company. But once she starts taking the pills and feeling the changes directly, she's not so sure anymore. Will she be able to resist the pull of the pink or will she forever become a cock-slurping Bimbo?",
     series: "Bimbo Stories",
@@ -783,7 +783,7 @@ const books = [
   {
     id: 65,
     title: "Bimbo Stories: Carnival",
-    titleSplit: ["Bimbo Stories", " Carnival"],
+    titleSplit: ["Bimbo Stories:", " Carnival"],
     pic: "./books/bimbo-stories-carnival.jpeg",
     description: "Elizabeth, Olivia, and Bridget all have the same strange memory of visiting a carnival fifteen years ago, so when they finally discover it again, they rush to go inside. Each woman has a strange, separate, and perverted journey deeper into the lewd carnival.",
     series: "Bimbo Stories",
