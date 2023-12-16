@@ -5,6 +5,12 @@ import themes from "../static/themes";
 import compilations from "../static/compilations";
 
 // STATE -----------------------------------------------
+export const catalogueMainType = writable("series");
+export const catalogueMainSeries = writable(series);
+export const catalogueMainCompilations = writable(compilations);
+export const catalgoueMainBooks = writable(books);
+export const catalogueMainThemes = writable(themes);
+
 export const catalogueType = writable("series");
 export const seriesDisplay = writable(series);
 export const compilationsDisplay = writable(compilations); 
