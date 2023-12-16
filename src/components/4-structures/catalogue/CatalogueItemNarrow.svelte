@@ -2,6 +2,7 @@
 <script>
   // IMPORTS --------------------------------------
   import { getBooksById } from "../../../static/books";
+  import { getCompilationsById } from "../../../static/compilations";
   import CatalogueModalButton 
   from "../../5-elements/catalogue/CatalogueModalButton.svelte";
 
@@ -39,13 +40,10 @@
           type: "compilation",
           list: { type: type, title: item.title },
           items: getCompilationsById(item.compilations)
-        }}
-        <!-- <p>
-          <a href={`${item.title}:compilation`}>
-            {item.compilations.length} 
-            compilation{item.compilations.length > 1 ? "s" : ""}
-          </a>
-        </p> -->
+        }}>
+          {item.compilations.length} 
+          compilation{item.compilations.length > 1 ? "s" : ""}
+        </CatalogueModalButton>
       {/if}
     </div>
   </div>

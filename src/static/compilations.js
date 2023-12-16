@@ -136,3 +136,20 @@ export function findCompilationById(id) {
     };
   };
 };
+
+export function getCompilationsById(ids) {
+  const result = [];
+  let entryCount = 0;
+  for (let i = compilations.length - 1 ; i >= 0 ; i--) {
+    for (let j = 0 ; j < ids.length ; j++) {
+      if (compilations[i].id === ids[j]) {
+        result[j] = compilations[i];
+        entryCount++;
+      };
+      if (entryCount === ids.length) {
+        return result;
+      };
+    };
+  };
+  return result;
+};

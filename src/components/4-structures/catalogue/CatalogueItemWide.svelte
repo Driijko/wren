@@ -2,6 +2,7 @@
 <script>
   // IMPORTS ---------------------------------
   import { getBooksById } from "../../../static/books";
+  import { getCompilationsById } from "../../../static/compilations";
   import CatalogueModalButton 
   from "../../5-elements/catalogue/CatalogueModalButton.svelte";
 
@@ -30,12 +31,15 @@
       {/if}
       {#if type === "series" && item.compilations.length > 0}
         &middot
-        <p>
-          <a href={`${item.title}:compilations`}>
-            {item.compilations.length} 
-            compilation{item.compilations.length > 1 ? "s" : ""}
-          </a>
-        </p>
+        <CatalogueModalButton data={{
+          scope: "list",
+          type: "compilation",
+          list: {type: type, title: item.title},
+          items: getCompilationsById(item.compilations)
+        }}>
+          {item.compilations.length} 
+          compilation{item.compilations.length > 1 ? "s" : ""}
+        </CatalogueModalButton>
       {/if}
     </div>
     <p class="description">{item.description}</p>
