@@ -910,7 +910,7 @@ export default books;
 export function getBooksById(ids) {
   const result = [];
   let entryCount = 0;
-  for (let i = 0 ; i < books.length ; i++) {
+  for (let i = books.length - 1 ; i >= 0 ; i--) {
     for (let j = 0 ; j < ids.length ; j++) {
       if (books[i].id === ids[j]) {
         result[j] = books[i];
