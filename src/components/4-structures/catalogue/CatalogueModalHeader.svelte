@@ -18,7 +18,13 @@
         {#if list.type === "series"}
           All books from the<br/> {list.title} series
         {:else if list.type === "compilation"}
-          All books included in the<br/> {list.title} compilation
+          All books included in<br/> {list.title}
+        {/if}
+      {:else if type === "compilation"}
+        {#if list.type === "series"}
+          All compilations<br/>
+          which include books from<br/>
+          the {list.title} series
         {/if}
       {/if}
     {/if}
@@ -38,7 +44,7 @@ header {
   line-height: 1.5;
 }
 header.bigger {
-  font-size: 19px;
+  font-size: 21px;
 }
 header.bigger br {
   display: none;
