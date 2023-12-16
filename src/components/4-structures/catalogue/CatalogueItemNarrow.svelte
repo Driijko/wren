@@ -22,20 +22,6 @@
       {:else}
         <h4>{item.title}</h4>
       {/if}
-      {#if 
-        (type === "series" || type === "book") 
-        && item.compilations.length > 0
-      }
-        <CatalogueModalButton data={{
-          scope: "list",
-          type: "compilation",
-          list: { type: type, title: item.title },
-          items: getCompilationsById(item.compilations)
-        }}>
-          {item.compilations.length} 
-          compilation{item.compilations.length > 1 ? "s" : ""}
-        </CatalogueModalButton>
-      {/if}
       {#if type === "compilation" || type === "series"}
         <CatalogueModalButton data={{
           scope: "list",
@@ -44,6 +30,17 @@
           items: getBooksById(item.books)
         }}>
           {item.books.length} books
+        </CatalogueModalButton>
+      {/if}
+      {#if item.compilations !== undefined && item.compilations.length > 0}
+        <CatalogueModalButton data={{
+          scope: "list",
+          type: "compilation",
+          list: { type: type, title: item.title },
+          items: getCompilationsById(item.compilations)
+        }}>
+          {item.compilations.length} 
+          compilation{item.compilations.length > 1 ? "s" : ""}
         </CatalogueModalButton>
       {/if}
     </div>

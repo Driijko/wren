@@ -29,10 +29,7 @@
           {item.books.length} books
         </CatalogueModalButton>
       {/if}
-      {#if 
-        (type === "series" || type === "book") 
-        && item.compilations.length > 0
-      }
+      {#if item.compilations !== undefined && item.compilations.length > 0}
         &middot
         <CatalogueModalButton data={{
           scope: "list",

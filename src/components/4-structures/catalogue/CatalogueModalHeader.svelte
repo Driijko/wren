@@ -22,9 +22,11 @@
         {/if}
       {:else if type === "compilation"}
         {#if list.type === "series"}
-          All compilations
-          which include<br/>
+          All compilations which include<br/>
           books from the {list.title} series
+        {:else if list.type === "book"}
+          All compilations which include<br/>
+          the book {list.title}
         {/if}
       {/if}
     {/if}

@@ -176,7 +176,7 @@ const books = [
     sale: "",
     words: "4,910",
     date: [23, 1, 5],
-    compilations: [{title: "Mirror World Complete", id: 8}],
+    compilations: [8],
     tags: [],
   },
   {
