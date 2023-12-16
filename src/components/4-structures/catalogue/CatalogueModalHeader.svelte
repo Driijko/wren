@@ -27,6 +27,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-left: 10px;
+  background-color: black;
 }
 h4 {
   flex: 1;

@@ -1,5 +1,10 @@
 <!-- SCRIPTS ////////////////////////////////////////// -->
 <script>
+  // IMPORTS ---------------------------------
+  import { getBooksById } from "../../../static/books";
+  import CatalogueModalButton 
+  from "../../5-elements/catalogue/CatalogueModalButton.svelte";
+
   // PROPS -------------------------------
   export let item;
   export let type;
@@ -18,11 +23,13 @@
       {/if}
       {#if type === "compilation" || type === "series"}
         &middot
-        <p>
-          <a href={item.title}>
-            {item.books.length} books
-          </a>
-        </p>
+        <CatalogueModalButton data={{
+          type: "books",
+          specifier: [item.title, "Series"],
+          items: getBooksById(item.books)
+        }}>
+          {item.books.length} books
+        </CatalogueModalButton>
       {/if}
       {#if type === "series" && item.compilations.length > 0}
         &middot

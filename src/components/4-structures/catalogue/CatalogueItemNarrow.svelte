@@ -1,6 +1,7 @@
 <!-- SCRIPTS ///////////////////////////////////////// -->
 <script>
   // IMPORTS --------------------------------------
+  import { getBooksById } from "../../../static/books";
   import CatalogueModalButton 
   from "../../5-elements/catalogue/CatalogueModalButton.svelte";
 
@@ -28,7 +29,7 @@
         <CatalogueModalButton data={{
           type: "books",
           specifier: [item.title, "Series"],
-          items: item.books
+          items: getBooksById(item.books)
         }}>
           {item.books.length} books
         </CatalogueModalButton>
