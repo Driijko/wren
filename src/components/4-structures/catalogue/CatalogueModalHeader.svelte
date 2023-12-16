@@ -1,6 +1,7 @@
 <!-- SCRIPTS ///////////////////////////////////////// -->
 <script>
   // IMPORTS -------------------------------------
+  import { vpwidth } from "../../../dynamic/viewport";
   import { catalogueModalData } from "../../../dynamic/catalogueDisplay";
   import CatalogueModalButtonCloser 
   from "../../5-elements/catalogue/CatalogueModalButtonCloser.svelte";
@@ -10,7 +11,7 @@
 </script>
 
 <!-- MARKUP //////////////////////////////////////////////// -->
-<header>
+<header class:bigger={$vpwidth >= 500}>
   <h4>
     {#if scope === "list"}
       {#if type === "book"}
@@ -35,6 +36,12 @@ header {
   padding-left: 10px;
   background-color: black;
   line-height: 1.5;
+}
+header.bigger {
+  font-size: 19px;
+}
+header.bigger br {
+  display: none;
 }
 h4 {
   flex: 1;
