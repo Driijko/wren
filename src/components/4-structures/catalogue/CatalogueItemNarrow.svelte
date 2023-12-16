@@ -27,8 +27,9 @@
           {item.books.length} books
         </a> -->
         <CatalogueModalButton data={{
-          type: "books",
-          specifier: [item.title, "Series"],
+          scope: "list",
+          type: "book",
+          list: {type: "Series", title: item.title},
           items: getBooksById(item.books)
         }}>
           {item.books.length} books
