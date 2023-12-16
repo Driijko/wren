@@ -5,15 +5,19 @@
   import CatalogueModalButtonCloser 
   from "../../5-elements/catalogue/CatalogueModalButtonCloser.svelte";
 
-  const { type, list } = $catalogueModalData;
+  const { scope, type, list } = $catalogueModalData;
 
 </script>
 
 <!-- MARKUP //////////////////////////////////////////////// -->
 <header>
   <h4>
-    {#if type === "books"}
-      All Books from the {list.name} {list.type}
+    {#if scope === "list"}
+      {#if type === "book"}
+        {#if list.type === "Series"}
+          All Books from the {list.title} {list.type}
+        {/if}
+      {/if}
     {/if}
   </h4>
   <CatalogueModalButtonCloser />
