@@ -1,5 +1,9 @@
 <!-- SCRIPTS ///////////////////////////////////////// -->
 <script>
+  // IMPORTS --------------------------------------
+  import CatalogueModalButton 
+  from "../../5-elements/catalogue/CatalogueModalButton.svelte";
+
   // PROPS ------------------------------------------
   export let item;
   export let type;
@@ -18,9 +22,16 @@
       {/if}
       {#if type === "compilation" || type === "series"}
       <p>
-        <a href={item.title}>
+        <!-- <a href={item.title}>
           {item.books.length} books
-        </a>
+        </a> -->
+        <CatalogueModalButton data={{
+          type: "books",
+          specifier: [item.title, "Series"],
+          items: item.books
+        }}>
+          {item.books.length} books
+        </CatalogueModalButton>
       </p>
       {/if}
       {#if type === "series" && item.compilations.length > 0}
