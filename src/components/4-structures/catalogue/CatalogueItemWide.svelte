@@ -16,11 +16,7 @@
   <img src={item.pic} alt={item.title} />
   <div>
     <div>
-      {#if type === "compilation" || type === "book"}
-        <h4>{item.title1} {item.title2}</h4>
-      {:else}
-        <h4>{item.title}</h4>
-      {/if}
+      <h4>{item.title}</h4>
       {#if type === "compilation" || type === "series"}
         &middot
         <CatalogueModalButton data={{
