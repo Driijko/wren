@@ -1,5 +1,8 @@
 <!-- SCRIPTS //////////////////////////////////// -->
 <script>
+  // IMPORTS --------------------------------------
+  import CatalogueListItemHeader from "./CatalogueListItemHeader.svelte";
+
   // PROPS -----------------------------------
   export let context;
   export let item;
@@ -12,13 +15,13 @@
   {#if width === "narrow"}
     <div>
       <img src={item.pic} alt={item.title} />
-      <header>{item.title}</header>
+      <CatalogueListItemHeader {context} {item} {width} />
     </div>
     <p>{item.description}</p>
   {:else if width === "wide"}
     <img src={item.pic} alt={item.title} />
     <div>
-      <header>{item.title}</header>
+      <CatalogueListItemHeader {context} {item} {width} />
       <p>{item.description}</p>
     </div>
   {/if}

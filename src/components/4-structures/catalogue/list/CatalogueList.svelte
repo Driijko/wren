@@ -11,7 +11,7 @@
 </script>
 
 <!-- MARKUP ////////////////////////////////////////// -->
-<ul class="reg-scroll">
+<ul class="reg-scroll" class:main={context === "main"}>
   {#if $vpwidth < 500}
     {#each items as item}
       <CatalogueListItem {context} {item} width="narrow" />
@@ -22,3 +22,25 @@
     {/each}
   {/if}
 </ul>
+
+<!-- STYLES ///////////////////////////////////// -->
+<style>
+/* PORTRAIT ------------------------------------------------ */
+@media screen and (orientation: portrait) and (max-width: 600px) {
+.main {
+  height: 86%;
+}
+}
+@media screen and (orientation: portrait) and (min-width: 600px) {
+.main {
+  height: 93%;
+}
+}
+
+/* LANDSCAPE --------------------------------------------- */
+@media screen and (orientation: landscape) {
+.main {
+  height: calc(100dvh - (var(--hpx) * 0.05));
+}
+}
+</style>
