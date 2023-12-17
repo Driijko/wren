@@ -1,6 +1,8 @@
 <!-- SCRIPTS /////////////////////////////////////// -->
 <script>
   // IMPORTS --------------------------------------
+  import CatalogueMain 
+  from "../4-structures/catalogue/main/CatalogueMain.svelte";
   import CatalogueTypeSelectMenu 
   from "../4-structures/catalogueOG/CatalogueTypeSelectMenu.svelte";
   import CatalogueMainTypeMenu 
@@ -14,5 +16,6 @@
 
 <!-- MARKUP //////////////////////////////////////////// -->
 <CatalogueMainTypeMenu />
+<CatalogueMain />
 <!-- <CatalogueDisplay /> -->
 <!-- <CatalogueModal /> -->
