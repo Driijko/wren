@@ -11,7 +11,7 @@
   import CatalogueModalHeader from "./CatalogueModalHeader.svelte";
   import CatalogueList from "../list/CatalogueList.svelte";
 
-  const { scope, type, items } = $catalogueModalData;
+  $: ({ scope, type, items } = $catalogueModalData);
 
   // LOCAL CONSTANT ------------------------------------
   const context = "modal";
@@ -21,7 +21,7 @@
     book: ids => getItemsById(ids, books),
     series: ids => getItemsById(ids, series),
     compilation: ids => getItemsById(ids, compilations),
-  }
+  };
 
 </script>
 

@@ -3,6 +3,10 @@
   // IMPORTS ----------------------------------
   import CatalogueModalButton 
   from "../../../../5-elements/catalogue/CatalogueModalButton.svelte";
+  import { catalogueModalData } 
+  from "../../../../../dynamic/catalogueDisplay";
+
+  $: ({ list } = $catalogueModalData);
 
   // PROPS -------------------------------------
   export let context;
@@ -34,9 +38,16 @@
       {item.books.length} books
     </CatalogueModalButton>
   {/if}
-  {#if item.compilations !== undefined && item.compilations.length > 0}
+  {#if 
+    item.compilations !== undefined 
+    && item.compilations.length > 0
+    && ((context === "modal" && list.from === "compilation") === false)
+  }
     <span>&middot</span>
     <p>
+      {#if item.type === "book"}
+        included in<br/> 
+      {/if}
       {item.compilations.length} 
       compilation{item.compilations.length > 1 ? "s" : ""}
     </p>
@@ -65,5 +76,8 @@
   align-items: center;
   padding-top: 18px;
   gap: 10px;
+}
+p {
+  text-align: center;
 }
 </style>
