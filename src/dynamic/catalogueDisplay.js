@@ -10,13 +10,13 @@ export const catalogueMainSeries = writable(series);
 export const catalogueMainCompilations = writable(compilations);
 export const catalogueMainBooks = writable(books);
 export const catalogueMainThemes = writable(themes);
+export const catalogueModal = writable(false);
 
 export const catalogueType = writable("series");
 export const seriesDisplay = writable(series);
 export const compilationsDisplay = writable(compilations); 
 export const booksDisplay = writable(books);
 export const themesDisplay = writable(themes);
-export const catalogueModal = writable(false);
 export const catalogueModalData = writable({
   scope: "", type: "", list: {type: "", title: ""}, items: [],
 });
