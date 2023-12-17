@@ -1,7 +1,7 @@
 <!-- SCRIPTS /////////////////////////////////////// -->
 <script>
   // IMPORTS ---------------------------------------
-  import { catalogueMainType, catalogueMainSeries, catalgoueMainBooks, catalogueMainCompilations, catalogueMainThemes }
+  import { catalogueMainType, catalogueMainSeries, catalogueMainBooks, catalogueMainCompilations, catalogueMainThemes }
   from "../../../../dynamic/catalogueDisplay";
   import CatalogueList from "../list/CatalogueList.svelte";
 
@@ -13,4 +13,8 @@
 <!-- MARKUP /////////////////////////////////////////// -->
 {#if $catalogueMainType === "series"}
   <CatalogueList {context} items={$catalogueMainSeries} />
+{:else if $catalogueMainType === "books"}
+  <CatalogueList {context} items={$catalogueMainBooks} />
+{:else if $catalogueMainType === "compilations"}
+  <CatalogueList {context} items={$catalogueMainCompilations} />
 {/if}
