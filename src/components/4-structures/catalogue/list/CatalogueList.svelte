@@ -25,6 +25,14 @@
 
 <!-- STYLES ///////////////////////////////////// -->
 <style>
+ul {
+  padding: 40px 10px 80px 10px;
+  display: flex;
+  gap: 3dvh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* PORTRAIT ------------------------------------------------ */
 @media screen and (orientation: portrait) and (max-width: 600px) {
 .main {
