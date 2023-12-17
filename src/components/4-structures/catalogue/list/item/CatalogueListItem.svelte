@@ -29,10 +29,74 @@
 
 <!-- STYLES ///////////////////////////////////// -->
 <style>
-.narrow {
-  border: 1px solid red;
+  /* GENERAL -------------------------------- */
+li {
+  background-color: hsl(0, 0%, 90%);
+  border-style: solid;
+  border-color: black;
 }
+img {
+  width: 133px;
+  object-fit: contain;
+}
+p {
+  line-height: 1.3;
+}
+
+/* NARROW ----------------------------------- */
+.narrow {
+  border-width: 5px;
+  border-radius: 5px;
+}
+.narrow > div {
+  display: flex;
+  border-bottom: 5px solid black;
+  background-color: black;
+  color: white;
+}
+div :global(.narrow h4) {
+  text-align: center;
+  line-height: 1.5;
+}
+.narrow > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+.narrow > p {
+  padding: 20px 15px;
+}
+
+/* WIDE ------------------------------------ */
 .wide {
-  border: 1px solid blue;
+  border-top-width: 6px;
+  border-bottom-width: 6px;
+  border-right-width: 30px;
+  border-left-width: 5px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+.wide > img {
+  padding: 10px 0px;
+  border-right: 5px solid black;
+  background-color: black;
+}
+.wide > div {
+  width: 35rem;
+  max-width: 60dvw;
+}
+div :global(.wide > div > div) {
+  display: flex;
+  align-items: center;
+  padding-top: 18px;
+  gap: 10px;
+}
+.wide p {
+  padding: 15px 40px 30px 0px;
+  width: 30rem;
+  max-width: 60dvw;
 }
 </style>
