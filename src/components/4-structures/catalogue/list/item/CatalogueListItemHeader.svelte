@@ -1,5 +1,9 @@
 <!-- SCRIPTS ///////////////////////////////// -->
 <script>
+  // IMPORTS ----------------------------------
+  import CatalogueModalButton 
+  from "../../../../5-elements/catalogue/CatalogueModalButton.svelte";
+
   // PROPS -------------------------------------
   export let context;
   export let item;
@@ -21,7 +25,14 @@
   </h4>
   {#if item.type === "compilation" || item.type === "series"}
     <span>&middot</span>
-    <p>{item.books.length} books</p>
+    <CatalogueModalButton data={{
+      scope: "list",
+      type: "book",
+      list: {from: item.type, title: item.title},
+      items: item.books,
+    }}>
+      {item.books.length} books
+    </CatalogueModalButton>
   {/if}
   {#if item.compilations !== undefined && item.compilations.length > 0}
     <span>&middot</span>

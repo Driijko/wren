@@ -54,17 +54,6 @@ p {
   background-color: black;
   color: white;
 }
-div :global(.narrow h4) {
-  text-align: center;
-  line-height: 1.5;
-}
-.narrow > div > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  flex: 1;
-}
 .narrow > p {
   padding: 20px 15px;
 }
@@ -87,12 +76,6 @@ div :global(.narrow h4) {
 .wide > div {
   width: 35rem;
   max-width: 60dvw;
-}
-div :global(.wide > div > div) {
-  display: flex;
-  align-items: center;
-  padding-top: 18px;
-  gap: 10px;
 }
 .wide p {
   padding: 15px 40px 30px 0px;

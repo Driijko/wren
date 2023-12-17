@@ -2,12 +2,26 @@
 <script>
   // IMPORTS ---------------------------------------
   import { fade } from "svelte/transition";
+  import books from "../../../../static/books";
+  import series from "../../../../static/series";
+  import compilations from "../../../../static/compilations";
+  import getItemsById from "../../../../static/getItemsById";
   import { catalogueModal, catalogueModalData } 
   from "../../../../dynamic/catalogueDisplay";
-  import { vpwidth } from "../../../../dynamic/viewport";
   import CatalogueModalHeader from "./CatalogueModalHeader.svelte";
-  import CatalogueItemNarrow from "./CatalogueItemNarrow.svelte";
-  import CatalogueItemWide from "./CatalogueItemWide.svelte";
+  import CatalogueList from "../list/CatalogueList.svelte";
+
+  const { scope, type, items } = $catalogueModalData;
+
+  // LOCAL CONSTANT ------------------------------------
+  const context = "modal";
+
+  // TYPE TO FUNCTION MAP -----------------------------
+  const map = {
+    book: ids => getItemsById(ids, books),
+    series: ids => getItemsById(ids, series),
+    compilation: ids => getItemsById(ids, compilations),
+  }
 
 </script>
 
@@ -15,17 +29,9 @@
 {#if $catalogueModal}
   <dialog transition:fade class="fill" open >
     <CatalogueModalHeader />
-    <ul class="reg-scroll">
-      {#if $vpwidth < 500}
-        {#each $catalogueModalData.items as item}
-          <CatalogueItemNarrow type="book" {item} />
-        {/each}
-      {:else if $vpwidth >= 500}
-        {#each $catalogueModalData.items as item}
-          <CatalogueItemWide type="book" {item} />
-        {/each}
-      {/if}
-    </ul>
+    {#if scope === "list"}
+      <CatalogueList {context} items={map[type](items)} />
+    {/if}
   </dialog>
 {/if}
 

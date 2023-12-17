@@ -15,16 +15,16 @@
   <h4>
     {#if scope === "list"}
       {#if type === "book"}
-        {#if list.type === "series"}
+        {#if list.from === "series"}
           All books from the<br/> {list.title} series
-        {:else if list.type === "compilation"}
+        {:else if list.from === "compilation"}
           All books included in<br/> {list.title}
         {/if}
       {:else if type === "compilation"}
-        {#if list.type === "series"}
+        {#if list.from === "series"}
           All compilations which include<br/>
           books from the {list.title} series
-        {:else if list.type === "book"}
+        {:else if list.from === "book"}
           All compilations which include<br/>
           the book {list.title}
         {/if}
@@ -45,10 +45,10 @@ header {
   background-color: black;
   line-height: 1.5;
 }
-header.bigger {
+.bigger {
   font-size: 21px;
 }
-header.bigger br {
+.bigger br {
   display: none;
 }
 h4 {
