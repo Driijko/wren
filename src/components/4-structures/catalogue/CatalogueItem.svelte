@@ -1,11 +1,6 @@
 <!-- SCRIPTS //////////////////////////////// -->
 <script>
   // IMPORTS -------------------------------------
-  import books from "../../../static/books";
-  import series from "../../../static/series";
-  import compilations from "../../../static/compilations";
-  import getItemsById from "../../../static/getItemsById";
-  
   import CatalogueModalButton 
   from "../../5-elements/catalogue/CatalogueModalButton.svelte";
 
@@ -38,13 +33,25 @@
         <img src={item.pic} alt={item.title} />
         <div class="center">
           <h4>{item.title}</h4>
-          <CatalogueModalButton data={{
-            scope: "list",
-            type: "book",
-            list: {from: item.type, title: item.title, items: item.books}
-          }}>
-
-          </CatalogueModalButton>
+          {#if item.books !== undefined}
+            <CatalogueModalButton data={{
+              scope: "list",
+              type: "book",
+              list: {from: item.type, title: item.title, items: item.books}
+            }}>
+              {item.books.length} books
+            </CatalogueModalButton>
+          {/if}
+          {#if item.compilations !== undefined}
+            <CatalogueModalButton data={{
+              scope: "list",
+              type: "compilation",
+              list: {from: item.type, title: item.title, items: item.compilations}
+            }}>
+              {item.compilations.length}
+              compilation{item.compilations.length > 1 ? "s" : ""}
+            </CatalogueModalButton>
+          {/if}
         </div>
       </header>
 
@@ -112,6 +119,10 @@ header {
 }
 header > div {
   flex: 1;
+}
+img { 
+  width: 133px;
+  object-fit: contain;
 }
 .property-value-pair {
   gap: 1dvh;

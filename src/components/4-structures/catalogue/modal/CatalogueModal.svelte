@@ -2,27 +2,27 @@
 <script>
   // IMPORTS ---------------------------------------
   import { fade } from "svelte/transition";
-  import books from "../../../../static/books";
-  import series from "../../../../static/series";
-  import compilations from "../../../../static/compilations";
-  import getItemsById from "../../../../static/getItemsById";
+  // import books from "../../../../static/books";
+  // import series from "../../../../static/series";
+  // import compilations from "../../../../static/compilations";
+  // import getItemsById from "../../../../static/getItemsById";
   import { catalogueModal, catalogueModalData } 
   from "../../../../dynamic/catalogueDisplay";
   import CatalogueModalHeader from "./CatalogueModalHeader.svelte";
   import CatalogueList from "../list/CatalogueList.svelte";
   import CatalogueItem from "../CatalogueItem.svelte";
 
-  $: ({ scope, type, list, item } = $catalogueModalData);
+  $: ({ scope, list, item } = $catalogueModalData);
 
   // LOCAL CONSTANT ------------------------------------
   const context = "modal";
 
   // TYPE TO FUNCTION MAP -----------------------------
-  const map = {
-    book: ids => getItemsById(ids, books),
-    series: ids => getItemsById(ids, series),
-    compilation: ids => getItemsById(ids, compilations),
-  };
+  // const map = {
+  //   book: ids => getItemsById(ids, books),
+  //   series: ids => getItemsById(ids, series),
+  //   compilation: ids => getItemsById(ids, compilations),
+  // };
 
 </script>
 
