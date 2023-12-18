@@ -5,9 +5,13 @@
   import { catalogueModalData } from "../../../../dynamic/catalogueDisplay";
   import CatalogueModalButtonCloser 
   from "../../../5-elements/catalogue/CatalogueModalButtonCloser.svelte";
-    import { interfaceModal } from "../../../../dynamic/interface";
 
-  $: ({ scope, type, list } = $catalogueModalData);
+  $: ({ scope, type, list, item } = $catalogueModalData);
+
+  // TYPE TO HEADER MAP -------------------------------
+  const map = {
+    series: "Series:", book: "Book:", compilation: "Compilation:"
+  }
 
 </script>
 
@@ -31,7 +35,7 @@
         {/if}
       {/if}
     {:else if scope === "item"}
-      <p>item</p>
+      {map[item.type]} {item.title}
     {/if}
   </h4>
   <CatalogueModalButtonCloser />

@@ -23,8 +23,7 @@
   <h4>
     <CatalogueModalButton data={{
       scope: "item",
-      type: item.type,
-      items: item
+      item: item
     }}>
     {#if item.titleSplit !== undefined && width === "narrow"}
       {item.titleSplit[0]}<br/>{item.titleSplit[1]}
