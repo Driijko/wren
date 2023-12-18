@@ -1,6 +1,7 @@
 <!-- SCRIPTS ///////////////////////////////// -->
 <script>
   // IMPORTS ----------------------------------
+  import { width } from "../../../../../dynamic/viewport";
   import CatalogueModalButton 
   from "../../../../5-elements/catalogue/CatalogueModalButton.svelte";
   import { catalogueModalData } 
@@ -11,21 +12,21 @@
   // PROPS -------------------------------------
   export let context;
   export let item;
-  export let width;
+  // export let width;
 
 </script>
 
 <!-- MARKUP //////////////////////////////////////// -->
 <header 
-  class:narrow={width === "narrow"} 
-  class:wide={width === "wide"}
+  class:narrow={$width === "narrow"} 
+  class:wide={$width === "wide"}
 >
   <h4>
     <CatalogueModalButton data={{
       scope: "item",
       item: item
     }}>
-    {#if item.titleSplit !== undefined && width === "narrow"}
+    {#if item.titleSplit !== undefined && $width === "narrow"}
       {item.titleSplit[0]}<br/>{item.titleSplit[1]}
     {:else}
       {item.title}

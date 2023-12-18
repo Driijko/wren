@@ -1,24 +1,25 @@
 <!-- SCRIPTS //////////////////////////////////// -->
 <script>
   // IMPORTS --------------------------------------
+  import { width } from "../../../../../dynamic/viewport";
   import CatalogueListItemHeader from "./CatalogueListItemHeader.svelte";
 
   // PROPS -----------------------------------
   export let context;
   export let item;
-  export let width;
+  // export let width;
 
 </script>
 
 <!-- MARKUP ///////////////////////////////// -->
-<li class:narrow={width === "narrow"} class:wide={width === "wide"}>
-  {#if width === "narrow"}
+<li class:narrow={$width === "narrow"} class:wide={$width === "wide"}>
+  {#if $width === "narrow"}
     <div>
       <img src={item.pic} alt={item.title} />
       <CatalogueListItemHeader {context} {item} {width} />
     </div>
     <p>{item.description}</p>
-  {:else if width === "wide"}
+  {:else if $width === "wide"}
     <img src={item.pic} alt={item.title} />
     <div>
       <CatalogueListItemHeader {context} {item} {width} />

@@ -23,4 +23,5 @@ export const width = writable(determineWidth());
 export function updateViewport() {
   breakpoint.set(determineBreakpoint());
   vpwidth.set(window.innerWidth);
+  width.set(determineWidth());
 };

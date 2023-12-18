@@ -1,8 +1,9 @@
 <!-- SCRIPTS ///////////////////////////////////////// -->
 <script>
   // IMPORTS ----------------------------------------
-  import { vpwidth } from "../../../../dynamic/viewport";
   import CatalogueListItem from "./item/CatalogueListItem.svelte";
+  import CatalogueItem from "../item/CatalogueItem.svelte";
+  import { width } from "../../../../dynamic/viewport";
 
   // PROPS ------------------------------------------
   export let context;
@@ -12,15 +13,11 @@
 
 <!-- MARKUP ////////////////////////////////////////// -->
 <ul class="reg-scroll" class:main={context === "main"}>
-  {#if $vpwidth < 500}
-    {#each items as item}
-      <CatalogueListItem {context} {item} width="narrow" />
-    {/each}
-  {:else if $vpwidth >= 500}
-    {#each items as item}
-      <CatalogueListItem {context} {item} width="wide" />
-    {/each}
-  {/if}
+  {#each items as item}
+    <li class:narrow={$width === "narrow"} class:wide={$width === "wide"}>
+      <CatalogueItem {context} {item} />
+    </li>
+  {/each}
 </ul>
 
 <!-- STYLES ///////////////////////////////////// -->
@@ -31,6 +28,24 @@ ul {
   gap: 3dvh;
   flex-wrap: wrap;
   justify-content: center;
+}
+li {
+  background-color: hsl(0, 0%, 90%);
+  border-style: solid;
+  border-color: black;
+}
+.narrow {
+  border-width: 5px;
+  border-radius: 5px;
+}
+.wide {
+  border-top-width: 6px;
+  border-bottom-width: 6px;
+  border-right-width: 30px;
+  border-left-width: 5px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
 }
 
 /* PORTRAIT ------------------------------------------------ */
