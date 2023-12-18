@@ -13,7 +13,7 @@ const compilations = [
     books: [ 26, 24, 22, 20, 17, 14 ],
     sale: "",
     tags: [],
-    link: "https://www.smashwords.com/books/view/1136331",
+    link: "https://www.smashwords.com/books/view/1330740",
   },
   {
     id: 7,
