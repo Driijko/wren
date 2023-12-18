@@ -159,6 +159,21 @@ a line, button line {
   height: 100%;
 }
 
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+*:has(.background) {
+  position: relative;
+}
+
+*:has(.background) > *:not(.background) {
+  z-index: 1;
+}
+
 /* VIEWPORT-BASED LAYOUTS /////////////////////////////// */
 :root {
   --wpx: calc(var(--w) * 1px);

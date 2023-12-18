@@ -17,6 +17,11 @@
   </a>
  {/if}
  <div class="reg-scroll main">
+  <div 
+    class="background fill" 
+    style:background-image={`url(${item.pic})`}
+  ></div>
+  <p>{item.description}</p>
  </div>
 </div>
 
@@ -39,5 +44,9 @@ div {
 }
 .main {
   border: 4px solid red;
+  /* position: relative; */
+}
+.background {
+  filter: brightness(40%);
 }
 </style>
