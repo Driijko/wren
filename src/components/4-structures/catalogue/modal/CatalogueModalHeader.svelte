@@ -6,7 +6,7 @@
   import CatalogueModalButtonCloser 
   from "../../../5-elements/catalogue/CatalogueModalButtonCloser.svelte";
 
-  const { scope, type, list } = $catalogueModalData;
+  $: ({ scope, type, list } = $catalogueModalData);
 
 </script>
 
