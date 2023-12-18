@@ -10,7 +10,7 @@
 
   // TYPE TO HEADER MAP -------------------------------
   const map = {
-    series: "Series:", book: "Book:", compilation: "Compilation:"
+    series: "SERIES", book: "BOOK", compilation: "COMPILATION"
   }
 
 </script>
@@ -35,7 +35,7 @@
         {/if}
       {/if}
     {:else if scope === "item"}
-      {map[item.type]} {item.title}
+      {map[item.type]}<br/> {item.title}
     {/if}
   </h4>
   <CatalogueModalButtonCloser />
