@@ -31,9 +31,10 @@
   <dialog transition:fade class="fill" open >
     <CatalogueModalHeader />
     {#if scope === "list"}
-      <CatalogueList {context} items={map[type](list.items)} />
+      <CatalogueList {context} items={list.items} />
+      <!-- <CatalogueList {context} items={map[type](list.items)} /> -->
     {:else if scope === "item"}
-      <CatalogueItem {context} {item} />
+      <CatalogueItem {item} />
     {/if}
   </dialog>
 {/if}
