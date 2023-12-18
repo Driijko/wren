@@ -1,7 +1,7 @@
 <!-- SCRIPTS ///////////////////////////////////////// -->
 <script>
   // IMPORTS ----------------------------------------
-  import CatalogueListItem from "./item/CatalogueListItem.svelte";
+  // import CatalogueListItem from "./item/CatalogueListItem.svelte";
   import CatalogueItem from "../item/CatalogueItem.svelte";
   import { width } from "../../../../dynamic/viewport";
 
@@ -33,6 +33,13 @@ li {
   background-color: hsl(0, 0%, 90%);
   border-style: solid;
   border-color: black;
+}
+li :global(img) {
+  width: 133px;
+  object-fit: contain;
+}
+li :global(p) {
+  line-height: 1.3;
 }
 .narrow {
   border-width: 5px;
