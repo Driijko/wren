@@ -65,7 +65,6 @@ h4 {
 header :global(button) {
   width: 60px;
   height: 60px;
-  /* border-left: 5px solid white; */
   background-color: hsl(0, 0%, 100%);
   padding: 13px;
 }
