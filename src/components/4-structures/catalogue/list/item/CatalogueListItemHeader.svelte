@@ -44,13 +44,15 @@
     && ((context === "modal" && list.from === "compilation") === false)
   }
     <span>&middot</span>
-    <p>
-      {#if item.type === "book"}
-        included in<br/> 
-      {/if}
+    <CatalogueModalButton data={{
+      scope: "list",
+      type: "compilation",
+      list: {from: item.type, title: item.title},
+      items: item.compilations
+    }}>
       {item.compilations.length} 
       compilation{item.compilations.length > 1 ? "s" : ""}
-    </p>
+    </CatalogueModalButton>
   {/if}
 </header>
 
