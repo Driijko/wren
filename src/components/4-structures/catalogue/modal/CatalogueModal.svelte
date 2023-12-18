@@ -11,7 +11,7 @@
   import CatalogueModalHeader from "./CatalogueModalHeader.svelte";
   import CatalogueList from "../list/CatalogueList.svelte";
 
-  $: ({ scope, type, items } = $catalogueModalData);
+  $: ({ scope, type, list } = $catalogueModalData);
 
   // LOCAL CONSTANT ------------------------------------
   const context = "modal";
@@ -30,7 +30,7 @@
   <dialog transition:fade class="fill" open >
     <CatalogueModalHeader />
     {#if scope === "list"}
-      <CatalogueList {context} items={map[type](items)} />
+      <CatalogueList {context} items={map[type](list.items)} />
     {/if}
   </dialog>
 {/if}

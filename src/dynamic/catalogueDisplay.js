@@ -18,7 +18,7 @@ export const compilationsDisplay = writable(compilations);
 export const booksDisplay = writable(books);
 export const themesDisplay = writable(themes);
 export const catalogueModalData = writable({
-  scope: "", type: "", list: {from: "", title: ""}, items: [],
+  scope: "", type: "", list: {from: "", title: "", items: []},
 });
 
 // FUNCTIONS ---------------------------------------

@@ -5,6 +5,7 @@
   import { catalogueModalData } from "../../../../dynamic/catalogueDisplay";
   import CatalogueModalButtonCloser 
   from "../../../5-elements/catalogue/CatalogueModalButtonCloser.svelte";
+    import { interfaceModal } from "../../../../dynamic/interface";
 
   $: ({ scope, type, list } = $catalogueModalData);
 
@@ -29,6 +30,8 @@
           the book {list.title}
         {/if}
       {/if}
+    {:else if scope === "item"}
+      <p>item</p>
     {/if}
   </h4>
   <CatalogueModalButtonCloser />

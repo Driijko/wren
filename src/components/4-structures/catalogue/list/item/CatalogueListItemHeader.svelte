@@ -38,8 +38,7 @@
     <CatalogueModalButton data={{
       scope: "list",
       type: "book",
-      list: {from: item.type, title: item.title},
-      items: item.books,
+      list: {from: item.type, title: item.title, items: item.books},
     }}>
       {item.books.length} books
     </CatalogueModalButton>
@@ -53,8 +52,7 @@
     <CatalogueModalButton data={{
       scope: "list",
       type: "compilation",
-      list: {from: item.type, title: item.title},
-      items: item.compilations
+      list: {from: item.type, title: item.title, items: item.compilations},
     }}>
       {item.compilations.length} 
       compilation{item.compilations.length > 1 ? "s" : ""}
