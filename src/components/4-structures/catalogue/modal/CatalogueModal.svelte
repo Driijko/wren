@@ -10,8 +10,9 @@
   from "../../../../dynamic/catalogueDisplay";
   import CatalogueModalHeader from "./CatalogueModalHeader.svelte";
   import CatalogueList from "../list/CatalogueList.svelte";
+  import CatalogueItem from "../CatalogueItem.svelte";
 
-  $: ({ scope, type, list } = $catalogueModalData);
+  $: ({ scope, type, list, item } = $catalogueModalData);
 
   // LOCAL CONSTANT ------------------------------------
   const context = "modal";
@@ -31,6 +32,8 @@
     <CatalogueModalHeader />
     {#if scope === "list"}
       <CatalogueList {context} items={map[type](list.items)} />
+    {:else if scope === "item"}
+      <CatalogueItem {context} {item} />
     {/if}
   </dialog>
 {/if}
