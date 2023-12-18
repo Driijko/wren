@@ -174,6 +174,10 @@ a line, button line {
   z-index: 1;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 /* VIEWPORT-BASED LAYOUTS /////////////////////////////// */
 :root {
   --wpx: calc(var(--w) * 1px);

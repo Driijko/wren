@@ -17,11 +17,10 @@
   </a>
  {/if}
  <div class="reg-scroll main">
-  <div 
-    class="background fill" 
-    style:background-image={`url(${item.pic})`}
-  ></div>
-  <p>{item.description}</p>
+  <div class="background" style:background-image={`url(${item.pic})`}></div>
+  <div class="property-value-pair">
+
+  </div>
  </div>
 </div>
 
@@ -43,7 +42,7 @@ div {
   border-top: none;
 }
 .main {
-  border: 4px solid red;
+  color: white;
   /* position: relative; */
 }
 .background {
