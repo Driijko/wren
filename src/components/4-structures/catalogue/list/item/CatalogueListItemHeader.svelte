@@ -21,11 +21,17 @@
   class:wide={width === "wide"}
 >
   <h4>
+    <CatalogueModalButton data={{
+      scope: "item",
+      type: item.type,
+      items: item
+    }}>
     {#if item.titleSplit !== undefined && width === "narrow"}
       {item.titleSplit[0]}<br/>{item.titleSplit[1]}
     {:else}
       {item.title}
     {/if}
+    </CatalogueModalButton>
   </h4>
   {#if item.type === "compilation" || item.type === "series"}
     <span>&middot</span>
