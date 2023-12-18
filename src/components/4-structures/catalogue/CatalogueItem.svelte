@@ -5,6 +5,14 @@
 
 </script>
 
+<!-- MARKUP ////////////////////////////////// -->
 <div>
-  
+ {item.description}
 </div>
+
+<!-- STYLES ////////////////////////////////// -->
+<style>
+div {
+  flex: 1;
+}
+</style>

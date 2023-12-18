@@ -34,6 +34,8 @@ const series = [
     sale: "",
     compilations: [8],
     date: [0, 0, 0],
+    complete: "Mirror World Complete",
+    link: "https://www.smashwords.com/books/view/1330740",
   },
   {
     id: 3,
@@ -58,6 +60,8 @@ const series = [
     sale: "",
     compilations: [4],
     date: [0, 0, 0],
+    complete: "Nurse Mommy Complete",
+    link: "https://www.smashwords.com/books/view/1148942",
   },
   {
     id: 5,
@@ -94,6 +98,8 @@ const series = [
     sale: "",
     compilations: [3],
     date: [0, 0, 0],
+    complete: "Hypno Sister Complete",
+    link: "https://www.smashwords.com/books/view/1136331",
   },
   {
     id: 8,

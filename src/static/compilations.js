@@ -13,6 +13,7 @@ const compilations = [
     books: [ 26, 24, 22, 20, 17, 14 ],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1136331",
   },
   {
     id: 7,
@@ -28,6 +29,7 @@ const compilations = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1313387",
   },
   {
     id: 6,
@@ -43,6 +45,7 @@ const compilations = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1164929"
   },
   {
     id: 5,
@@ -58,6 +61,7 @@ const compilations = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1161326",
   },
   {
     id: 4,
@@ -73,6 +77,7 @@ const compilations = [
     books: [ 34, 33, 32, 30 ],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1148942",
   },
   {
     id: 3,
@@ -88,6 +93,7 @@ const compilations = [
     books: [42, 41, 40, 39, 38],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1136331",
   },
   {
     id: 2,
@@ -103,6 +109,7 @@ const compilations = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1097936",
   },
   {
     id: 1,
@@ -118,6 +125,7 @@ const compilations = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1089070",
   },
   {
     id: 0,
@@ -133,6 +141,7 @@ const compilations = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1070700",
   },
 ];
 
