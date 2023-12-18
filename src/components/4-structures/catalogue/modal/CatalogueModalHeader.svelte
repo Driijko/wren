@@ -16,7 +16,7 @@
 </script>
 
 <!-- MARKUP //////////////////////////////////////////////// -->
-<header class:bigger={$vpwidth >= 500}>
+<header class:smaller={$vpwidth < 500} class:bigger={$vpwidth >= 500}>
   <h4>
     {#if scope === "list"}
       {#if type === "book"}
