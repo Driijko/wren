@@ -4,7 +4,6 @@
   import { width } from "../../../../dynamic/viewport";
   import CatalogueItemNarrow from "./CatalogueItemNarrow.svelte";
   import CatalogueItemWide from "./CatalogueItemWide.svelte";
-  // import CatalogueListItemHeader from "./CatalogueListItemHeader.svelte";
 
   // PROPS -----------------------------------
   export let context;
@@ -14,9 +13,9 @@
 
 <!-- MARKUP ///////////////////////////////// -->
 {#if $width === "narrow"}
-  <CatalogueItemNarrow {item} />
+  <CatalogueItemNarrow {item} {context} />
 {:else if $width === "wide"}
-  <CatalogueItemWide {item} />
+  <CatalogueItemWide {item} {context} />
 {/if}
 
 <!-- STYLES ///////////////////////////////////// -->

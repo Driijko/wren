@@ -1,13 +1,18 @@
 <!-- SCRIPTS /////////////////////////////////////// -->
 <script>
+  // IMPORTS ----------------------------------
+  import CatalogueItemHeader from "./CatalogueItemHeader.svelte";
+  
+  // PROPS ---------------------------------------
   export let item;
+  export let context;
 
 </script>
 
 <!-- MARKUP /////////////////////////////////////// -->
 <div>
   <img src={item.pic} alt={item.title} />
-  <!-- <CatalogueListItemHeader {context} {item} {width} /> -->
+  <CatalogueItemHeader {item} {context} />
 </div>
 <p>{item.description}</p>
 
