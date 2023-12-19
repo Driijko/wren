@@ -9,7 +9,7 @@
   import { catalogueModal, catalogueModalData } 
   from "../../../../dynamic/catalogueDisplay";
   import CatalogueModalHeader from "./CatalogueModalHeader.svelte";
-  import CatalogueList from "../list/CatalogueList.svelte";
+  import CatalogueList from "../CatalogueList.svelte";
   import CatalogueItem from "../CatalogueItem.svelte";
 
   $: ({ scope, list, item } = $catalogueModalData);

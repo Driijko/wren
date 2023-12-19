@@ -3,7 +3,7 @@
   // IMPORTS ---------------------------------------
   import { catalogueMainType, catalogueMainSeries, catalogueMainBooks, catalogueMainCompilations, catalogueMainThemes }
   from "../../../../dynamic/catalogueDisplay";
-  import CatalogueList from "../list/CatalogueList.svelte";
+  import CatalogueList from "../CatalogueList.svelte";
 
   // LOCAL CONSTANT -----------------------------
   const context = "main";

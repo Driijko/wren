@@ -2,8 +2,8 @@
 <script>
   // IMPORTS ----------------------------------------
   // import CatalogueListItem from "./item/CatalogueListItem.svelte";
-  import CatalogueItem from "../item/CatalogueItem.svelte";
-  import { width } from "../../../../dynamic/viewport";
+  import CatalogueItem from "./item/CatalogueItem.svelte";
+  import { width } from "../../../dynamic/viewport";
 
   // PROPS ------------------------------------------
   export let context;
