@@ -2,27 +2,16 @@
 <script>
   // IMPORTS ---------------------------------------
   import { fade } from "svelte/transition";
-  // import books from "../../../../static/books";
-  // import series from "../../../../static/series";
-  // import compilations from "../../../../static/compilations";
-  // import getItemsById from "../../../../static/getItemsById";
   import { catalogueModal, catalogueModalData } 
   from "../../../../dynamic/catalogueDisplay";
   import CatalogueModalHeader from "./CatalogueModalHeader.svelte";
   import CatalogueList from "../CatalogueList.svelte";
-  import CatalogueItem from "../CatalogueItem.svelte";
+  import CatalogueItem from "../item/CatalogueItem.svelte";
 
   $: ({ scope, list, item } = $catalogueModalData);
 
   // LOCAL CONSTANT ------------------------------------
   const context = "modal";
-
-  // TYPE TO FUNCTION MAP -----------------------------
-  // const map = {
-  //   book: ids => getItemsById(ids, books),
-  //   series: ids => getItemsById(ids, series),
-  //   compilation: ids => getItemsById(ids, compilations),
-  // };
 
 </script>
 
@@ -32,7 +21,6 @@
     <CatalogueModalHeader />
     {#if scope === "list"}
       <CatalogueList {context} items={list.items} />
-      <!-- <CatalogueList {context} items={map[type](list.items)} /> -->
     {:else if scope === "item"}
       <CatalogueItem {item} />
     {/if}
