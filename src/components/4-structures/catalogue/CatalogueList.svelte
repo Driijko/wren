@@ -34,13 +34,6 @@ li {
   border-style: solid;
   border-color: black;
 }
-li :global(img) {
-  width: 133px;
-  object-fit: contain;
-}
-li :global(p) {
-  line-height: 1.3;
-}
 .narrow {
   border-width: 5px;
   border-radius: 5px;
@@ -51,8 +44,11 @@ li :global(p) {
   border-right-width: 30px;
   border-left-width: 5px;
   border-radius: 10px;
-  display: flex;
-  gap: 20px;
+}
+.wide :global(img) {
+  padding: 10px 0px;
+  border-right: 5px solid black;
+  background-color: black;
 }
 
 /* PORTRAIT ------------------------------------------------ */

@@ -47,12 +47,12 @@
     {/if}
 
     {#if item.type === "book" || item.type === "compilation"}
-      <div>
-        <div>
+      <div class="price-count">
+        <div class="center">
           <h5>Price</h5>
           <p>{item.price}</p>
         </div>
-        <div>
+        <div class="center">
           <h5>Wordcount</h5>
           <p>{item.words}</p>
         </div>
@@ -78,11 +78,18 @@
 <!-- STYLES ///////////////////////////////////// -->
 <style>
 .item-profile {
-  height: 85.3%;
+  height: calc(100% - 64px);
   /* border: 4px solid green; */
 }
 .reg-scroll {
   /* height: calc(100% - 2em); */
   /* border: 4px solid green; */
+}
+.price-count {
+  display: flex;
+  justify-content: space-around;
+}
+.price-count > div {
+  flex-direction: column;
 }
 </style>

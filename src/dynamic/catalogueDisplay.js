@@ -38,6 +38,10 @@ export function setCatalogueModalData(data) {
   catalogueModalData.set(data);
 };
 
+export function clearCatalogueModalData() {
+  catalogueModalData.set({});
+}
+
 /*
 scope: item, list
 type: book, compilation, series

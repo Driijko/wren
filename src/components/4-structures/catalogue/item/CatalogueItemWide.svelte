@@ -1,7 +1,10 @@
 <!-- SCRIPTS //////////////////////////////////// -->
 <script>
   // IMPORTS ---------------------------------
+  import { catalogueModalData } from "../../../../dynamic/catalogueDisplay";
   import CatalogueItemHeader from "./CatalogueItemHeader.svelte";
+
+  $: ({ scope } = $catalogueModalData);
 
   // PROPS ---------------------------------
   export let item;
@@ -10,22 +13,32 @@
 </script>
 
 <!-- MARKUP /////////////////////////////////////// -->
-<img src={item.pic} alt={item.title} />
-<div>
-  <CatalogueItemHeader {item} {context} />
-  <p>{item.description}</p>
+<div class="container">
+  <img src={item.pic} alt={item.title} />
+  <div class="right">
+    <CatalogueItemHeader {item} {context} />
+    {#if scope === "item"}
+      <div>
+        <h5>Synopsis</h5>
+        <p>{item.description}</p>
+      </div>
+    {:else}
+      <p>{item.description}</p>
+    {/if}
+  </div>  
 </div>
 
 <!-- STYLES ///////////////////////////////// -->
 <style>
+.container {
+  display: flex;
+  gap: 20px;
+}
 img {
-  padding: 10px 0px;
-  border-right: 5px solid black;
-  background-color: black;
   width: 133px;
   object-fit: contain;
 }
-div {
+.right {
   width: 35rem;
   max-width: 60dvw;
 }
@@ -33,5 +46,6 @@ p {
   padding: 15px 40px 30px 0px;
   width: 30rem;
   max-width: 60dvw;
+  line-height: 1.3;
 }
 </style>

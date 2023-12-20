@@ -51,6 +51,7 @@ header {
   padding-left: 10px;
   background-color: black;
   line-height: 1.5;
+  height: 64px;
 }
 .wide {
   font-size: 21px;

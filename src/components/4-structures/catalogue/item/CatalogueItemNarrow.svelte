@@ -17,7 +17,7 @@
   <img src={item.pic} alt={item.title} />
   <CatalogueItemHeader {item} {context} />
 </div>
-{#if context === "modal" && scope === "item"}
+{#if scope === "item"}
   <div>
     <h5>Synopsis</h5>
     <p>{item.description}</p>
@@ -28,10 +28,6 @@
 
 <!-- STYLES ////////////////////////////////////// -->
 <style>
-.container {
-  display: flex;
-  flex-direction: column;
-}
 .top {
   display: flex;
   border-bottom: 5px solid black;
@@ -46,5 +42,6 @@ p {
   padding: 20px 15px;
   background-color: white;
   color: black;
+  line-height: 1.3;
 }
 </style>
