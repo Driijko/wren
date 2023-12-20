@@ -22,6 +22,8 @@ img {
   padding: 10px 0px;
   border-right: 5px solid black;
   background-color: black;
+  width: 133px;
+  object-fit: contain;
 }
 div {
   width: 35rem;

@@ -22,7 +22,7 @@
     {#if scope === "list"}
       <CatalogueList {context} items={list.items} />
     {:else if scope === "item"}
-      <CatalogueItem {item} />
+      <CatalogueItem {item} {context} />
     {/if}
   </dialog>
 {/if}

@@ -6,7 +6,7 @@
   import CatalogueModalButton 
   from "../../../5-elements/catalogue/CatalogueModalButton.svelte";
 
-  $: ({ list } = $catalogueModalData);
+  $: ({ scope, type, list } = $catalogueModalData);
 
   // PROPS -------------------------------------
   export let context;
@@ -22,7 +22,8 @@
   <h4>
     <CatalogueModalButton data={{
       scope: "item",
-      item: item
+      item: item, 
+      themes: item.themes
     }}>
     {#if item.titleSplit !== undefined && $width === "narrow"}
       {item.titleSplit[0]}<br/>{item.titleSplit[1]}
@@ -31,6 +32,18 @@
     {/if}
     </CatalogueModalButton>
   </h4>
+  {#if 
+    scope === "item" 
+    && (type === "book" || type === "compilation")
+    && item.series !== undefined
+  }
+    <span>&middot</span>
+    <CatalogueModalButton data={{
+      scope: list,
+      type: "series",
+      list: {from: item.type, title: item.title, items: item.series},
+    }}></CatalogueModalButton>
+  {/if}
   {#if item.type === "compilation" || item.type === "series"}
     <span>&middot</span>
     <CatalogueModalButton data={{
@@ -44,7 +57,11 @@
   {#if 
     item.compilations !== undefined 
     && item.compilations.length > 0
-    && ((context === "modal" && list.from === "compilation") === false)
+    && ((
+        context === "modal" 
+        && list !== undefined 
+        && list.from === "compilation"
+      ) === false)
   }
     <span>&middot</span>
     <CatalogueModalButton data={{

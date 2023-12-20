@@ -26,6 +26,9 @@
     if (data.list !== undefined) {
       data.list.items = map[data.type](data.list.items);
     }
+    if (data.scope === "item") {
+      
+    }
     setCatalogueModalData(data);
   };
 

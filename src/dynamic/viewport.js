@@ -17,11 +17,11 @@ function determineWidth() {
 };
 
 export const breakpoint = writable(determineBreakpoint());
-export const vpwidth = writable(window.innerWidth);
+// export const vpwidth = writable(window.innerWidth);
 export const width = writable(determineWidth());
 
 export function updateViewport() {
   breakpoint.set(determineBreakpoint());
-  vpwidth.set(window.innerWidth);
+  // vpwidth.set(window.innerWidth);
   width.set(determineWidth());
 };
