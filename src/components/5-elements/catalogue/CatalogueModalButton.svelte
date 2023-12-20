@@ -20,8 +20,10 @@
   
   // EVENT HANDLERS -------------------------------
   function handleClick() {
+    console.log(data);
     if ($catalogueModal === false) {
       openCatalogueModal();
+      console.log("hi");
     };
     if (data.list !== undefined) {
       data.list.items = map[data.type](data.list.items);
@@ -30,6 +32,7 @@
       
     }
     setCatalogueModalData(data);
+    // console.log(data);
   };
 
 </script>

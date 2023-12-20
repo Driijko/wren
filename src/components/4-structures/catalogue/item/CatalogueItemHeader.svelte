@@ -23,7 +23,7 @@
     <CatalogueModalButton data={{
       scope: "item",
       item: item, 
-      themes: item.themes
+      // themes: item.themes
     }}>
     {#if item.titleSplit !== undefined && $width === "narrow"}
       {item.titleSplit[0]}<br/>{item.titleSplit[1]}

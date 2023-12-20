@@ -37,9 +37,8 @@
   <!-- Scrolling Div --------------------- -->
   <div class="reg-scroll"
     style:height={item.link !== undefined ? "calc(100% - 2em)" : "100%"}
+    style:background-image={`url(${item.pic})`}
   >
-    <div class="background"></div>
-
     {#if $width === "narrow"}
       <CatalogueItemNarrow {item} {context} />
     {:else if $width === "wide"}
@@ -82,6 +81,8 @@
   /* border: 4px solid green; */
 }
 .reg-scroll {
+  background-size: cover;
+  background-attachment: fixed;
   /* height: calc(100% - 2em); */
   /* border: 4px solid green; */
 }

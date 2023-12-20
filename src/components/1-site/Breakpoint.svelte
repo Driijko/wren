@@ -16,7 +16,7 @@
 <!-- MARKUP ///////////////////////////////////////////// -->
 
 <!-- Background ---------------- -->
-<div class="vp background-container">
+<div class="vp site-background-container">
   <FlippableBackground 
     picNum="2"
     duration={50}
@@ -47,7 +47,7 @@
 
 <!-- STYLES /////////////////////////////////////////// -->
 <style>
-.background-container {
+.site-background-container {
   background-color: black;
   /* opacity: 0;
   animation: fade-in 2s ease-out forwards; */
