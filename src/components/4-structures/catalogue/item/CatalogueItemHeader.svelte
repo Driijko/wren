@@ -20,17 +20,25 @@
   class:wide={$width === "wide"}
 >
   <h4>
-    <CatalogueModalButton data={{
-      scope: "item",
-      item: item, 
-      // themes: item.themes
-    }}>
-    {#if item.titleSplit !== undefined && $width === "narrow"}
-      {item.titleSplit[0]}<br/>{item.titleSplit[1]}
+    {#if scope === "item"}
+      {#if item.titleSplit !== undefined && $width === "narrow"}
+        {item.titleSplit[0]}<br/>{item.titleSplit[1]}
+      {:else}
+        {item.title}
+      {/if}
     {:else}
-      {item.title}
+      <CatalogueModalButton data={{
+        scope: "item",
+        item: item, 
+        // themes: item.themes
+      }}>
+      {#if item.titleSplit !== undefined && $width === "narrow"}
+        {item.titleSplit[0]}<br/>{item.titleSplit[1]}
+      {:else}
+        {item.title}
+      {/if}
+      </CatalogueModalButton>
     {/if}
-    </CatalogueModalButton>
   </h4>
   {#if 
     scope === "item" 
