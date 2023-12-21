@@ -13,22 +13,15 @@
 </script>
 
 <!-- MARKUP /////////////////////////////////////// -->
-<div class="top">
+<div>
   <img src={item.pic} alt={item.title} />
   <CatalogueItemHeader {item} {context} />
 </div>
-{#if scope === "item"}
-  <div>
-    <h5>Synopsis</h5>
-    <p>{item.description}</p>
-  </div>
-{:else}
-  <p>{item.description}</p>
-{/if}
+<p>{item.description}</p>
 
 <!-- STYLES ////////////////////////////////////// -->
 <style>
-.top {
+div {
   display: flex;
   border-bottom: 5px solid black;
   background-color: black;

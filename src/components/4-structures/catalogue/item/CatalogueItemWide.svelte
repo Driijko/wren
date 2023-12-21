@@ -17,14 +17,7 @@
   <img src={item.pic} alt={item.title} />
   <div class="right">
     <CatalogueItemHeader {item} {context} />
-    {#if scope === "item"}
-      <div>
-        <h5>Synopsis</h5>
-        <p>{item.description}</p>
-      </div>
-    {:else}
-      <p>{item.description}</p>
-    {/if}
+    <p>{item.description}</p>
   </div>  
 </div>
 
