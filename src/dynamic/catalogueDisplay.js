@@ -11,20 +11,14 @@ export const catalogueMainCompilations = writable(compilations);
 export const catalogueMainBooks = writable(books);
 export const catalogueMainThemes = writable(themes);
 export const catalogueModal = writable(false);
-
-// export const seriesDisplay = writable(series);
-// export const compilationsDisplay = writable(compilations); 
-// export const booksDisplay = writable(books);
-// export const themesDisplay = writable(themes);
-
-// Potential properties of catalogueModalData: 
-// scope: string: "item" or "list"
-// type: string: "series", "book", "compilation" or "theme"
-// from: string: "series", "book", "compilation" or "theme",
-// title: string,
-// items: array: of data items
-// item: single data item
-export const catalogueModalData = writable({});
+export const catalogueModalData = writable({
+  scope: "", // string: "item" or "list"
+  type: "", // string: "series", "book", "compilation" or "theme"
+  from: "", // string: "series", "book", "compilation" or "theme"
+  title: "", // string
+  items: [], // array: of data items 
+  item: {}, // single data item
+});
 
 // FUNCTIONS ---------------------------------------
 export function openCatalogueModal() {
