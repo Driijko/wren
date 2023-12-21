@@ -11,7 +11,7 @@ const books = [
     words: "7,070",
     date: [23, 12, 2],
     compilations: [],
-    tags: [],
+    tags: [{id: 0, title: "incest"}, {id: 0, title: "bimbo"}, {id: 0, title: "bimbofication"}, {id: 0, title: "titfuck"}, {id: 0, title: "blowjob"}, {id: 0, title: "big tits"}, {id: 0, title: "huge tits"}],
     link: "https://www.smashwords.com/books/view/1488679",
   },
   {

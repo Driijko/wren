@@ -46,7 +46,7 @@
     {/if}
 
     {#if item.type === "book" || item.type === "compilation"}
-      <div class="price-count">
+      <section class="price-count">
         <div class="center">
           <h5>Price</h5>
           <p>{item.price}</p>
@@ -55,18 +55,18 @@
           <h5>Wordcount</h5>
           <p>{item.words}</p>
         </div>
-      </div>
+      </section>
     {/if}
 
-    {#if item.themes !== undefined}
-      <div>
+    {#if item.tags !== undefined}
+      <section class="tag-section">
         <h5>Themes</h5>
-        <ul>
-          {#each themes as theme}
+        <ul class="tag-list">
+          {#each item.tags as theme}
             <li>{theme.title}</li>
           {/each}
         </ul>
-      </div>
+      </section>
     {/if}
 
   </div>
@@ -83,14 +83,40 @@
 .reg-scroll {
   background-size: cover;
   background-attachment: fixed;
+  background-image: none !important;
+  background-color: black;
+  color: white;
   /* height: calc(100% - 2em); */
   /* border: 4px solid green; */
+}
+h5 {
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
 }
 .price-count {
   display: flex;
   justify-content: space-around;
+  padding: 10px;
 }
 .price-count > div {
   flex-direction: column;
+  gap: 5px;
+}
+.tag-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+.tag-list li {
+  background-color: hsl(220, 100%, 30%);
+  padding: 10px;
 }
 </style>
