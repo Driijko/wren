@@ -7,7 +7,7 @@
   import CatalogueItemWide from "./CatalogueItemWide.svelte";
   import SmashwordsLink from "./SmashwordsLink.svelte";
 
-  $: ({ scope, themes } = $catalogueModalData);
+  $: ({ scope } = $catalogueModalData);
 
   // PROPS -----------------------------------
   export let context;
@@ -98,6 +98,7 @@ h5 {
   display: flex;
   justify-content: space-around;
   padding: 10px;
+  padding-top: 20px;
 }
 .price-count > div {
   flex-direction: column;

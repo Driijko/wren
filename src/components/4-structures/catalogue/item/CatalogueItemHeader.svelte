@@ -6,7 +6,7 @@
   import CatalogueModalButton 
   from "../../../5-elements/catalogue/CatalogueModalButton.svelte";
 
-  $: ({ scope, type, list } = $catalogueModalData);
+  $: ({ scope, from, type } = $catalogueModalData);
 
   // PROPS -------------------------------------
   export let context;
@@ -19,6 +19,8 @@
   class:narrow={$width === "narrow"} 
   class:wide={$width === "wide"}
 >
+
+  <!-- MAIN HEADER ------------------------------------- -->
   <h4>
     {#if scope === "item"}
       {#if item.titleSplit !== undefined && $width === "narrow"}
@@ -30,7 +32,6 @@
       <CatalogueModalButton data={{
         scope: "item",
         item: item, 
-        // themes: item.themes
       }}>
       {#if item.titleSplit !== undefined && $width === "narrow"}
         {item.titleSplit[0]}<br/>{item.titleSplit[1]}
@@ -40,47 +41,60 @@
       </CatalogueModalButton>
     {/if}
   </h4>
+
+  <!-- SERIES ----------------------------------------- -->
   {#if 
     scope === "item" 
-    && (type === "book" || type === "compilation")
+    && (item.type === "book" || item.type === "compilation")
     && item.series !== undefined
   }
     <span>&middot</span>
     <CatalogueModalButton data={{
-      scope: list,
+      scope: "list",
       type: "series",
-      list: {from: item.type, title: item.title, items: item.series},
+      from: item.type,
+      title: item.title,
+      items: item.series,
     }}></CatalogueModalButton>
   {/if}
+
+  <!-- BOOKS ----------------------------------- -->
   {#if item.type === "compilation" || item.type === "series"}
     <span>&middot</span>
     <CatalogueModalButton data={{
       scope: "list",
       type: "book",
-      list: {from: item.type, title: item.title, items: item.books},
+      from: item.type,
+      title: item.title,
+      items: item.books,
     }}>
       {item.books.length} books
     </CatalogueModalButton>
   {/if}
+
+  <!-- COMPILATIONS -------------------------- -->
   {#if 
     item.compilations !== undefined 
     && item.compilations.length > 0
     && ((
         context === "modal" 
-        && list !== undefined 
-        && list.from === "compilation"
+        && scope === "list"
+        && from === "compilation"
       ) === false)
   }
     <span>&middot</span>
     <CatalogueModalButton data={{
       scope: "list",
       type: "compilation",
-      list: {from: item.type, title: item.title, items: item.compilations},
+      from: item.type,
+      title: item.title,
+      items: item.compilations,
     }}>
       {item.compilations.length} 
       compilation{item.compilations.length > 1 ? "s" : ""}
     </CatalogueModalButton>
   {/if}
+
 </header>
 
 <!-- STYLES //////////////////////////////////////// -->

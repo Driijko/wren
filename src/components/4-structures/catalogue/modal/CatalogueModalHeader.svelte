@@ -6,7 +6,7 @@
   import CatalogueModalButtonCloser 
   from "../../../5-elements/catalogue/CatalogueModalButtonCloser.svelte";
 
-  $: ({ scope, type, list, item } = $catalogueModalData);
+  $: ({ scope, type, from, title, item } = $catalogueModalData);
 
   // TYPE TO HEADER MAP -------------------------------
   const map = {
@@ -20,18 +20,18 @@
   <h4>
     {#if scope === "list"}
       {#if type === "book"}
-        {#if list.from === "series"}
-          All books from the<br/> {list.title} series
-        {:else if list.from === "compilation"}
-          All books included in<br/> {list.title}
+        {#if from === "series"}
+          All books from the<br/> {title} series
+        {:else if from === "compilation"}
+          All books included in<br/> {title}
         {/if}
       {:else if type === "compilation"}
-        {#if list.from === "series"}
+        {#if from === "series"}
           All compilations which include<br/>
-          books from the {list.title} series
-        {:else if list.from === "book"}
+          books from the {title} series
+        {:else if from === "book"}
           All compilations which include<br/>
-          the book {list.title}
+          the book {title}
         {/if}
       {/if}
     {:else if scope === "item"}

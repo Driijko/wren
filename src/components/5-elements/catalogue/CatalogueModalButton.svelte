@@ -5,7 +5,7 @@
   import series from "../../../static/series";
   import compilations from "../../../static/compilations";
   import getItemsById from "../../../static/getItemsById";
-  import { catalogueModal, openCatalogueModal, setCatalogueModalData } 
+  import { catalogueModal, openCatalogueModal, updateCatalogueModalData } 
   from "../../../dynamic/catalogueDisplay";
 
   // PROPS ------------------------------------
@@ -20,19 +20,13 @@
   
   // EVENT HANDLERS -------------------------------
   function handleClick() {
-    console.log(data);
     if ($catalogueModal === false) {
       openCatalogueModal();
-      console.log("hi");
     };
-    if (data.list !== undefined) {
-      data.list.items = map[data.type](data.list.items);
-    }
-    if (data.scope === "item") {
-      
-    }
-    setCatalogueModalData(data);
-    // console.log(data);
+    if (data.scope === "list") {
+      data.items = map[data.type](data.items);
+    };
+    updateCatalogueModalData(data);
   };
 
 </script>

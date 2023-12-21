@@ -8,7 +8,7 @@
   import CatalogueList from "../CatalogueList.svelte";
   import CatalogueItem from "../item/CatalogueItem.svelte";
 
-  $: ({ scope, list, item } = $catalogueModalData);
+  $: ({ scope, items, item } = $catalogueModalData);
 
   // LOCAL CONSTANT ------------------------------------
   const context = "modal";
@@ -20,7 +20,7 @@
   <dialog transition:fade class="fill" open >
     <CatalogueModalHeader />
     {#if scope === "list"}
-      <CatalogueList {context} items={list.items} />
+      <CatalogueList {context} {items} />
     {:else if scope === "item"}
       <CatalogueItem {item} {context} />
     {/if}
