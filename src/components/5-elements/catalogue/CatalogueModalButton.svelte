@@ -5,7 +5,7 @@
   import series from "../../../static/series";
   import compilations from "../../../static/compilations";
   import getItemsById from "../../../static/getItemsById";
-  import { catalogueModal, openCatalogueModal, updateCatalogueModalData } 
+  import { catalogueModal, openCatalogueModal, setCatalogueModalData } 
   from "../../../dynamic/catalogueDisplay";
 
   // PROPS ------------------------------------
@@ -26,7 +26,7 @@
     if (data.scope === "list") {
       data.items = map[data.type](data.items);
     };
-    updateCatalogueModalData(data);
+    setCatalogueModalData(data);
   };
 
 </script>

@@ -25,8 +25,6 @@ export const catalogueModal = writable(false);
 // items: array: of data items
 // item: single data item
 export const catalogueModalData = writable({});
-export const catalogueModalDataHistory = writable([]);
-export const catalogueModalDataHistoryIndex = writable(0);
 
 // FUNCTIONS ---------------------------------------
 export function openCatalogueModal() {
@@ -37,21 +35,6 @@ export function closeCatalogueModal() {
   catalogueModal.set(false);
 };
 
-export function updateCatalogueModalData(data) {
-  if (Object.keys(get(catalogueModalData)).length > 0) {
-    catalogueModalDataHistory.update(prev => {
-      prev.push(get(catalogueModalData));
-      return prev;
-    });
-    catalogueModalDataHistoryIndex.update(prev => prev++);
-    console.log(
-      get(catalogueModalDataHistory), 
-      get(catalogueModalDataHistoryIndex)
-    );
-  };
-  catalogueModalData.set(data);
-};
-
 export function setCatalogueModalData(data) {
   catalogueModalData.set(data);
 };
@@ -59,9 +42,3 @@ export function setCatalogueModalData(data) {
 export function clearCatalogueModalData() {
   catalogueModalData.set({});
 }
-
-/*
-scope: item, list
-type: book, compilation, series
-list: {type: compilation/series, name: }
-items: */
