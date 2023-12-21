@@ -12,6 +12,7 @@ const books = [
     date: [23, 12, 2],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1488679",
   },
   {
     id: 1,
@@ -27,6 +28,7 @@ const books = [
     date: [23, 11, 15],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1480414",
   },
   {
     id: 2,
@@ -41,6 +43,7 @@ const books = [
     date: [23, 10, 24],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1470772",
   },
   {
     id: 3,
@@ -55,6 +58,7 @@ const books = [
     date: [23, 9, 3],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1445543",
   },
   {
     id: 4,
@@ -69,6 +73,7 @@ const books = [
     date: [23, 7, 25],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1428922",
   },
   {
     id: 5,
@@ -83,6 +88,7 @@ const books = [
     date: [23, 7, 10],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1422148",
   },
   {
     id: 6,
@@ -97,6 +103,7 @@ const books = [
     date: [23, 6, 18],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1410320",
   },
   {
     id: 7,
@@ -111,6 +118,7 @@ const books = [
     date: [23, 3, 13],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1362355",
   },
   {
     id: 8,
@@ -126,6 +134,7 @@ const books = [
     date: [23, 2, 23],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1351321",
   },
   {
     id: 9,
@@ -140,6 +149,7 @@ const books = [
     date: [23, 2, 16],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1346973",
   },
   {
     id: 10,
@@ -154,6 +164,7 @@ const books = [
     date: [23, 2, 9],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1337906",
   },
   {
     id: 11,
@@ -169,6 +180,7 @@ const books = [
     books: [ 26, 24, 22, 20, 17, 14 ],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1330740",
   },
   {
     id: 12,
@@ -184,6 +196,7 @@ const books = [
     date: [23, 1, 26],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1329385",
   },
   {
     id: 13,
@@ -199,6 +212,7 @@ const books = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1313387",
   },
   {
     id: 14,
@@ -213,6 +227,7 @@ const books = [
     date: [23, 1, 5],
     compilations: [8],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1311498",
   },
   {
     id: 15,
@@ -228,6 +243,7 @@ const books = [
     date: [22, 12, 14],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1287254",
   },
   {
     id: 16,
@@ -242,6 +258,7 @@ const books = [
     date: [22, 11, 4],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1176550",
   },
   {
     id: 17,
@@ -256,6 +273,7 @@ const books = [
     date: [22, 10, 12],
     compilations: [8],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1169994",
   },
   {
     id: 18,
@@ -271,6 +289,7 @@ const books = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1164929",
   },
   {
     id: 19,
@@ -286,6 +305,7 @@ const books = [
     date: [22, 9, 1],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1163912",
   },
   {
     id: 20,
@@ -300,6 +320,7 @@ const books = [
     date: [22, 8, 25],
     compilations: [8],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1162562",
   },
   {
     id: 21,
@@ -315,6 +336,7 @@ const books = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1161326",
   },
   {
     id: 22,
@@ -329,6 +351,7 @@ const books = [
     date: [22, 7, 22],
     compilations: [8],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1158121",
   },
   {
     id: 23,
@@ -343,6 +366,7 @@ const books = [
     date: [22, 7, 8],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1155283",
   },
   {
     id: 24,
@@ -357,6 +381,7 @@ const books = [
     date: [22, 6, 23],
     compilations: [8],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1153063",
   },
   {
     id: 25,
@@ -371,6 +396,7 @@ const books = [
     date: [22, 6, 16],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1152071",
   },
   {
     id: 26,
@@ -385,6 +411,7 @@ const books = [
     date: [22, 6, 9],
     compilations: [8],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1150880",
   },
   {
     id: 27,
@@ -399,6 +426,7 @@ const books = [
     date: [22, 6, 1],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1150127",
   },
   {
     id: 28,
@@ -414,6 +442,7 @@ const books = [
     books: [ 34, 33, 32, 30 ],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1148942",
   },
   {
     id: 29,
@@ -428,6 +457,7 @@ const books = [
     date: [22, 5, 18],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1148164",
   },
   {
     id: 30,
@@ -442,6 +472,7 @@ const books = [
     date: [22, 5, 8],
     compilations: [4],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1146148",
   },
   {
     id: 31,
@@ -456,6 +487,7 @@ const books = [
     date: [22, 5, 3],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1145361",
   },
   {
     id: 32,
@@ -470,6 +502,7 @@ const books = [
     date: [22, 4, 28],
     compilations: [4],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1144543",
   },
   {
     id: 33,
@@ -484,6 +517,7 @@ const books = [
     date: [22, 4, 1],
     compilations: [4],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1140055",
   },
   {
     id: 34,
@@ -498,6 +532,7 @@ const books = [
     date: [22, 3, 24],
     compilations: [4],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1139133",
   },
   {
     id: 35,
@@ -513,6 +548,7 @@ const books = [
     date: [22, 3, 17],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1138094",
   },
   {
     id: 36,
@@ -528,6 +564,7 @@ const books = [
     books: [42, 41, 40, 39, 38],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1136331",
   },
   {
     id: 37,
@@ -543,6 +580,7 @@ const books = [
     date: [22, 2, 22],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1134254",
   },
   {
     id: 38,
@@ -557,6 +595,7 @@ const books = [
     date: [22, 2, 18],
     compilations: [3],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1133464",
   },
   {
     id: 39,
@@ -571,6 +610,7 @@ const books = [
     date: [22, 1, 23],
     compilations: [3],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1129018",
   },
   {
     id: 40,
@@ -585,6 +625,7 @@ const books = [
     date: [22, 1, 3],
     compilations: [3],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1124811",
   },
   {
     id: 41,
@@ -599,6 +640,7 @@ const books = [
     date: [21, 12, 27],
     compilations: [3],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1123574",
   },
   {
     id: 42,
@@ -613,6 +655,7 @@ const books = [
     date: [21, 12, 14],
     compilations: [3],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1121177",
   },
   {
     id: 43,
@@ -628,6 +671,7 @@ const books = [
     date: [21, 11, 27],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1117740",
   },
   {
     id: 44,
@@ -642,6 +686,7 @@ const books = [
     date: [21, 11, 3],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1113663",
   },
   {
     id: 45,
@@ -657,6 +702,7 @@ const books = [
     date: [21, 9, 27],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1106587",
   },
   {
     id: 46,
@@ -672,6 +718,7 @@ const books = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1097936",
   },
   {
     id: 47,
@@ -686,6 +733,7 @@ const books = [
     date: [21, 7, 31],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1097036",
   },
   {
     id: 48,
@@ -701,6 +749,7 @@ const books = [
     date: [21, 6, 21],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1090603",
   },
   {
     id: 49,
@@ -716,6 +765,7 @@ const books = [
     date: [21, 6, 18],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1090200",
   },
   {
     id: 50,
@@ -730,6 +780,7 @@ const books = [
     date: [21, 6, 15],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1089736",
   },
   {
     id: 51,
@@ -745,6 +796,7 @@ const books = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1089070",
   },
   {
     id: 52,
@@ -760,6 +812,7 @@ const books = [
     date: [21, 6, 8],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1088521",
   },
   {
     id: 53,
@@ -774,6 +827,7 @@ const books = [
     date: [21, 6, 1],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1087486",
   },
   {
     id: 54,
@@ -789,6 +843,7 @@ const books = [
     date: [21, 5, 22],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1085705",
   },
   {
     id: 55,
@@ -804,6 +859,7 @@ const books = [
     date: [21, 5, 14],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1084330",
   },
   {
     id: 56,
@@ -818,6 +874,7 @@ const books = [
     date: [21, 5, 9],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1083542",
   },
   {
     id: 57,
@@ -832,6 +889,7 @@ const books = [
     date: [21, 5, 4],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1082782",
   },
   {
     id: 58,
@@ -846,6 +904,7 @@ const books = [
     date: [21, 4, 16],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1080093",
   },
   {
     id: 59,
@@ -861,6 +920,7 @@ const books = [
     date: [21, 3, 27],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1076693",
   },
   {
     id: 60,
@@ -875,6 +935,7 @@ const books = [
     date: [21, 3, 18],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1075288",
   },
   {
     id: 61,
@@ -889,6 +950,7 @@ const books = [
     date: [21, 3, 12],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1074063",
   },
   {
     id: 62,
@@ -904,6 +966,7 @@ const books = [
     date: [21, 3, 5],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1072788",
   },
   {
     id: 63,
@@ -919,6 +982,7 @@ const books = [
     books: [],
     sale: "",
     tags: [],
+    link: "https://www.smashwords.com/books/view/1070700",
   },
   {
     id: 64,
@@ -934,6 +998,7 @@ const books = [
     date: [21, 2, 16],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1069695",
   },
   {
     id: 65,
@@ -949,6 +1014,7 @@ const books = [
     date: [21, 2, 12],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1069070",
   },
   {
     id: 66,
@@ -964,6 +1030,7 @@ const books = [
     date: [21, 1, 28],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1066265",
   },
   {
     id: 67,
@@ -979,6 +1046,7 @@ const books = [
     date: [20, 12, 18],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1059975",
   },
   {
     id: 68,
@@ -994,6 +1062,7 @@ const books = [
     date: [20, 12, 10],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1058458",
   },
   {
     id: 69,
@@ -1009,6 +1078,7 @@ const books = [
     date: [20, 12, 4],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1057416",
   },
   {
     id: 70,
@@ -1024,6 +1094,7 @@ const books = [
     date: [20, 11, 27],
     compilations: [],
     tags: [],
+    link: "https://www.smashwords.com/books/view/1056329",
   },
 ];
 
