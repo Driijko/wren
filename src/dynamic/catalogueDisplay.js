@@ -1,4 +1,4 @@
-import { writable, get } from "svelte/store";
+import { writable } from "svelte/store";
 import series from "../static/series";
 import books from "../static/books";
 import themes from "../static/themes";
@@ -10,6 +10,9 @@ export const catalogueMainSeries = writable(series);
 export const catalogueMainCompilations = writable(compilations);
 export const catalogueMainBooks = writable(books);
 export const catalogueMainThemes = writable(themes);
+export const catalogueMainSeriesTags = writable([]);
+export const catalogueMainBooksTags = writable([]);
+export const catalogueMainCompilationsTags = writable([]);
 export const catalogueModal = writable(false);
 export const catalogueModalData = writable({
   scope: "", // string: "item" or "list"
@@ -25,18 +28,21 @@ const map = {
   books: {
     static: books, 
     dynamic: catalogueMainBooks, 
-    sort: { property: "", order: "" }
+    sort: { property: "", order: "" },
+    tags: catalogueMainBooksTags,
   }, 
   series: {
     static: series, 
     dynamic: catalogueMainSeries,
     sort: { property: "", order: "" },
+    tags: catalogueMainSeriesTags,
   }, 
   compilations: {
     static: compilations, 
     dynamic: catalogueMainCompilations, 
     sort: { property: "", order: "" },
-  }
+    tags: catalogueMainCompilationsTags,
+  },
 };
 
 // FUNCTIONS ---------------------------------------
@@ -73,11 +79,13 @@ function genericSort(property, order) {
 };
 
 function itemsSort(dynamic, property, order) {
-  dynamic.set( 
-    get(dynamic).sort(
-      genericSort(property, order)
-  ));
+  dynamic.update(prev => {
+    prev.sort(genericSort(property, order));
+    return prev;
+  });
 };
+
+// FILTER FUNCTIONS --------------------------------------------
 
 // ORGANIZE: FILTER & SORT /////////////////////////////////////
 function organizeItems(type) {
@@ -90,5 +98,13 @@ function organizeItems(type) {
 // USER ACTIONS /////////////////////////////////////////////
 export function setSort(type, property, order) {
   map[type].sort = {property: property, order: order };
+  organizeItems(type);
+};
+
+export function addTag(type, tag) {
+  map[type].tags.update(prev => {
+    prev.push(tag);
+    return prev;
+  });
   organizeItems(type);
 };
