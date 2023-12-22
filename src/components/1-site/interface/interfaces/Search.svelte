@@ -18,29 +18,45 @@
   };
 
   // LOCAL STATE ----------------------------------------------
-  let searchResults = [];
+  $: searchResults = [];
 
   // EVENT HANDLERS ------------------------------------------
-  function handleChange(string) {
-    searchResults = map[$catalogueMainType].array.map(item => item.title)
-      .filter(title => title.includes(string))
+  function handleChange(e) {
+    // searchResults = map[$catalogueMainType].array.map(item => item.title)
+    //   .filter(title => title.includes(e.target.value));
+    searchResults = map[$catalogueMainType].array.filter(item => item.title.includes(e.target.value));
+    console.log(searchResults);
   };
 
 </script>
 
 <!-- MARKUP ////////////////////////////////////////// -->
 <div class="fill">
-  <CatalogueMainTypeMenu />
-  <label for="search">
-    Search {map[$catalogueMainType].string} by Title
-    <input autofocus list="items-list" on:change={handleChange} />
-  </label>
-  <datalist id="items-list">
-    {#each map[$catalogueMainType].array as item (item.id)}
-      <option value={item.title}></option>
-    {/each}
-  </datalist>
+  <div>
+    <CatalogueMainTypeMenu />
+    <label for="search">
+      Search {map[$catalogueMainType].string} by Title
+      <input autofocus list="items-list" on:change={handleChange} />
+    </label>
+    <datalist id="items-list">
+      {#each map[$catalogueMainType].array as item (item.id)}
+        <option value={item.title}></option>
+      {/each}
+    </datalist>
+  </div>
+  <div class="results">
+    <ul>
+      {#each searchResults as result}
+        <li>
+          <CatalogueModalButton data={{scope: "item", item: result}}>
+            {result.title}
+          </CatalogueModalButton>
+        </li>
+      {/each}
+    </ul>
+  </div>
 </div>
+
 
 <!-- STYLES ///////////////////////////////////////// -->
 <style>
@@ -55,5 +71,9 @@ h2 {
 input {
   width: 300px;
   height: 100px;
+}
+.results {
+  border: 4px solid green;
+  /* height: 400px; */
 }
 </style>
