@@ -43,7 +43,7 @@
 
 <!-- MARKUP ////////////////////////////////////////// -->
 <CatalogueMainTypeMenu />
-<div class="main-container">
+<div class="catalogue-interface">
   <label for="search" class="center">
     <span>Search {map[$catalogueMainType].string} by Title</span><br/>
     <input bind:this={inputElement} list="items-list" on:change={handleChange} />
@@ -67,7 +67,7 @@
 
 <!-- STYLES ///////////////////////////////////////// -->
 <style>
-.main-container {
+.catalogue-interface {
   background-color: hsl(0, 0%, 10%);
   color: white;
   display: flex;
@@ -98,7 +98,7 @@ ul {
   width: min(30em, 80vw);
 }
 /* PORTRAIT ------------------------------------------- */
-@media screen and (orientation: portrait) and (max-width: 600px) {
+/* @media screen and (orientation: portrait) and (max-width: 600px) {
 .main-container {
   height: 86%;
 }
@@ -108,7 +108,7 @@ ul {
 .main-container {
   height: 93%;
 }
-}
+} */
 
 @media screen and (orientation: portrait) and (min-height: 650px) {
   .main-container {
@@ -123,9 +123,9 @@ ul {
 }
 
 /* LANDSCAPE --------------------------------------------- */
-@media screen and (orientation: landscape) {
+/* @media screen and (orientation: landscape) {
 .main-container {
   height: calc(100% - (var(--hpx) * 0.05));
 }
-}
+} */
 </style>
