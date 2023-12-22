@@ -1,25 +1,12 @@
 <!-- SCRIPTS /////////////////////////////////////////// -->
 <script>
   // IMPORTS -----------------------------------------
-  import books from "../../../../static/books";
-  import series from "../../../../static/series";
-  import compilations from "../../../../static/compilations";
   import { catalogueMainType, map } 
   from "../../../../dynamic/catalogueDisplay";
   import CatalogueMainTypeMenu 
   from "../../../4-structures/catalogue/main/CatalogueMainTypeMenu.svelte";
   import CatalogueModalButton 
   from "../../../5-elements/catalogue/CatalogueModalButton.svelte";
-
-  // PROPS --------------------------------------------
-  // export let map;
-
-  // TYPE TO STRING AND DATA ARRAY MAP ----------------------------------
-  // const map = {
-  //   books: { string: "Books", array: books},
-  //   series: { string: "Series", array: series },
-  //   compilations: { string: "Compilations", array: compilations}
-  // };
 
   // LOCAL STATE ----------------------------------------------
   $: searchResults = [];

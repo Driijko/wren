@@ -1,4 +1,4 @@
-import { writable } from "svelte/store";
+import { writable, get } from "svelte/store";
 import series from "../static/series";
 import books from "../static/books";
 import themes from "../static/themes";
@@ -104,9 +104,19 @@ export function setSort(type, property, order) {
   organizeItems(type);
 };
 
-export function addTag(type, tag) {
+export function addTag(tag) {
+  const type = get(catalogueMainType);
   map[type].tags.update(prev => {
     prev.push(tag);
+    return prev;
+  });
+  organizeItems(type);
+};
+
+export function removeTag(tag) {
+  const type = get(catalogueMainType);
+  map[type].tags.update(prev => {
+    prev.splice(prev.indexOf(tag), 1);
     return prev;
   });
   organizeItems(type);

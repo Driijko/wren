@@ -12,25 +12,6 @@
   import Sort from "../interfaces/Sort.svelte";
   import Filter from "../interfaces/Filter.svelte";
 
-  // MAP TYPE TO STRING, ITEMS, TAGS --------------------
-  const map = {
-    books: {
-      string: "Books",
-      items: books,
-      tags: catalogueMainBooksTags,
-    },
-    series: {
-      string: "Series",
-      items: series,
-      tags: catalogueMainSeriesTags,
-    },
-    compilations: {
-      string: "Compilations",
-      items: compilations,
-      tags: catalogueMainCompilationsTags,
-    },
-  };
-
 </script>
 
 <!-- MARKUP ///////////////////////////////////////// -->

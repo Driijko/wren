@@ -1,19 +1,13 @@
 <!-- SCRIPTS ////////////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------------
-  import { catalogueMainType, catalogueMainBooksTags, catalogueMainSeriesTags, catalogueMainCompilationsTags} 
+  import { catalogueMainType, map } 
   from "../../../../dynamic/catalogueDisplay";
   import themes from "../../../../static/themes";
   import CatalogueMainTypeMenu 
   from "../../../4-structures/catalogue/main/CatalogueMainTypeMenu.svelte";
-
-  const map = {
-    books: { string: "Books", tags: catalogueMainBooksTags },
-    series: { string: "Series", tags: catalogueMainSeriesTags },
-    compilations: { 
-      string: "Compilations", tags: catalogueMainCompilationsTags
-    },
-  };
+  import FilterThemeCheckbox 
+  from "../../../5-elements/catalogue/FilterThemeCheckbox.svelte";
 
 </script>
 
@@ -24,7 +18,7 @@
   <ul class="reg-scroll">
     {#each themes as theme}
       <li>
-        {theme.title}
+        <FilterThemeCheckbox theme={theme.title} />
       </li>
     {/each}
   </ul>

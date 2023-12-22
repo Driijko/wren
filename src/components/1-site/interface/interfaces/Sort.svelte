@@ -1,16 +1,11 @@
 <!-- SCRIPTS //////////////////////////////////////// -->
 <script>
   // IMPORTS ----------------------------------------------
-  import { catalogueMainType, setSort } 
+  import { catalogueMainType, setSort, map } 
   from "../../../../dynamic/catalogueDisplay";
   import { closeInterfaceModal } from "../../../../dynamic/interface";
   import CatalogueMainTypeMenu 
   from "../../../4-structures/catalogue/main/CatalogueMainTypeMenu.svelte";
-
-  // MAP TYPE TO STRING ----------------------------------
-  const map = { 
-    books: "Books", series: "Series", compilations: "Compilations"
-  };
 
   // EVENT HANDLERS -----------------------------------
   function handleClick(property, order) {
@@ -23,7 +18,7 @@
 <!-- MARKUP ///////////////////////////////////////////// -->
 <CatalogueMainTypeMenu />
 <div class="catalogue-interface">
-  <h2>Sort {map[$catalogueMainType]}:</h2>
+  <h2>Sort {map[$catalogueMainType].string}:</h2>
   <div>
     <h3>Alphabetically</h3>
     <button on:click={()=> handleClick("title", "start")}>
