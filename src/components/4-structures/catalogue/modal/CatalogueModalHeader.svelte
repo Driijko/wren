@@ -27,8 +27,8 @@
         {/if}
       {:else if type === "compilation"}
         {#if from === "series"}
-          All compilations which include<br/>
-          books from the {title} series
+          All compilations featuring<br/>
+          the {title} series
         {:else if from === "book"}
           All compilations which include<br/>
           the book {title}

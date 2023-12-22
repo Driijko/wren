@@ -26,13 +26,16 @@
 
   // EVENT HANDLERS ------------------------------------------
   function handleChange(e) {
-    searchResults = map[$catalogueMainType].array.filter(item => item.title.includes(e.target.value));
+    searchResults = map[$catalogueMainType].array
+      .filter(item => item.title.includes(e.target.value));
+    inputElement.blur();
   };
 
   // REACTIVE RESETTING OF INPUT ELEMENT AND RESULTS --------------------
   $: if (currentType !== $catalogueMainType) {
+    currentType = $catalogueMainType;
     inputElement.value = "";
-    inputElement.focus();
+    // inputElement.focus();
     searchResults = [];
   };
 
@@ -41,28 +44,24 @@
 <!-- MARKUP ////////////////////////////////////////// -->
 <CatalogueMainTypeMenu />
 <div class="main-container">
-  <div class="input">
-    <label for="search" class="center">
-      <span>Search {map[$catalogueMainType].string} by Title</span><br/>
-      <input bind:this={inputElement} autofocus list="items-list" on:change={handleChange} />
-    </label>
-    <datalist id="items-list">
-      {#each map[$catalogueMainType].array as item (item.id)}
-        <option value={item.title}></option>
-      {/each}
-    </datalist>
-  </div>
-  <div class="results">
-    <ul>
-      {#each searchResults as result}
-        <li>
-          <CatalogueModalButton data={{scope: "item", item: result}}>
-            {result.title}
-          </CatalogueModalButton>
-        </li>
-      {/each}
-    </ul>
-  </div>
+  <label for="search" class="center">
+    <span>Search {map[$catalogueMainType].string} by Title</span><br/>
+    <input bind:this={inputElement} list="items-list" on:change={handleChange} />
+  </label>
+  <datalist id="items-list">
+    {#each map[$catalogueMainType].array as item (item.id)}
+      <option value={item.title}></option>
+    {/each}
+  </datalist>
+  <ul class="reg-scroll">
+    {#each searchResults as result}
+      <li>
+        <CatalogueModalButton data={{scope: "item", item: result}}>
+          {result.title}
+        </CatalogueModalButton>
+      </li>
+    {/each}
+  </ul>
 </div>
 
 
@@ -71,22 +70,29 @@
 .main-container {
   background-color: hsl(0, 0%, 10%);
   color: white;
-  border: 4px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5px;
+  padding: 10px;
+  padding-bottom: 20px;
 }
-.input label {
+label {
+  padding-top: 15px;
   flex-direction: column;
 }
 input {
   width: 200px;
   height: 2em;
 }
-.results {
-  height: calc(100% - 5em);
-  border: 4px solid green;
+ul {
+  height: calc(100% - 6em);
+  border: 4px solid hsl(0, 0%, 30%);
+  background-color: hsl(0, 0%, 20%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
 }
 /* PORTRAIT ------------------------------------------- */
 @media screen and (orientation: portrait) and (max-width: 600px) {
