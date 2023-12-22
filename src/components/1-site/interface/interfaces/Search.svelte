@@ -4,18 +4,22 @@
   import books from "../../../../static/books";
   import series from "../../../../static/series";
   import compilations from "../../../../static/compilations";
-  import { catalogueMainType } from "../../../../dynamic/catalogueDisplay";
+  import { catalogueMainType, map } 
+  from "../../../../dynamic/catalogueDisplay";
   import CatalogueMainTypeMenu 
   from "../../../4-structures/catalogue/main/CatalogueMainTypeMenu.svelte";
   import CatalogueModalButton 
   from "../../../5-elements/catalogue/CatalogueModalButton.svelte";
 
+  // PROPS --------------------------------------------
+  // export let map;
+
   // TYPE TO STRING AND DATA ARRAY MAP ----------------------------------
-  const map = {
-    books: { string: "Books", array: books},
-    series: { string: "Series", array: series },
-    compilations: { string: "Compilations", array: compilations}
-  };
+  // const map = {
+  //   books: { string: "Books", array: books},
+  //   series: { string: "Series", array: series },
+  //   compilations: { string: "Compilations", array: compilations}
+  // };
 
   // LOCAL STATE ----------------------------------------------
   $: searchResults = [];
@@ -26,7 +30,7 @@
 
   // EVENT HANDLERS ------------------------------------------
   function handleChange(e) {
-    searchResults = map[$catalogueMainType].array
+    searchResults = map[$catalogueMainType].static
       .filter(item => item.title.includes(e.target.value));
     inputElement.blur();
   };
@@ -49,7 +53,7 @@
     <input bind:this={inputElement} list="items-list" on:change={handleChange} />
   </label>
   <datalist id="items-list">
-    {#each map[$catalogueMainType].array as item (item.id)}
+    {#each map[$catalogueMainType].static as item (item.id)}
       <option value={item.title}></option>
     {/each}
   </datalist>
@@ -76,7 +80,7 @@
   align-items: center;
   padding: 10px;
   padding-bottom: 20px;
-  gap: 3dvh;
+  gap: 4dvh;
 }
 label {
   padding-top: 15px;
@@ -98,20 +102,8 @@ ul {
   width: min(30em, 80vw);
 }
 /* PORTRAIT ------------------------------------------- */
-/* @media screen and (orientation: portrait) and (max-width: 600px) {
-.main-container {
-  height: 86%;
-}
-}
-
-@media screen and (orientation: portrait) and (min-width: 600px) {
-.main-container {
-  height: 93%;
-}
-} */
-
-@media screen and (orientation: portrait) and (min-height: 650px) {
-  .main-container {
+@media screen and (orientation: portrait) and (min-height: 600px) {
+  .catalogue-interface {
     padding-bottom: 40px;
   }
 }
@@ -121,11 +113,4 @@ ul {
     height: calc(100% - 10em);
   }
 }
-
-/* LANDSCAPE --------------------------------------------- */
-/* @media screen and (orientation: landscape) {
-.main-container {
-  height: calc(100% - (var(--hpx) * 0.05));
-}
-} */
 </style>

@@ -2,10 +2,34 @@
 <script>
   // IMPORTS ------------------------------------------
   import { currentInterfaceSite } from "../../../../dynamic/interface";
+  import books from "../../../../static/books";
+  import series from "../../../../static/series";
+  import compilations from "../../../../static/compilations";
+  import { catalogueMainBooksTags, catalogueMainSeriesTags, catalogueMainCompilationsTags } 
+  from "../../../../dynamic/catalogueDisplay";
   import SiteMenu from "../interfaces/SiteMenu.svelte";
   import Search from "../interfaces/Search.svelte";
   import Sort from "../interfaces/Sort.svelte";
   import Filter from "../interfaces/Filter.svelte";
+
+  // MAP TYPE TO STRING, ITEMS, TAGS --------------------
+  const map = {
+    books: {
+      string: "Books",
+      items: books,
+      tags: catalogueMainBooksTags,
+    },
+    series: {
+      string: "Series",
+      items: series,
+      tags: catalogueMainSeriesTags,
+    },
+    compilations: {
+      string: "Compilations",
+      items: compilations,
+      tags: catalogueMainCompilationsTags,
+    },
+  };
 
 </script>
 
@@ -24,6 +48,10 @@
 
 <!-- STYLES //////////////////////////////////////// -->
 <style>
+div :global(.catalogue-interface) {
+  background-color: hsl(0, 0%, 10%);
+  color: white;
+}
 /* PORTRAIT ------------------------------------------- */
 @media screen and (orientation: portrait) and (max-width: 600px) {
 div :global(.catalogue-interface) {

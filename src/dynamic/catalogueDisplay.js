@@ -24,20 +24,23 @@ export const catalogueModalData = writable({
 });
 
 // MAP --------------------------------------------
-const map = { 
+export const map = { 
   books: {
+    string: "Books",
     static: books, 
     dynamic: catalogueMainBooks, 
     sort: { property: "", order: "" },
     tags: catalogueMainBooksTags,
   }, 
   series: {
+    string: "Series",
     static: series, 
     dynamic: catalogueMainSeries,
     sort: { property: "", order: "" },
     tags: catalogueMainSeriesTags,
   }, 
   compilations: {
+    string: "Compilations",
     static: compilations, 
     dynamic: catalogueMainCompilations, 
     sort: { property: "", order: "" },

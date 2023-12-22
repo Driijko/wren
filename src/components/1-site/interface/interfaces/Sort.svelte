@@ -22,7 +22,7 @@
 
 <!-- MARKUP ///////////////////////////////////////////// -->
 <CatalogueMainTypeMenu />
-<div>
+<div class="catalogue-interface">
   <h2>Sort {map[$catalogueMainType]}:</h2>
   <div>
     <h3>Alphabetically</h3>
