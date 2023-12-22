@@ -33,6 +33,9 @@
       Z - A
     </button>
   </div>
+  {#if 
+    $catalogueMainType === "books" || $catalogueMainType === "compilations"
+  }
   <div>
     <h3>by Publication Date</h3>
     <button on:click={()=> handleClick("date", "start")}>
@@ -42,4 +45,5 @@
       oldest - newest
     </button>
   </div>
+  {/if}
 </div>
