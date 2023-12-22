@@ -5,6 +5,8 @@
   import series from "../../../static/series";
   import compilations from "../../../static/compilations";
   import getItemsById from "../../../static/getItemsById";
+  import { interfaceModal, closeInterfaceModal } 
+  from "../../../dynamic/interface";
   import { catalogueModal, openCatalogueModal, setCatalogueModalData } 
   from "../../../dynamic/catalogueDisplay";
 
@@ -20,6 +22,9 @@
   
   // EVENT HANDLERS -------------------------------
   function handleClick() {
+    if ($interfaceModal) {
+      closeInterfaceModal();
+    };
     if ($catalogueModal === false) {
       openCatalogueModal();
     };
