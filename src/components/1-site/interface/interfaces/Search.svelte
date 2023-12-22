@@ -72,9 +72,11 @@
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   padding-bottom: 20px;
+  gap: 3dvh;
 }
 label {
   padding-top: 15px;
@@ -93,6 +95,7 @@ ul {
   gap: 10px;
   padding: 10px;
   border-radius: 5px;
+  width: min(30em, 80vw);
 }
 /* PORTRAIT ------------------------------------------- */
 @media screen and (orientation: portrait) and (max-width: 600px) {
@@ -105,6 +108,18 @@ ul {
 .main-container {
   height: 93%;
 }
+}
+
+@media screen and (orientation: portrait) and (min-height: 650px) {
+  .main-container {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-height: 900px) {
+  ul {
+    height: calc(100% - 10em);
+  }
 }
 
 /* LANDSCAPE --------------------------------------------- */

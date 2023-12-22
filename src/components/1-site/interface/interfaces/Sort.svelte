@@ -38,10 +38,10 @@
   }
   <div>
     <h3>by Publication Date</h3>
-    <button on:click={()=> handleClick("date", "start")}>
+    <button on:click={()=> handleClick("date", "end")}>
       newest - oldest
     </button>
-    <button on:click={()=> handleClick("date", "end")}>
+    <button on:click={()=> handleClick("date", "start")}>
       oldest - newest
     </button>
   </div>
