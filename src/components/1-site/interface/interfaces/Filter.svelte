@@ -1,7 +1,7 @@
 <!-- SCRIPTS ////////////////////////////////////////// -->
 <script>
   // IMPORTS ------------------------------------------
-  import { catalogueMainType, map } 
+  import { catalogueMainType, map, removeAllTags } 
   from "../../../../dynamic/catalogueDisplay";
   import themes from "../../../../static/themes";
   import CatalogueMainTypeMenu 
@@ -18,6 +18,9 @@
 <CatalogueMainTypeMenu />
 <div class="catalogue-interface">
   <h2>Filter {map[$catalogueMainType].string} by Themes</h2>
+  {#if $tags.length > 0}
+    <button on:click={removeAllTags}>Remove all filters</button>
+  {/if}
   <ul class="reg-scroll center">
     {#each themes as theme}
       <li>

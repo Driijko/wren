@@ -13,11 +13,15 @@
 
 <!-- MARKUP ////////////////////////////////////////// -->
 <ul class="reg-scroll" class:main={context === "main"}>
-  {#each items as item}
-    <li class:narrow={$width === "narrow"} class:wide={$width === "wide"}>
-      <CatalogueItem {context} {item} />
-    </li>
-  {/each}
+  {#if items.length > 0}
+    {#each items as item}
+      <li class:narrow={$width === "narrow"} class:wide={$width === "wide"}>
+        <CatalogueItem {context} {item} />
+      </li>
+    {/each}
+  {:else}
+    <p>No items match your filter settings!</p>
+  {/if}
 </ul>
 
 <!-- STYLES ///////////////////////////////////// -->

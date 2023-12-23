@@ -111,6 +111,8 @@ function organizeItems(type) {
     dynamic.set(data.filter(item => {
       return filterByTags(item, get(tags));
     }));
+  } else {
+    dynamic.set(data);
   };
   
   // After filtering, apply sorting if necessary
