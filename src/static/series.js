@@ -6,7 +6,7 @@ const series = [
     pic: "./series/bimbo-stories.jpeg",
     description: "If you love huge tits, empty brains, and hungry blowjobs, then Bimbo Stories has been waiting for you. Set in a universe in which the large mysterious corporation Pink Industries has made Pink Pills and Pink Milk a socially tolerated - if not always accepted - way to transform a person's mind and body into a huge-titted plump-lipped cum-loving Bimbo, most Bimbo Stories are standalone tales with hints at a larger mythology for the avid return reader. No matter the method or resistance, mind after mind - and body after body - will change to suit the greedy desires of lust. *slurrrrp*",
     books: [70, 69, 68, 67, 66, 65, 64, 62, 61, 59, 57, 55, 53, 49, 47, 43, 37, 25, 19, 16, 15, 10, 8, 4, 3, 1, 0],
-    tags: [],
+    tags: [{id: 0, title: ""}],
     sale: "",
     date: [0, 0, 0],
     compilations: [0, 1, 7],

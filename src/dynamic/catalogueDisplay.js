@@ -27,21 +27,21 @@ export const catalogueModalData = writable({
 export const map = { 
   books: {
     string: "Books",
-    static: books, 
+    data: books, 
     dynamic: catalogueMainBooks, 
     sort: { property: "", order: "" },
     tags: catalogueMainBooksTags,
   }, 
   series: {
     string: "Series",
-    static: series, 
+    data: series, 
     dynamic: catalogueMainSeries,
     sort: { property: "", order: "" },
     tags: catalogueMainSeriesTags,
   }, 
   compilations: {
     string: "Compilations",
-    static: compilations, 
+    data: compilations, 
     dynamic: catalogueMainCompilations, 
     sort: { property: "", order: "" },
     tags: catalogueMainCompilationsTags,
@@ -64,6 +64,17 @@ export function setCatalogueModalData(data) {
 export function clearCatalogueModalData() {
   catalogueModalData.set({});
 }
+
+// FILTER FUNCTION------------------------------------
+function filterByTags(item, tags) {
+  const itemTags = item.tags.map(tag => tag.title);
+  for (const tag of tags) {
+    if (itemTags.includes(tag) === false) {
+      return false;
+    };
+  };
+  return true;
+};
 
 // SORT FUNCTIONS //////////////////////////////////////
 function genericSort(property, order) {
@@ -92,7 +103,17 @@ function itemsSort(dynamic, property, order) {
 
 // ORGANIZE: FILTER & SORT /////////////////////////////////////
 function organizeItems(type) {
-  const { dynamic, sort } = map[type];
+
+  const { data, dynamic, sort, tags } = map[type];
+
+  // Filter -------------------------------
+  if (tags.length > 0) {
+    dynamic.set(data.filter(item => {
+      return filterByTags(item, tags);
+    }));
+  };
+  
+  // After filtering, apply sorting if necessary
   if (sort.property.length > 0) {
     itemsSort(dynamic, sort.property, sort.order);
   };
@@ -121,3 +142,9 @@ export function removeTag(tag) {
   });
   organizeItems(type);
 };
+
+export function removeAllTags() {
+  const type = get(catalogueMainType);
+  map[type].tags.set([]);
+  organizeItems(type);
+}
