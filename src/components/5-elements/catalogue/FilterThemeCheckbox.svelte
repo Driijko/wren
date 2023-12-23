@@ -20,6 +20,26 @@
 
 <!-- MARKUP /////////////////////////////////////////////// -->
 <label for={theme}>
-  {theme}
+  <span>{theme}</span>
   <input id={theme} type="checkbox" {checked} on:click={handleClick} />
 </label>
+
+<!-- STYLES ////////////////////////////////////////////// -->
+<style>
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid green;
+  gap: 10px;
+  width: 130px;
+}
+input {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+input:checked {
+  background-color: blue;
+}
+</style>

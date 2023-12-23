@@ -107,9 +107,9 @@ function organizeItems(type) {
   const { data, dynamic, sort, tags } = map[type];
 
   // Filter -------------------------------
-  if (tags.length > 0) {
+  if (get(tags).length > 0) {
     dynamic.set(data.filter(item => {
-      return filterByTags(item, tags);
+      return filterByTags(item, get(tags));
     }));
   };
   
