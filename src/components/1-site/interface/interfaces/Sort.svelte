@@ -9,7 +9,7 @@
 
   // EVENT HANDLERS -----------------------------------
   function handleClick(property, order) {
-    setSort($catalogueMainType, property, order);
+    setSort(property, order);
     closeInterfaceModal();
   };
 

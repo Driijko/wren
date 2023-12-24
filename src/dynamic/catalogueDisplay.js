@@ -92,17 +92,17 @@ function genericSort(property, order) {
   };
 };
 
-function itemsSort(dynamic, property, order) {
-  dynamic.update(prev => {
+function itemsSort(property, order) {
+  map[get(catalogueMainType)].dynamic.update(prev => {
     prev.sort(genericSort(property, order));
     return prev;
   });
 };
 
 // ORGANIZE: FILTER & SORT /////////////////////////////////////
-function organizeItems(type) {
+function organizeItems() {
 
-  const { data, dynamic, sort, tags } = map[type];
+  const { data, dynamic, sort, tags } = map[get(catalogueMainType)];
 
   // Filter -------------------------------
   if (get(tags).length > 0) {
@@ -115,36 +115,33 @@ function organizeItems(type) {
   
   // After filtering, apply sorting if necessary
   if (sort.property.length > 0) {
-    itemsSort(dynamic, sort.property, sort.order);
+    itemsSort(sort.property, sort.order);
   };
 };
 
 // USER ACTIONS /////////////////////////////////////////////
-export function setSort(type, property, order) {
-  map[type].sort = {property: property, order: order };
-  organizeItems(type);
+export function setSort(property, order) {
+  map[get(catalogueMainType)].sort = {property: property, order: order };
+  organizeItems();
 };
 
 export function addTag(tag) {
-  const type = get(catalogueMainType);
-  map[type].tags.update(prev => {
+  map[get(catalogueMainType)].tags.update(prev => {
     prev.push(tag);
     return prev;
   });
-  organizeItems(type);
+  organizeItems();
 };
 
 export function removeTag(tag) {
-  const type = get(catalogueMainType);
-  map[type].tags.update(prev => {
+  map[get(catalogueMainType)].tags.update(prev => {
     prev.splice(prev.indexOf(tag), 1);
     return prev;
   });
-  organizeItems(type);
+  organizeItems();
 };
 
 export function removeAllTags() {
-  const type = get(catalogueMainType);
-  map[type].tags.set([]);
-  organizeItems(type);
+  map[get(catalogueMainType)].tags.set([]);
+  organizeItems();
 }
