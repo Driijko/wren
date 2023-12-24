@@ -10,7 +10,8 @@
   from "../../../5-elements/catalogue/FilterThemeCheckbox.svelte";
 
   // $: REACTIVE TAG VARIABLE --------------------------
-  $: tags = map[$catalogueMainType].tags;
+  $: ({ dynamic, tags } = map[$catalogueMainType]);
+  // $: tags = map[$catalogueMainType].tags;
 
 </script>
 
@@ -20,6 +21,9 @@
   <h2>Filter {map[$catalogueMainType].string} by Themes</h2>
   {#if $tags.length > 0}
     <button on:click={removeAllTags}>Remove all filters</button>
+  {/if}
+  {#if $dynamic.length === 0}
+    <p>No items match your filters!</p>
   {/if}
   <ul class="reg-scroll center">
     {#each themes as theme}

@@ -17,7 +17,7 @@
 
   // EVENT HANDLERS ------------------------------------------
   function handleChange(e) {
-    searchResults = map[$catalogueMainType].static
+    searchResults = map[$catalogueMainType].data
       .filter(item => item.title.includes(e.target.value));
     inputElement.blur();
   };
@@ -37,10 +37,13 @@
 <div class="catalogue-interface">
   <label for="search" class="center">
     <span>Search {map[$catalogueMainType].string} by Title</span><br/>
-    <input bind:this={inputElement} list="items-list" on:change={handleChange} />
+    <input bind:this={inputElement} 
+      list="items-list" 
+      on:change={handleChange} 
+    />
   </label>
   <datalist id="items-list">
-    {#each map[$catalogueMainType].static as item (item.id)}
+    {#each map[$catalogueMainType].data as item (item.id)}
       <option value={item.title}></option>
     {/each}
   </datalist>

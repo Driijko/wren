@@ -99,8 +99,6 @@ function itemsSort(dynamic, property, order) {
   });
 };
 
-// FILTER FUNCTIONS --------------------------------------------
-
 // ORGANIZE: FILTER & SORT /////////////////////////////////////
 function organizeItems(type) {
 

@@ -24,7 +24,8 @@
 <!-- STYLES //////////////////////////////////// -->
 <style>
 p {
-  margin-left: 8px;
+  margin-left: calc(var(--hpx) * 0.015);
   padding-top: 6px;
+  font-size: calc(var(--hpx) * 0.025);
 }
 </style>
