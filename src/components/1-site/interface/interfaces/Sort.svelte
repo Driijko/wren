@@ -1,17 +1,11 @@
 <!-- SCRIPTS //////////////////////////////////////// -->
 <script>
   // IMPORTS ----------------------------------------------
-  import { catalogueMainType, setSort, map } 
+  import { catalogueMainType, map } 
   from "../../../../dynamic/catalogueDisplay";
-  import { closeInterfaceModal } from "../../../../dynamic/interface";
   import CatalogueMainTypeMenu 
   from "../../../4-structures/catalogue/main/CatalogueMainTypeMenu.svelte";
-
-  // EVENT HANDLERS -----------------------------------
-  function handleClick(property, order) {
-    setSort(property, order);
-    closeInterfaceModal();
-  };
+  import SortButton from "../../../5-elements/catalogue/SortButton.svelte";
 
 </script>
 
@@ -22,12 +16,12 @@
   <div class="center">
     <h3>Alphabetically</h3>
     <div class="button-container">
-      <button on:click={()=> handleClick("title", "start")}>
+      <SortButton property="title" order="start" >
         A - Z
-      </button>
-      <button on:click={()=> handleClick("title", "end")}>
+      </SortButton>
+      <SortButton property="title" order="end" >
         Z - A
-      </button>
+      </SortButton>
     </div>
   </div>
   {#if 
@@ -36,12 +30,12 @@
     <div class="center">
       <h3>by Publication Date</h3>
       <div class="button-container">
-        <button on:click={()=> handleClick("date", "end")}>
+        <SortButton property="date" order="start" >
           newest - oldest
-        </button>
-        <button on:click={()=> handleClick("date", "start")}>
+        </SortButton>
+        <SortButton property="date" order="end" >
           oldest - newest
-        </button>
+        </SortButton>
       </div>
     </div>
   {/if}
@@ -70,10 +64,5 @@ h3 {
 .button-container {
   display: flex;
   gap: min(8vw, 30px);
-}
-button {
-  border: 2px solid white;
-  padding: 5px 10px;
-  border-radius: 5px;
 }
 </style>
