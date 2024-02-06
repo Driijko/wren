@@ -23,6 +23,10 @@ const themes = [
     id: 5,
     title: "titfuck"
   },
+  {
+    id: 6,
+    title: "bimbofication"
+  }
 ];
 
 export default themes;
