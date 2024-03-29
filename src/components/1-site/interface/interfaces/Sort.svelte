@@ -30,10 +30,10 @@
     <div class="center">
       <h3>by Publication Date</h3>
       <div class="button-container">
-        <SortButton property="date" order="start" >
+        <SortButton property="date" order="end" >
           newest - oldest
         </SortButton>
-        <SortButton property="date" order="end" >
+        <SortButton property="date" order="start" >
           oldest - newest
         </SortButton>
       </div>
@@ -53,7 +53,6 @@ h2 {
   font-weight: bold;
 }
 .catalogue-interface > div {
-  /* border: 1px solid red; */
   flex-direction: column;
   gap: min(3dvh, 20px);
 }

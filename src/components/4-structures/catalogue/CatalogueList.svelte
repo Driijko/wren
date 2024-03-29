@@ -32,6 +32,7 @@ ul {
   gap: 3dvh;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 li {
   background-color: hsl(0, 0%, 90%);

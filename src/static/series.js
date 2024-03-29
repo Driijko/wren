@@ -44,7 +44,10 @@ const series = [
     pic: "./series/incest-inn.jpeg",
     description: "Lillian Bustmore is a beautiful, confident, and intelligent woman who has a very peculiar job. Lillian runs the Home Nest Inn, a large and strange old hotel where people can come to live out taboo fantasies. The mysterious hotel transports its customers to other places and sometimes other times so that they can finally be with that family member in that way they never thought they could. Come inside if you dare...",
     books: [60, 58, 56, 54, 52, 48, 44, 27, 23, 12 ],
-    tags: [{id: 0, title: "bimbo"}, {id: 1, title: "huge tits"}],
+    tags: [
+      {id: 0, title: "bimbo"}, 
+      {id: 1, title: "huge tits"}
+    ],
     sale: "",
     compilations: [2],
     date: [0, 0, 0],

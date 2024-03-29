@@ -140,7 +140,7 @@ const compilations = [
     pic: "./compilations/bimbo-stories-bundle.jpeg",
     books: [],
     sale: "",
-    tags: [],
+    tags: [{id:0, title: "bimbo"}],
     link: "https://www.smashwords.com/books/view/1070700",
   },
 ];
