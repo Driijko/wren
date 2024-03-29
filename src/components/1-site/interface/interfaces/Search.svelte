@@ -24,8 +24,9 @@
 
   // EVENT HANDLERS ------------------------------------------
   function handleChange(e) {
+    const lowerCase = e.target.value.toLowerCase();
     searchResults = map[$catalogueMainType].data
-      .filter(item => item.title.includes(e.target.value));
+      .filter(item => item.title.toLowerCase().includes(lowerCase));
     inputElement.blur();
   };
 
@@ -34,7 +35,7 @@
     markerBottomHighlight = e.target.scrollTop < (
       e.target.scrollHeight - e.target.clientHeight
     );
-  }
+  };
 
   // REACTIVE RESETTING OF INPUT ELEMENT AND RESULTS --------------------
   $: if (currentType !== $catalogueMainType) {
@@ -78,13 +79,13 @@
   </datalist>
   <div id="search-results-container">
 
-    <!-- {#if scrollable} -->
+    {#if scrollable}
       <div class="marker marker-top center" class:scrollable
         class:highlight={markerTopHighlight}
       >
         <CaretUpIcon />
       </div>
-    <!-- {/if} -->
+    {/if}
 
     <ul bind:this={resultsElement} class="reg-scroll" on:scroll={handleScroll}>
       {#each searchResults as result}
@@ -96,13 +97,13 @@
       {/each}
     </ul>
 
-    <!-- {#if scrollable} -->
+    {#if scrollable}
       <div class="marker marker-bottom center" class:scrollable
         class:highlight={markerBottomHighlight}
       >
         <CaretDownIcon />
       </div>
-    <!-- {/if} -->
+    {/if}
   </div>
 </div>
 
