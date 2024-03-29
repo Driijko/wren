@@ -32,9 +32,10 @@
 
   function handleScroll(e) {
     markerTopHighlight = e.target.scrollTop > 0;
-    markerBottomHighlight = e.target.scrollTop < (
-      e.target.scrollHeight - e.target.clientHeight
-    );
+    markerBottomHighlight = Math.round(e.target.scrollTop) < 
+      (e.target.scrollHeight - e.target.clientHeight)
+    ;
+    console.log("top:", e.target.scrollTop, ", scrollHeight:", (e.target.scrollHeight - e.target.clientHeight));
   };
 
   // REACTIVE RESETTING OF INPUT ELEMENT AND RESULTS --------------------
